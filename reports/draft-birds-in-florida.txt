@@ -1,0 +1,16 @@
+title: Birds in Florida: 25 Species Every Birder Should Know
+slug: birds-in-florida
+word_count: 3567
+meta_description: Birds in Florida guide: learn 25 species every birder should know, plus the marsh, beach, pine, and backyard habitats where you're likely to find them.
+meta_length: 151
+primary_keyword: birds in florida
+categories: Florida Birding; Bird Identification; Beginner Birding
+affiliate_y_n: N
+internal_links_count: 7
+published_url: https://dishadc.github.io/field-feather-co/blog/birds-in-florida/
+template_reference: docs/blog/birdwatching-for-beginners/index.html
+research_summary: Built a habitat-first Florida guide covering backyard, wooded, wetland, and coastal birds. Every species name was verified against allaboutbirds.org overview pages before drafting. Habitat and range notes were grounded in Cornell Lab All About Birds life history pages, with eBird Explore Hotspots included for local planning.
+species_verified_on_allaboutbirds: Northern Mockingbird; Northern Cardinal; Mourning Dove; Blue Jay; Fish Crow; Carolina Wren; Tufted Titmouse; Red-bellied Woodpecker; Pileated Woodpecker; Painted Bunting; Osprey; Bald Eagle; Belted Kingfisher; Great Blue Heron; Great Egret; Snowy Egret; Tricolored Heron; White Ibis; Roseate Spoonbill; Anhinga; Red-winged Blackbird; Brown Pelican; Double-crested Cormorant; Boat-tailed Grackle; Black Skimmer
+overview_verification_status: 25/25 allaboutbirds.org overview URLs returned HTTP 200 during research
+authoritative sources used: eBird Explore Hotspots; Cornell Lab of Ornithology All About Birds overview and life history pages for all 25 listed species.
+notes: Article saved as static HTML under docs/blog/ with GitHub Pages URL structure only. No CSV files were edited.

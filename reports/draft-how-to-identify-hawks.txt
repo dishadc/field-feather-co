@@ -1,0 +1,55 @@
+Draft report: How to Identify Hawks in Flight: Shape, Behavior, and Habitat Clues
+Date: 2026-04-12
+Brand: Field & Feather Co.
+Status: Drafted and saved as static HTML for temporary GitHub Pages publishing
+
+Output file
+- docs/blog/how-to-identify-hawks/index.html
+
+SEO metadata
+- Title: How to Identify Hawks in Flight: Shape, Behavior, and Habitat Clues | Field & Feather Co.
+- Primary keyword: how to identify hawks
+- Meta description: Learn how to identify hawks in flight using wing shape, tail length, behavior, and habitat clues, with practical tips for common North American hawks.
+- Meta description length: 150 characters
+- OG title: How to Identify Hawks in Flight: Shape, Behavior, and Habitat Clues
+- OG URL: https://dishadc.github.io/field-feather-co/blog/how-to-identify-hawks/
+
+Content summary
+- Original long-form article drafted in existing blog HTML style
+- Focused on silhouette, wing shape, tail length, flight rhythm, behavior, habitat, and common-species comparisons
+- Included practical comparisons for Red-tailed Hawk, Cooper's Hawk, and Sharp-shinned Hawk
+- Included FAQ section and conclusion
+- Temporary-hosting language kept aligned with GitHub Pages fallback in AGENTS.md
+
+Verification
+- Word count (HTML text extraction): 3167
+- Minimum requirement met: yes
+- H2 structure present: yes
+- Internal links present: yes
+- Internal link targets used:
+  - ../how-to-identify-birds/index.html
+  - ../birdwatching-for-beginners/index.html
+  - ../best-binoculars-for-birding/index.html
+  - ../best-spotting-scopes-for-birding/index.html
+  - ../spring-bird-migration/index.html
+  - ../essential-birding-gear-for-beginners/index.html
+  - ../index.html
+
+Authoritative sources cited
+- Cornell Lab of Ornithology: Red-tailed Hawk Overview
+  https://www.allaboutbirds.org/guide/Red-tailed_Hawk/overview
+- Cornell Lab of Ornithology: Cooper's Hawk Overview
+  https://www.allaboutbirds.org/guide/Coopers_Hawk/overview
+- Cornell Lab of Ornithology: Sharp-shinned Hawk Overview
+  https://www.allaboutbirds.org/guide/Sharp-shinned_Hawk/overview
+- eBird Status and Trends: Red-tailed Hawk
+  https://science.ebird.org/en/status-and-trends/species/rethaw
+- eBird Status and Trends: Cooper's Hawk
+  https://science.ebird.org/en/status-and-trends/species/coohaw
+- eBird Status and Trends: Sharp-shinned Hawk
+  https://science.ebird.org/en/status-and-trends/species/shshaw
+
+Notes
+- Research confirmed accessible Cornell and eBird source pages for species-level grounding.
+- USGS and Hawk Mountain pages tested during research were blocked from this environment, so they were not cited.
+- No CSV files were edited.
