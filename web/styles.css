@@ -1,0 +1,14 @@
+body { font-family: Inter, Arial, sans-serif; margin: 0; background: #f7f5ef; color: #233; }
+header { background: #31473a; color: #fff; padding: 24px; text-align: center; }
+header nav { margin-top: 12px; }
+header nav a { color: #e9f0ea; margin: 0 10px; text-decoration: none; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.product { background: white; border-radius: 12px; padding: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+.product h3 { margin-top: 0; font-size: 1rem; }
+.price { font-weight: bold; color: #204e2b; }
+.badge { display: inline-block; background: #e6f2e8; color: #1f5530; border-radius: 8px; padding: 2px 8px; font-size: 0.75rem; }
+.cta, .buy { display: inline-block; background: #2f6b3f; color: white; padding: 10px 14px; border-radius: 8px; text-decoration: none; }
+.buy.disabled { background: #9aa; pointer-events: none; }
+footer { text-align: center; padding: 24px; color: #556; }

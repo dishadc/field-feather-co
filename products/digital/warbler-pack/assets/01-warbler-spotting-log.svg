@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="3300" viewBox="0 0 2550 3300">
+  <rect width="2550" height="3300" fill="#f8f5ee"/>
+  <text x="180" y="220" font-size="88" font-family="Georgia" fill="#2f3e2f">Warbler Spotting Log</text>
+  <text x="180" y="285" font-size="38" font-family="Arial" fill="#556b5d">Field & Feather Co. • Printable</text>
+  <line x1="180" y1="330" x2="2370" y2="330" stroke="#66785f" stroke-width="4"/>
+  <text x="180" y="420" font-size="34" font-family="Arial">Date:</text><line x1="290" y1="425" x2="800" y2="425" stroke="#999" stroke-width="2"/>
+  <text x="900" y="420" font-size="34" font-family="Arial">Location:</text><line x1="1060" y1="425" x2="2370" y2="425" stroke="#999" stroke-width="2"/>
+  <text x="180" y="490" font-size="34" font-family="Arial">Weather:</text><line x1="330" y1="495" x2="900" y2="495" stroke="#999" stroke-width="2"/>
+  <text x="980" y="490" font-size="34" font-family="Arial">Habitat:</text><line x1="1130" y1="495" x2="2370" y2="495" stroke="#999" stroke-width="2"/>
+  <text x="180" y="590" font-size="32" font-family="Arial">Species observed</text>
+  <text x="860" y="590" font-size="32" font-family="Arial">Count</text>
+  <text x="1080" y="590" font-size="32" font-family="Arial">Behavior / Notes</text>
+  <line x1="180" y1="620" x2="2370" y2="620" stroke="#556b5d" stroke-width="3"/>
+  <g stroke="#b8b8b8" stroke-width="2">
+    <line x1="820" y1="620" x2="820" y2="2860"/>
+    <line x1="1040" y1="620" x2="1040" y2="2860"/>
+  </g>
+  <g stroke="#c9c9c9" stroke-width="2">
+    <line x1="180" y1="700" x2="2370" y2="700"/>
+    <line x1="180" y1="780" x2="2370" y2="780"/>
+    <line x1="180" y1="860" x2="2370" y2="860"/>
+    <line x1="180" y1="940" x2="2370" y2="940"/>
+    <line x1="180" y1="1020" x2="2370" y2="1020"/>
+    <line x1="180" y1="1100" x2="2370" y2="1100"/>
+    <line x1="180" y1="1180" x2="2370" y2="1180"/>
+    <line x1="180" y1="1260" x2="2370" y2="1260"/>
+    <line x1="180" y1="1340" x2="2370" y2="1340"/>
+    <line x1="180" y1="1420" x2="2370" y2="1420"/>
+    <line x1="180" y1="1500" x2="2370" y2="1500"/>
+    <line x1="180" y1="1580" x2="2370" y2="1580"/>
+    <line x1="180" y1="1660" x2="2370" y2="1660"/>
+    <line x1="180" y1="1740" x2="2370" y2="1740"/>
+    <line x1="180" y1="1820" x2="2370" y2="1820"/>
+    <line x1="180" y1="1900" x2="2370" y2="1900"/>
+    <line x1="180" y1="1980" x2="2370" y2="1980"/>
+    <line x1="180" y1="2060" x2="2370" y2="2060"/>
+    <line x1="180" y1="2140" x2="2370" y2="2140"/>
+    <line x1="180" y1="2220" x2="2370" y2="2220"/>
+    <line x1="180" y1="2300" x2="2370" y2="2300"/>
+    <line x1="180" y1="2380" x2="2370" y2="2380"/>
+    <line x1="180" y1="2460" x2="2370" y2="2460"/>
+    <line x1="180" y1="2540" x2="2370" y2="2540"/>
+    <line x1="180" y1="2620" x2="2370" y2="2620"/>
+    <line x1="180" y1="2700" x2="2370" y2="2700"/>
+    <line x1="180" y1="2780" x2="2370" y2="2780"/>
+    <line x1="180" y1="2860" x2="2370" y2="2860"/>
+  </g>
+  <text x="180" y="3160" font-size="28" font-family="Arial" fill="#7a7a7a">Personal use file. Resale prohibited.</text>
+</svg>

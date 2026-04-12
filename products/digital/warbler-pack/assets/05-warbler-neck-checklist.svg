@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="3300" viewBox="0 0 2550 3300">
+  <rect width="2550" height="3300" fill="#f8f5ee"/>
+  <text x="180" y="220" font-size="88" font-family="Georgia" fill="#2f3e2f">Warbler Neck Survival Checklist</text>
+  <text x="180" y="285" font-size="38" font-family="Arial" fill="#556b5d">Humor bonus page</text>
+  <line x1="180" y1="330" x2="2370" y2="330" stroke="#66785f" stroke-width="4"/>
+  <g font-family="Arial" font-size="40" fill="#2f3e2f">
+    <text x="220" y="520">☐ Stretch before sunrise scan</text>
+    <text x="220" y="640">☐ Pack water + snacks + optics cloth</text>
+    <text x="220" y="760">☐ Set Merlin + eBird checklists</text>
+    <text x="220" y="880">☐ Note first warbler call of the day</text>
+    <text x="220" y="1000">☐ Photograph at least one canopy angle</text>
+    <text x="220" y="1120">☐ Celebrate one difficult ID</text>
+    <text x="220" y="1240">☐ Log migration highlights tonight</text>
+  </g>
+  <rect x="180" y="1400" width="2190" height="1160" fill="none" stroke="#b8b8b8" stroke-width="3"/>
+  <text x="220" y="1490" font-size="38" font-family="Arial" fill="#556b5d">Notes / species highlights:</text>
+</svg>

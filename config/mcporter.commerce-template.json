@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "etsy": {
+      "url": "https://YOUR-ETSY-MCP-ENDPOINT/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_ETSY_MCP_TOKEN"
+      }
+    },
+    "shopify": {
+      "url": "https://YOUR-SHOPIFY-MCP-ENDPOINT/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_SHOPIFY_MCP_TOKEN"
+      }
+    },
+    "gumroad": {
+      "url": "https://YOUR-GUMROAD-MCP-ENDPOINT/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_GUMROAD_MCP_TOKEN"
+      }
+    },
+    "pinterest": {
+      "url": "https://YOUR-PINTEREST-MCP-ENDPOINT/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_PINTEREST_MCP_TOKEN"
+      }
+    }
+  }
+}
