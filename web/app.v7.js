@@ -131,7 +131,7 @@ function renderHome() {
   const countEl = document.getElementById('live-count');
   if (countEl) {
     const live = state.products.filter(p => p.purchasable).length;
-    countEl.textContent = `${live} live downloads now available`;
+    countEl.textContent = live > 0 ? `${live} live downloads now available` : 'Catalog preview mode — checkout opens after payouts are enabled';
   }
 }
 
@@ -162,6 +162,13 @@ function renderShop() {
     grid.innerHTML = state.filtered.map((p,i) => productCard(p,i)).join('');
     const total = document.getElementById('shop-count');
     if (total) total.textContent = `${state.filtered.length} products`;
+    const note = document.getElementById('shop-live-note');
+    if (note) {
+      const liveVisible = state.filtered.filter(p => p.purchasable).length;
+      note.textContent = liveVisible > 0
+        ? `${liveVisible} items currently purchasable`
+        : 'No items are currently checkout-enabled. Browse details and save favorites while checkout setup completes.';
+    }
   }
 
   [typeSel, speciesSel, regionSel, q].forEach(el => el && el.addEventListener('input', apply));
