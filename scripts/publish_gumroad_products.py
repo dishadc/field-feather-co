@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import csv
 import json
 import os
@@ -13,30 +14,27 @@ IMPORT_CSV = ROOT / "imports" / "gumroad_products.csv"
 LINKS_CSV = ROOT / "data" / "product_links.csv"
 MAP_CSV = ROOT / "data" / "gumroad_product_map.csv"
 
-def load_token():
+
+def load_token() -> str:
     tok = os.getenv("GUMROAD_ACCESS_TOKEN", "").strip()
     if tok:
         return tok
-    env_file = ROOT / '.env'
+    env_file = ROOT / ".env"
     if env_file.exists():
         for line in env_file.read_text().splitlines():
-            if line.startswith('GUMROAD_ACCESS_TOKEN='):
-                return line.split('=', 1)[1].strip()
-    return ''
-
-ACCESS_TOKEN = load_token()
-if not ACCESS_TOKEN:
-    raise SystemExit("Missing GUMROAD_ACCESS_TOKEN env var (or .env entry)")
+            if line.startswith("GUMROAD_ACCESS_TOKEN="):
+                return line.split("=", 1)[1].strip()
+    return ""
 
 
-def api_get(path, params):
+def api_get(path: str, params: dict) -> dict:
     q = urllib.parse.urlencode(params)
     url = f"https://api.gumroad.com{path}?{q}"
     with urllib.request.urlopen(url, timeout=60) as r:
         return json.loads(r.read().decode())
 
 
-def api_post(path, params, retries=5):
+def api_post(path: str, params: dict, retries: int = 5) -> dict:
     req = urllib.request.Request(
         f"https://api.gumroad.com{path}",
         data=urllib.parse.urlencode(params).encode(),
@@ -57,93 +55,129 @@ def api_post(path, params, retries=5):
     return {"success": False, "error": last_err or "unknown error"}
 
 
-# existing products by custom permalink
-existing = api_get("/v2/products", {"access_token": ACCESS_TOKEN}).get("products", [])
-by_slug = {p.get("custom_permalink"): p for p in existing if p.get("custom_permalink")}
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Publish/import Gumroad products and sync local link maps")
+    parser.add_argument("--max-create", type=int, default=50, help="Maximum number of new products to create in this run")
+    args = parser.parse_args()
+    max_create = max(0, args.max_create)
 
-created = 0
-reused = 0
-errors = []
-rows_out = []
+    access_token = load_token()
+    if not access_token:
+        raise SystemExit("Missing GUMROAD_ACCESS_TOKEN env var (or .env entry)")
 
-for row in csv.DictReader(IMPORT_CSV.open()):
-    slug = row["url_slug"].strip()
-    status = row["status"].strip().lower()
-    price_cents = int(round(float(row["price_usd"].strip()) * 100))
+    existing = api_get("/v2/products", {"access_token": access_token}).get("products", [])
+    by_slug = {p.get("custom_permalink"): p for p in existing if p.get("custom_permalink")}
 
-    product = by_slug.get(slug)
-    if not product:
-        payload = {
-            "access_token": ACCESS_TOKEN,
-            "name": row["name"].strip(),
-            "description": row["description"].strip(),
-            "price": str(price_cents),
-            "custom_permalink": slug,
-            "published": "true" if status == "ready" else "false",
-        }
-        resp = api_post("/v2/products", payload)
-        if not resp.get("success", True) or not resp.get("product"):
-            errors.append({"sku": row["sku"].strip(), "slug": slug, "error": resp.get("error", "create failed")})
-            continue
-        product = resp.get("product", {})
-        created += 1
-        time.sleep(0.6)
-    else:
-        reused += 1
+    created = 0
+    reused = 0
+    errors = []
+    rows_out = []
 
-    checkout = product.get("short_url") or product.get("url") or ""
-    rows_out.append(
-        {
-            "sku": row["sku"].strip(),
-            "channel": "gumroad",
-            "checkout_url": checkout,
-            "status": status,
-            "product_id": product.get("id", ""),
-            "slug": product.get("custom_permalink", slug),
-            "price_cents": product.get("price", price_cents),
-            "name": product.get("name", row["name"].strip()),
-        }
+    # ready first, then draft
+    import_rows = list(csv.DictReader(IMPORT_CSV.open()))
+    import_rows.sort(
+        key=lambda r: (
+            0 if r.get("url_slug", "").strip() in by_slug else 1,
+            0 if r.get("status", "").strip().lower() == "ready" else 1,
+            r.get("sku", ""),
+        )
     )
 
-# update product_links.csv using gumroad rows
-with LINKS_CSV.open() as f:
-    current = list(csv.DictReader(f))
+    for row in import_rows:
+        slug = row["url_slug"].strip()
+        status = row["status"].strip().lower()
+        price_cents = int(round(float(row["price_usd"].strip()) * 100))
 
-index = {r["sku"]: r for r in rows_out}
-updated = []
-for row in current:
-    sku = row["sku"]
-    if sku in index:
-        g = index[sku]
-        updated.append(
+        product = by_slug.get(slug)
+        if not product:
+            if created >= max_create:
+                continue
+
+            payload = {
+                "access_token": access_token,
+                "name": row["name"].strip(),
+                "description": row["description"].strip(),
+                "price": str(price_cents),
+                "custom_permalink": slug,
+                "published": "true" if status == "ready" else "false",
+            }
+            resp = api_post("/v2/products", payload)
+            if not resp.get("success", True) or not resp.get("product"):
+                err = resp.get("error", "create failed")
+                errors.append({"sku": row["sku"].strip(), "slug": slug, "error": err})
+                if "429" in str(err):
+                    break
+                continue
+
+            product = resp.get("product", {})
+            created += 1
+            by_slug[slug] = product
+            time.sleep(0.6)
+        else:
+            reused += 1
+
+        checkout = product.get("short_url") or product.get("url") or ""
+        rows_out.append(
             {
-                "sku": sku,
+                "sku": row["sku"].strip(),
                 "channel": "gumroad",
-                "checkout_url": g["checkout_url"],
-                "status": g["status"],
+                "checkout_url": checkout,
+                "status": status,
+                "product_id": product.get("id", ""),
+                "slug": product.get("custom_permalink", slug),
+                "price_cents": product.get("price", price_cents),
+                "name": product.get("name", row["name"].strip()),
             }
         )
-    else:
-        updated.append(row)
 
-with LINKS_CSV.open("w", newline="") as f:
-    w = csv.DictWriter(f, fieldnames=["sku", "channel", "checkout_url", "status"])
-    w.writeheader()
-    w.writerows(updated)
+    with LINKS_CSV.open() as f:
+        current = list(csv.DictReader(f))
 
-with MAP_CSV.open("w", newline="") as f:
-    fields = ["sku", "product_id", "slug", "checkout_url", "status", "price_cents", "name"]
-    w = csv.DictWriter(f, fieldnames=fields)
-    w.writeheader()
-    for r in rows_out:
-        w.writerow({k: r.get(k, "") for k in fields})
+    index = {r["sku"]: r for r in rows_out}
+    updated = []
+    for row in current:
+        sku = row["sku"]
+        if sku in index:
+            g = index[sku]
+            updated.append(
+                {
+                    "sku": sku,
+                    "channel": "gumroad",
+                    "checkout_url": g["checkout_url"],
+                    "status": g["status"],
+                }
+            )
+        else:
+            updated.append(row)
 
-print(json.dumps({
-    "created": created,
-    "reused": reused,
-    "errors": len(errors),
-    "mapped": len(rows_out),
-    "links_updated": sum(1 for r in updated if r.get("channel") == "gumroad" and r.get("checkout_url")),
-}, indent=2))
-if errors:
-    print("sample_errors", json.dumps(errors[:5], indent=2))
+    with LINKS_CSV.open("w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["sku", "channel", "checkout_url", "status"])
+        w.writeheader()
+        w.writerows(updated)
+
+    with MAP_CSV.open("w", newline="") as f:
+        fields = ["sku", "product_id", "slug", "checkout_url", "status", "price_cents", "name"]
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        for r in rows_out:
+            w.writerow({k: r.get(k, "") for k in fields})
+
+    print(
+        json.dumps(
+            {
+                "created": created,
+                "reused": reused,
+                "errors": len(errors),
+                "mapped": len(rows_out),
+                "links_updated": sum(1 for r in updated if r.get("channel") == "gumroad" and r.get("checkout_url")),
+                "max_create": max_create,
+            },
+            indent=2,
+        )
+    )
+    if errors:
+        print("sample_errors", json.dumps(errors[:5], indent=2))
+
+
+if __name__ == "__main__":
+    main()
