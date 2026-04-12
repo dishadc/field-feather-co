@@ -1,20 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="3300" viewBox="0 0 2550 3300">
-  <rect width="2550" height="3300" fill="#f8f5ee"/>
-  <text x="180" y="220" font-size="82" font-family="Georgia" fill="#2f3e2f">Colorado Birding Life List</text>
-  <text x="180" y="280" font-size="36" font-family="Arial" fill="#556b5d">Field & Feather Co. • Printable Checklist</text>
-  <line x1="180" y1="330" x2="2370" y2="330" stroke="#66785f" stroke-width="4"/>
-  <text x="180" y="420" font-size="32" font-family="Arial">Name:</text><line x1="280" y1="425" x2="930" y2="425" stroke="#999" stroke-width="2"/>
-  <text x="1000" y="420" font-size="32" font-family="Arial">Region:</text><line x1="1120" y1="425" x2="1720" y2="425" stroke="#999" stroke-width="2"/>
-  <text x="1780" y="420" font-size="32" font-family="Arial">Year:</text><line x1="1870" y1="425" x2="2370" y2="425" stroke="#999" stroke-width="2"/>
-  <rect x="180" y="520" width="2190" height="2340" fill="none" stroke="#66785f" stroke-width="3"/>
-  <line x1="180" y1="640" x2="2370" y2="640" stroke="#66785f" stroke-width="3"/>
-  <line x1="780" y1="520" x2="780" y2="2860" stroke="#b8b8b8" stroke-width="2"/>
-  <line x1="1080" y1="520" x2="1080" y2="2860" stroke="#b8b8b8" stroke-width="2"/>
-  <line x1="1500" y1="520" x2="1500" y2="2860" stroke="#b8b8b8" stroke-width="2"/>
-  <line x1="1860" y1="520" x2="1860" y2="2860" stroke="#b8b8b8" stroke-width="2"/>
-  <text x="230" y="600" font-size="30" font-family="Arial">Species</text>
-  <text x="830" y="600" font-size="30" font-family="Arial">Date</text>
-  <text x="1130" y="600" font-size="30" font-family="Arial">Location</text>
-  <text x="1550" y="600" font-size="30" font-family="Arial">Count</text>
-  <text x="1910" y="600" font-size="30" font-family="Arial">Verified</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Colorado Birding Life List Checklist Printable, Birdwatch Log preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#e8dcc8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffdf8"/>
+      <stop offset="100%" stop-color="#f7efe2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="90" y="70" width="1020" height="760" rx="28" fill="url(#panel)" stroke="#d2c2a8" stroke-width="3"/>
+  <rect x="90" y="70" width="16" height="760" fill="#c4714a" rx="8"/>
+  <g transform="translate(770,170)">
+    <ellipse cx="150" cy="260" rx="170" ry="130" fill="#7ec8c8" opacity="0.30"/>
+    <path d="M40 300c45-82 102-130 173-144 67-14 130 6 192 66" fill="none" stroke="#2d4a2d" stroke-width="15" stroke-linecap="round"/>
+    <path d="M116 201c46-33 96-31 150 6-39 12-72 38-99 74-9-29-26-55-51-80z" fill="#7ec8c8" stroke="#2d4a2d" stroke-width="5"/>
+    <circle cx="252" cy="199" r="7" fill="#1a2332"/>
+    <path d="M278 212l28 10-30 8z" fill="#c4714a"/>
+  </g>
+  <text x="140" y="176" font-family="'Playfair Display', Georgia, serif" font-size="58" fill="#2d4a2d">Field &amp; Feather Co.</text>
+  <text x="140" y="250" font-family="'DM Sans', Arial, sans-serif" font-size="34" fill="#1a2332" font-weight="700">Digital Download · PDF</text>
+  <text x="140" y="300" font-family="'DM Sans', Arial, sans-serif" font-size="32" fill="#c4714a" font-weight="700">State Checklist</text>
+  <text x="140" y="390" font-family="'Playfair Display', Georgia, serif" font-size="42" fill="#2d4a2d">Colorado Birding Life List Checklist Printable, Bird</text>
+  <text x="140" y="444" font-family="'Playfair Display', Georgia, serif" font-size="42" fill="#2d4a2d">watch Log</text>
+  <text x="140" y="760" font-family="'DM Sans', Arial, sans-serif" font-size="38" fill="#1a2332" font-weight="700">$5.99</text>
+  <text x="245" y="760" font-family="'DM Sans', Arial, sans-serif" font-size="28" fill="#5e635c">Instant digital delivery</text>
 </svg>

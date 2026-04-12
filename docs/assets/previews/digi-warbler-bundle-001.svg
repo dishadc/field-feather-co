@@ -1,49 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="3300" viewBox="0 0 2550 3300">
-  <rect width="2550" height="3300" fill="#f8f5ee"/>
-  <text x="180" y="220" font-size="88" font-family="Georgia" fill="#2f3e2f">Warbler Spotting Log</text>
-  <text x="180" y="285" font-size="38" font-family="Arial" fill="#556b5d">Field & Feather Co. • Printable</text>
-  <line x1="180" y1="330" x2="2370" y2="330" stroke="#66785f" stroke-width="4"/>
-  <text x="180" y="420" font-size="34" font-family="Arial">Date:</text><line x1="290" y1="425" x2="800" y2="425" stroke="#999" stroke-width="2"/>
-  <text x="900" y="420" font-size="34" font-family="Arial">Location:</text><line x1="1060" y1="425" x2="2370" y2="425" stroke="#999" stroke-width="2"/>
-  <text x="180" y="490" font-size="34" font-family="Arial">Weather:</text><line x1="330" y1="495" x2="900" y2="495" stroke="#999" stroke-width="2"/>
-  <text x="980" y="490" font-size="34" font-family="Arial">Habitat:</text><line x1="1130" y1="495" x2="2370" y2="495" stroke="#999" stroke-width="2"/>
-  <text x="180" y="590" font-size="32" font-family="Arial">Species observed</text>
-  <text x="860" y="590" font-size="32" font-family="Arial">Count</text>
-  <text x="1080" y="590" font-size="32" font-family="Arial">Behavior / Notes</text>
-  <line x1="180" y1="620" x2="2370" y2="620" stroke="#556b5d" stroke-width="3"/>
-  <g stroke="#b8b8b8" stroke-width="2">
-    <line x1="820" y1="620" x2="820" y2="2860"/>
-    <line x1="1040" y1="620" x2="1040" y2="2860"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Warbler Birding Journal Printable Bundle, Migration Log Kit preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#e8dcc8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffdf8"/>
+      <stop offset="100%" stop-color="#f7efe2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="90" y="70" width="1020" height="760" rx="28" fill="url(#panel)" stroke="#d2c2a8" stroke-width="3"/>
+  <rect x="90" y="70" width="16" height="760" fill="#c4714a" rx="8"/>
+  <g transform="translate(770,170)">
+    <ellipse cx="150" cy="260" rx="170" ry="130" fill="#7ec8c8" opacity="0.30"/>
+    <path d="M40 300c45-82 102-130 173-144 67-14 130 6 192 66" fill="none" stroke="#2d4a2d" stroke-width="15" stroke-linecap="round"/>
+    <path d="M116 201c46-33 96-31 150 6-39 12-72 38-99 74-9-29-26-55-51-80z" fill="#7ec8c8" stroke="#2d4a2d" stroke-width="5"/>
+    <circle cx="252" cy="199" r="7" fill="#1a2332"/>
+    <path d="M278 212l28 10-30 8z" fill="#c4714a"/>
   </g>
-  <g stroke="#c9c9c9" stroke-width="2">
-    <line x1="180" y1="700" x2="2370" y2="700"/>
-    <line x1="180" y1="780" x2="2370" y2="780"/>
-    <line x1="180" y1="860" x2="2370" y2="860"/>
-    <line x1="180" y1="940" x2="2370" y2="940"/>
-    <line x1="180" y1="1020" x2="2370" y2="1020"/>
-    <line x1="180" y1="1100" x2="2370" y2="1100"/>
-    <line x1="180" y1="1180" x2="2370" y2="1180"/>
-    <line x1="180" y1="1260" x2="2370" y2="1260"/>
-    <line x1="180" y1="1340" x2="2370" y2="1340"/>
-    <line x1="180" y1="1420" x2="2370" y2="1420"/>
-    <line x1="180" y1="1500" x2="2370" y2="1500"/>
-    <line x1="180" y1="1580" x2="2370" y2="1580"/>
-    <line x1="180" y1="1660" x2="2370" y2="1660"/>
-    <line x1="180" y1="1740" x2="2370" y2="1740"/>
-    <line x1="180" y1="1820" x2="2370" y2="1820"/>
-    <line x1="180" y1="1900" x2="2370" y2="1900"/>
-    <line x1="180" y1="1980" x2="2370" y2="1980"/>
-    <line x1="180" y1="2060" x2="2370" y2="2060"/>
-    <line x1="180" y1="2140" x2="2370" y2="2140"/>
-    <line x1="180" y1="2220" x2="2370" y2="2220"/>
-    <line x1="180" y1="2300" x2="2370" y2="2300"/>
-    <line x1="180" y1="2380" x2="2370" y2="2380"/>
-    <line x1="180" y1="2460" x2="2370" y2="2460"/>
-    <line x1="180" y1="2540" x2="2370" y2="2540"/>
-    <line x1="180" y1="2620" x2="2370" y2="2620"/>
-    <line x1="180" y1="2700" x2="2370" y2="2700"/>
-    <line x1="180" y1="2780" x2="2370" y2="2780"/>
-    <line x1="180" y1="2860" x2="2370" y2="2860"/>
-  </g>
-  <text x="180" y="3160" font-size="28" font-family="Arial" fill="#7a7a7a">Personal use file. Resale prohibited.</text>
+  <text x="140" y="176" font-family="'Playfair Display', Georgia, serif" font-size="58" fill="#2d4a2d">Field &amp; Feather Co.</text>
+  <text x="140" y="250" font-family="'DM Sans', Arial, sans-serif" font-size="34" fill="#1a2332" font-weight="700">Digital Download · PDF</text>
+  <text x="140" y="300" font-family="'DM Sans', Arial, sans-serif" font-size="32" fill="#c4714a" font-weight="700">Field Journal Edition</text>
+  <text x="140" y="390" font-family="'Playfair Display', Georgia, serif" font-size="42" fill="#2d4a2d">Warbler Birding Journal Printable Bundle, Migration </text>
+  <text x="140" y="444" font-family="'Playfair Display', Georgia, serif" font-size="42" fill="#2d4a2d">Log Kit</text>
+  <text x="140" y="760" font-family="'DM Sans', Arial, sans-serif" font-size="38" fill="#1a2332" font-weight="700">$9.99</text>
+  <text x="245" y="760" font-family="'DM Sans', Arial, sans-serif" font-size="28" fill="#5e635c">Instant digital delivery</text>
 </svg>

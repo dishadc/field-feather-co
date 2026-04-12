@@ -49,6 +49,8 @@ function deliveryLine(type) {
 
 function resolveImage(p) {
   if (p.image && /^https?:\/\//.test(p.image)) return p.image;
+  const sku = (p.sku || '').toLowerCase();
+  if (sku) return `assets/previews/${sku}.svg`;
   return `https://picsum.photos/seed/${seed(p.sku || p.title || p.keyword || 'bird')}/400/300`;
 }
 
