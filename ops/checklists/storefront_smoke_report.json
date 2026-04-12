@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-04-12T21:15:15.241922+00:00",
-  "status": "FAIL",
+  "generated_at_utc": "2026-04-12T21:17:54.643682+00:00",
+  "status": "PASS",
   "results": [
     {
       "name": "home",
@@ -54,10 +54,8 @@
     {
       "name": "journal_hub",
       "url": "https://dishadc.github.io/field-feather-co/blog/",
-      "status": "FAIL",
-      "missing": [
-        "Featured coverage"
-      ],
+      "status": "PASS",
+      "missing": [],
       "http_status": 200
     },
     {

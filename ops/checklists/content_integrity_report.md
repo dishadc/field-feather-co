@@ -1,8 +1,8 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-12T21:15:18.312902+00:00
+Generated (UTC): 2026-04-12T21:17:57.310335+00:00
 
-Overall status: FAIL
+Overall status: PASS
 
 ## Published article checks
 - Birdwatching for Beginners: The Complete 2026 Guide: PASS
@@ -189,8 +189,7 @@ Overall status: FAIL
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-birding-apps/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-birds/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-hawks/index.html: FAIL
-  - forbidden markers: GitHub Pages
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-hawks/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-for-beginners/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-etiquette/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-start-birdwatching-alone/index.html: PASS

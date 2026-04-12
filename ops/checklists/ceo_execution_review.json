@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-04-12T21:15:29.413845+00:00",
-  "status": "FAIL",
+  "generated_at_utc": "2026-04-12T21:18:08.570542+00:00",
+  "status": "PASS",
   "reports": {
     "pages_consistency": {
       "generated_at_utc": "2026-04-12T19:28:34.696865+00:00",
@@ -36,8 +36,8 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-12T21:15:15.241922+00:00",
-      "status": "FAIL",
+      "generated_at_utc": "2026-04-12T21:17:54.643682+00:00",
+      "status": "PASS",
       "results": [
         {
           "name": "home",
@@ -91,10 +91,8 @@
         {
           "name": "journal_hub",
           "url": "https://dishadc.github.io/field-feather-co/blog/",
-          "status": "FAIL",
-          "missing": [
-            "Featured coverage"
-          ],
+          "status": "PASS",
+          "missing": [],
           "http_status": 200
         },
         {
@@ -115,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-12T21:15:22.771Z",
+      "generated_at_utc": "2026-04-12T21:18:01.559Z",
       "status": "PASS",
       "results": [
         {
@@ -155,8 +153,8 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-12T21:15:18.312902+00:00",
-      "status": "FAIL",
+      "generated_at_utc": "2026-04-12T21:17:57.310335+00:00",
+      "status": "PASS",
       "article_results": [
         {
           "title": "Birdwatching for Beginners: The Complete 2026 Guide",
@@ -658,10 +656,8 @@
         {
           "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-hawks/index.html",
           "exists": true,
-          "forbidden_markers": [
-            "GitHub Pages"
-          ],
-          "status": "FAIL"
+          "forbidden_markers": [],
+          "status": "PASS"
         },
         {
           "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-for-beginners/index.html",
