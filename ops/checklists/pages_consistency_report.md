@@ -1,12 +1,12 @@
 # GitHub Pages Consistency Report
 
-Generated (UTC): 2026-04-12T07:48:43.733111+00:00
+Generated (UTC): 2026-04-12T10:34:21.358728+00:00
 
 Status: PASS
 Reasons: none
 
 ## Pipeline
-Latest pages-build-deployment: completed / success / https://github.com/dishadc/field-feather-co/actions/runs/24301782851
+Latest pages-build-deployment: completed / success / https://github.com/dishadc/field-feather-co/actions/runs/24302422798
 
 ## Content consistency
 - raw matches local docs/index.html: True
@@ -16,9 +16,9 @@ Latest pages-build-deployment: completed / success / https://github.com/dishadc/
 - live still has legacy "live downloads now available" string: True
 
 ## SHA256
-- local docs/index.html: `713f38c5003996cda239746af9d267e51d76a8f44f26f3895e6a3e14b7c1c580`
-- raw main docs/index.html: `713f38c5003996cda239746af9d267e51d76a8f44f26f3895e6a3e14b7c1c580`
-- live index.html: `713f38c5003996cda239746af9d267e51d76a8f44f26f3895e6a3e14b7c1c580`
+- local docs/index.html: `cadc65b73515b5adef66aae8c70476b3e350b521605efc6e013a838e93d0842b`
+- raw main docs/index.html: `cadc65b73515b5adef66aae8c70476b3e350b521605efc6e013a838e93d0842b`
+- live index.html: `cadc65b73515b5adef66aae8c70476b3e350b521605efc6e013a838e93d0842b`
 
 ## URLs
 - Live: https://dishadc.github.io/field-feather-co/index.html

@@ -3,7 +3,26 @@
 Purpose: single inbox for anything required from you.
 I keep this file updated continuously.
 
-Last updated: 2026-04-12 00:48 
+Last updated: 2026-04-12 03:32 
+
+## OPEN (blog infrastructure blockers)
+
+0) Field & Feather blog stack access + Telegram routing
+- Why needed: blog infrastructure cannot be completed without platform credentials and routing.
+- Current blockers verified:
+  - `fieldandfeather.co` does not resolve in DNS yet.
+  - No Cloudways credentials are present for provisioning WordPress.
+  - No Telegram gateway secrets are configured (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_HOME_CHANNEL`, `TELEGRAM_ALLOWED_USERS` are absent).
+  - No Google OAuth credentials are configured for Search Console setup.
+- Your action:
+  - Provide Cloudways account access or complete Cloudways account/payment bootstrap for a DigitalOcean 2GB server.
+  - Point `fieldandfeather.co` DNS to the new WordPress host once provisioned.
+  - Configure Hermes Telegram gateway credentials/channel.
+  - Reply with Amazon Associates ID and OpticsPlanet affiliate ID when created.
+- What I have already done:
+  - Created the 21-article Week 1 content calendar in `data/content-calendar.csv`.
+  - Activated and corrected the recurring editorial cron schedules.
+  - Logged all blockers in `data/decision-log.csv`.
 
 ## OPEN (blocking revenue now)
 

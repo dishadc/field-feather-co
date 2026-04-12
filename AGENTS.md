@@ -36,3 +36,66 @@ File map:
 - marketing/pinterest/: pin title/description/URL matrix
 - data/: KPI and sales tracker
 - scripts/: automation tasks
+
+# Blogs Division
+
+## Business Overview
+- Brand: Field & Feather Co.
+- Niche: Birdwatching / birding lifestyle
+- Website: fieldandfeather.co (WordPress)
+- Newsletter: The Morning Warbler (Beehiiv)
+- Target audience: Birders aged 35–65, educated, affluent
+- Current phase: Blog buildout
+
+## WordPress Access
+- Primary target URL: https://fieldandfeather.co
+- REST API endpoint: https://fieldandfeather.co/wp-json/wp/v2/
+- Auth method: Application Password (stored in MEMORY.md)
+- SEO plugin: RankMath Pro
+- Meta fields: rank_math_focus_keyword, rank_math_description,
+  rank_math_title, rank_math_og_title
+
+## Temporary Publishing Fallback
+- Temporary live journal URL: https://dishadc.github.io/field-feather-co/blog/
+- Until WordPress hosting is live, publish editorial content as static HTML
+  under `docs/blog/` and treat GitHub Pages as the live article host.
+- When WordPress is ready, migrate article canonicals and publishing workflow.
+
+## Beehiiv Access
+- Publication ID: [stored in MEMORY.md]
+- API key: [stored in MEMORY.md]
+- Base URL: https://api.beehiiv.com/v2/
+- Newsletter name: The Morning Warbler
+- Send day: Sunday, 8:00am Eastern
+- Subscriber count target: 5,000 by month 18
+
+## Brand Voice
+Knowledgeable but warm. Precise but accessible. Write like the smartest 
+birder at your local Audubon chapter — not a professor, not a casual.
+Use field guide terminology correctly. Never talk down to readers.
+
+## Design Standards
+- Brand colours: Forest green #2D4A2D, Cream #F5F0E8, 
+  Terracotta #C4714A, Robin's egg #7EC8C8
+- Always use Oxford commas
+- Spell "birdwatching" as one word, "life list" as two words,
+  "field guide" as two words
+
+## Content Rules
+- Minimum article length: 2,000 words
+- Every article must have: H2 structure, internal links (3+),
+  affiliate links where relevant, a clear meta description under 160 chars
+- Always cite Cornell Lab / eBird / USGS for species data
+- Never make unverified claims about species range or behaviour
+- Image attribution: always include Macaulay Library photographer credit
+
+## Affiliate Programs Active
+- Amazon Associates (3–4.5%): books, binoculars, feeders
+- OpticsPlanet (5%): binoculars, spotting scopes
+- Bookshop.org (10%): field guides
+- REI (5%): outdoor/birding gear
+
+## Current Content Status
+- Total articles published: [auto-updated by Hermes]
+- Top performing article: [auto-updated by Hermes]
+- Current monthly traffic: [auto-updated by Hermes]
