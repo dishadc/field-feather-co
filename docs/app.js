@@ -81,6 +81,7 @@ function renderShop() {
   const speciesSel = document.getElementById('filter-species');
   const regionSel = document.getElementById('filter-region');
   const q = document.getElementById('filter-q');
+  if (!typeSel || !speciesSel || !regionSel || !q) return;
 
   speciesSel.innerHTML = '<option value="">All species</option>' + uniq(state.products.map(p => p.species)).map(s => `<option>${s}</option>`).join('');
   regionSel.innerHTML = '<option value="">All regions</option>' + uniq(state.products.map(p => p.region)).map(r => `<option>${r}</option>`).join('');
@@ -171,12 +172,13 @@ function renderDownloads() {
 
   try {
     await loadProducts();
-    renderHome();
-    renderShop();
-    renderProductDetail();
-    renderDownloads();
   } catch (e) {
     const targets = document.querySelectorAll('[data-catalog-error]');
     targets.forEach(t => t.textContent = 'Catalog is updating. Please refresh in a moment.');
+    return;
   }
+
+  [renderHome, renderShop, renderProductDetail, renderDownloads].forEach(fn => {
+    try { fn(); } catch (e) { console.error(e); }
+  });
 })();
