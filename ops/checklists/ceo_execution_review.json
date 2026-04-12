@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-12T20:22:06.399778+00:00",
+  "generated_at_utc": "2026-04-12T20:46:53.809900+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
@@ -36,7 +36,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-12T20:22:04.141640+00:00",
+      "generated_at_utc": "2026-04-12T20:46:51.535308+00:00",
       "status": "PASS",
       "results": [
         {
@@ -113,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-12T20:21:34.813Z",
+      "generated_at_utc": "2026-04-12T20:46:21.109Z",
       "status": "PASS",
       "results": [
         {
@@ -153,7 +153,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-12T20:21:28.086348+00:00",
+      "generated_at_utc": "2026-04-12T20:46:16.226858+00:00",
       "status": "PASS",
       "article_results": [
         {
@@ -331,6 +331,61 @@
           "meta_present": true,
           "sources_present": true,
           "internal_links": 13
+        },
+        {
+          "title": "How to Attract More Birds to Your Yard Naturally",
+          "url": "https://dishadc.github.io/field-feather-co/blog/attract-birds-to-your-yard/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 19
+        },
+        {
+          "title": "Birds in California: A Beginner-Friendly Guide to Common Species",
+          "url": "https://dishadc.github.io/field-feather-co/blog/birds-in-california/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 13
+        },
+        {
+          "title": "How to Identify Shorebirds Without Guessing",
+          "url": "https://dishadc.github.io/field-feather-co/blog/how-to-identify-shorebirds/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 12
+        },
+        {
+          "title": "How to Use eBird to Track Migration in Real Time",
+          "url": "https://dishadc.github.io/field-feather-co/blog/how-to-use-ebird-migration/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 14
+        },
+        {
+          "title": "Best Bird Field Guides Compared: Sibley vs Peterson vs National Geographic",
+          "url": "https://dishadc.github.io/field-feather-co/blog/best-bird-field-guides/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 16
         }
       ],
       "asset_results": [
@@ -536,43 +591,43 @@
   },
   "content_calendar": {
     "total": 21,
-    "published": 16,
-    "queued": 5
+    "published": 21,
+    "queued": 0
   },
   "published_articles": {
-    "count": 16,
+    "count": 21,
     "latest": [
       {
-        "post_id": "static-20260412-hawk-migration",
-        "title": "Hawk Migration Explained: Best Times, Weather, and Watch Sites",
-        "url": "https://dishadc.github.io/field-feather-co/blog/hawk-migration/",
+        "post_id": "static-20260412-how-to-identify-shorebirds",
+        "title": "How to Identify Shorebirds Without Guessing",
+        "url": "https://dishadc.github.io/field-feather-co/blog/how-to-identify-shorebirds/",
         "publish_date": "2026-04-12",
-        "primary_keyword": "hawk migration",
-        "word_count": "3128",
-        "categories": "migration;hawks;bird-id",
+        "primary_keyword": "how to identify shorebirds",
+        "word_count": "3554",
+        "categories": "bird-id;shorebirds;how-to",
         "has_affiliate": "n",
         "status": "LIVE_STATIC_TEMP"
       },
       {
-        "post_id": "static-20260412-best-birding-apps",
-        "title": "Best Birding Apps in 2026: Merlin, eBird, and More Compared",
-        "url": "https://dishadc.github.io/field-feather-co/blog/best-birding-apps/",
+        "post_id": "static-20260412-how-to-use-ebird-migration",
+        "title": "How to Use eBird to Track Migration in Real Time",
+        "url": "https://dishadc.github.io/field-feather-co/blog/how-to-use-ebird-migration/",
         "publish_date": "2026-04-12",
-        "primary_keyword": "best birding apps",
-        "word_count": "3555",
-        "categories": "gear;apps;birding-basics",
+        "primary_keyword": "how to use ebird migration",
+        "word_count": "3406",
+        "categories": "migration;ebird;how-to",
+        "has_affiliate": "n",
+        "status": "LIVE_STATIC_TEMP"
+      },
+      {
+        "post_id": "static-20260412-best-bird-field-guides",
+        "title": "Best Bird Field Guides Compared: Sibley vs Peterson vs National Geographic",
+        "url": "https://dishadc.github.io/field-feather-co/blog/best-bird-field-guides/",
+        "publish_date": "2026-04-12",
+        "primary_keyword": "best bird field guides",
+        "word_count": "3681",
+        "categories": "gear;field-guides;birding-basics",
         "has_affiliate": "y",
-        "status": "LIVE_STATIC_TEMP"
-      },
-      {
-        "post_id": "static-20260412-birdwatching-etiquette",
-        "title": "Birdwatching Etiquette: 12 Rules Every Beginner Should Learn",
-        "url": "https://dishadc.github.io/field-feather-co/blog/birdwatching-etiquette/",
-        "publish_date": "2026-04-12",
-        "primary_keyword": "birdwatching etiquette",
-        "word_count": "3049",
-        "categories": "beginner;ethics;birding-basics",
-        "has_affiliate": "n",
         "status": "LIVE_STATIC_TEMP"
       }
     ]

@@ -18,7 +18,7 @@ CHECKS = [
     ('privacy', 'https://dishadc.github.io/field-feather-co/privacy.html', ['Privacy', 'Field & Feather', 'app.v8.js']),
     ('terms', 'https://dishadc.github.io/field-feather-co/terms.html', ['Terms', 'Field & Feather', 'app.v8.js']),
     ('product_shell', 'https://dishadc.github.io/field-feather-co/product.html?sku=DIGI-STATE-TEXAS', ['product-detail', 'related-grid', 'app.v8.js']),
-    ('journal_hub', 'https://dishadc.github.io/field-feather-co/blog/', ['Field Notes Journal', 'Week 1 blitz progress']),
+    ('journal_hub', 'https://dishadc.github.io/field-feather-co/blog/', ['Field Notes Journal', 'Week 1 blitz']),
     ('article_beginner', 'https://dishadc.github.io/field-feather-co/blog/birdwatching-for-beginners/', ['Birdwatching for Beginners: The Complete 2026 Guide', 'Sources:']),
     ('article_binoculars', 'https://dishadc.github.io/field-feather-co/blog/best-binoculars-for-birding/', ['Best Binoculars for Birding in 2026', 'Sources:']),
 ]

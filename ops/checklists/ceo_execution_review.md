@@ -1,6 +1,6 @@
 # CEO Execution Review
 
-Generated (UTC): 2026-04-12T20:22:06.399778+00:00
+Generated (UTC): 2026-04-12T20:46:53.809900+00:00
 
 Overall status: PASS
 
@@ -12,14 +12,14 @@ Overall status: PASS
 
 ## Content pipeline
 - planned articles: 21
-- published in calendar: 16
-- still queued: 5
-- published-articles rows: 16
+- published in calendar: 21
+- still queued: 0
+- published-articles rows: 21
 
 ## Latest published entries
-- 2026-04-12 — Hawk Migration Explained: Best Times, Weather, and Watch Sites — LIVE_STATIC_TEMP
-- 2026-04-12 — Best Birding Apps in 2026: Merlin, eBird, and More Compared — LIVE_STATIC_TEMP
-- 2026-04-12 — Birdwatching Etiquette: 12 Rules Every Beginner Should Learn — LIVE_STATIC_TEMP
+- 2026-04-12 — How to Identify Shorebirds Without Guessing — LIVE_STATIC_TEMP
+- 2026-04-12 — How to Use eBird to Track Migration in Real Time — LIVE_STATIC_TEMP
+- 2026-04-12 — Best Bird Field Guides Compared: Sibley vs Peterson vs National Geographic — LIVE_STATIC_TEMP
 
 ## CEO review guidance
 - If any report is FAIL, redirect active work toward fixes first.

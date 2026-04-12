@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-12T20:21:28.086348+00:00
+Generated (UTC): 2026-04-12T20:46:16.226858+00:00
 
 Overall status: PASS
 
@@ -133,6 +133,46 @@ Overall status: PASS
   - meta present: True
   - sources present: True
   - internal links: 13
+- How to Attract More Birds to Your Yard Naturally: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/attract-birds-to-your-yard/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 19
+- Birds in California: A Beginner-Friendly Guide to Common Species: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/birds-in-california/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 13
+- How to Identify Shorebirds Without Guessing: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-shorebirds/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 12
+- How to Use eBird to Track Migration in Real Time: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/how-to-use-ebird-migration/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 14
+- Best Bird Field Guides Compared: Sibley vs Peterson vs National Geographic: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/best-bird-field-guides/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 16
 
 ## Preview asset checks
 - All expected preview assets exist in docs/ and web/.
