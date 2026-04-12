@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="3300" viewBox="0 0 2550 3300">
+  <rect width="2550" height="3300" fill="#f8f5ee"/>
+  <text x="180" y="220" font-size="82" font-family="Georgia" fill="#2f3e2f">Spring Migration Weekly Tracker v6</text>
+  <text x="180" y="280" font-size="36" font-family="Arial" fill="#556b5d">Field & Feather Co.</text>
+  <line x1="180" y1="330" x2="2370" y2="330" stroke="#66785f" stroke-width="4"/>
+  <text x="180" y="420" font-size="30" font-family="Arial">Week of:</text><line x1="320" y1="425" x2="980" y2="425" stroke="#999" stroke-width="2"/>
+  <text x="1040" y="420" font-size="30" font-family="Arial">Patch:</text><line x1="1150" y1="425" x2="2370" y2="425" stroke="#999" stroke-width="2"/>
+  <rect x="180" y="520" width="2190" height="2280" fill="none" stroke="#66785f" stroke-width="3"/>
+  <line x1="180" y1="640" x2="2370" y2="640" stroke="#66785f" stroke-width="3"/>
+  <line x1="860" y1="520" x2="860" y2="2800" stroke="#b8b8b8" stroke-width="2"/>
+  <line x1="1360" y1="520" x2="1360" y2="2800" stroke="#b8b8b8" stroke-width="2"/>
+  <line x1="1820" y1="520" x2="1820" y2="2800" stroke="#b8b8b8" stroke-width="2"/>
+  <text x="230" y="600" font-size="30" font-family="Arial">Species</text>
+  <text x="910" y="600" font-size="30" font-family="Arial">First Seen</text>
+  <text x="1410" y="600" font-size="30" font-family="Arial">Peak</text>
+  <text x="1870" y="600" font-size="30" font-family="Arial">Notes</text>
+</svg>

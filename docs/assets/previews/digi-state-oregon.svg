@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="3300" viewBox="0 0 2550 3300">
+  <rect width="2550" height="3300" fill="#f8f5ee"/>
+  <text x="180" y="220" font-size="82" font-family="Georgia" fill="#2f3e2f">Oregon Birding Life List</text>
+  <text x="180" y="280" font-size="36" font-family="Arial" fill="#556b5d">Field & Feather Co. • Printable Checklist</text>
+  <line x1="180" y1="330" x2="2370" y2="330" stroke="#66785f" stroke-width="4"/>
+  <text x="180" y="420" font-size="32" font-family="Arial">Name:</text><line x1="280" y1="425" x2="930" y2="425" stroke="#999" stroke-width="2"/>
+  <text x="1000" y="420" font-size="32" font-family="Arial">Region:</text><line x1="1120" y1="425" x2="1720" y2="425" stroke="#999" stroke-width="2"/>
+  <text x="1780" y="420" font-size="32" font-family="Arial">Year:</text><line x1="1870" y1="425" x2="2370" y2="425" stroke="#999" stroke-width="2"/>
+  <rect x="180" y="520" width="2190" height="2340" fill="none" stroke="#66785f" stroke-width="3"/>
+  <line x1="180" y1="640" x2="2370" y2="640" stroke="#66785f" stroke-width="3"/>
+  <line x1="780" y1="520" x2="780" y2="2860" stroke="#b8b8b8" stroke-width="2"/>
+  <line x1="1080" y1="520" x2="1080" y2="2860" stroke="#b8b8b8" stroke-width="2"/>
+  <line x1="1500" y1="520" x2="1500" y2="2860" stroke="#b8b8b8" stroke-width="2"/>
+  <line x1="1860" y1="520" x2="1860" y2="2860" stroke="#b8b8b8" stroke-width="2"/>
+  <text x="230" y="600" font-size="30" font-family="Arial">Species</text>
+  <text x="830" y="600" font-size="30" font-family="Arial">Date</text>
+  <text x="1130" y="600" font-size="30" font-family="Arial">Location</text>
+  <text x="1550" y="600" font-size="30" font-family="Arial">Count</text>
+  <text x="1910" y="600" font-size="30" font-family="Arial">Verified</text>
+</svg>

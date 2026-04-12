@@ -1,51 +1,105 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="grain">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Field & Feather Co. | Birding Printables</title>
+  <title>Field & Feather Co. | Refined birding tools for modern field journaling</title>
+  <meta name="description" content="Refined naturalist birding printables: state life lists, migration trackers, and warbler journals with instant digital delivery." />
+  <meta property="og:title" content="Field & Feather Co." />
+  <meta property="og:description" content="Every bird has a story. We help you record yours." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dishadc.github.io/field-feather-co/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Field & Feather Co.</h1>
-    <p>Birding printables for life lists, migration season, and warbler nerds.</p>
-    <nav>
-      <a href="#products">Products</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+  
+<header class="topbar">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Field & Feather Co.</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="shop.html">Shop</a>
+      <a href="downloads.html">Digital Downloads</a>
+      <a href="about.html">About</a>
+      <button class="btn btn-secondary" data-theme-toggle aria-label="Toggle dark mode">Dark Mode</button>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section id="hero" class="card">
-      <h2>Build your life list faster</h2>
-      <p>Digital-first products. Instant download. Built by birders for birders.</p>
-      <a class="cta" href="#products">Shop now</a>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Refined Naturalist Collection</p>
+        <h1 id="hero-heading">Every bird has a story.<br/>We help you record yours.</h1>
+        <p>Vintage field-guide soul, modern editorial clarity. Build your life list with state checklists, migration trackers, and warbler-focused journals designed for serious but joyful birders.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="shop.html">Start Your Life List</a>
+          <a class="btn btn-secondary" href="downloads.html">Browse Digital Downloads</a>
+        </div>
+      </div>
+      <aside class="hero-art reveal delay-1" data-parallax>
+        <img class="bird-bleed" src="assets/previews/digi-warbler-bundle-001.svg" alt="Warbler journal artwork" />
+      </aside>
     </section>
 
-    <section id="products">
-      <h2>Featured launch catalog</h2>
-      <div id="product-grid" class="grid"></div>
+    <section class="season-banner card reveal delay-1" aria-label="Seasonal collection">
+      <strong>Seasonal Collection — Spring Migration</strong>
+      <p id="live-count">Catalog syncing…</p>
     </section>
 
-    <section id="faq" class="card">
-      <h2>FAQ</h2>
-      <p><strong>Do you ship physical items?</strong> Current launch is digital-first. No physical item shipped for these listings.</p>
-      <p><strong>How do I get files?</strong> After checkout on Etsy/Shopify/Gumroad, download links are delivered automatically.</p>
-      <p><strong>Can I resell files?</strong> No. Personal use only unless commercial license is explicitly included.</p>
+    <section aria-labelledby="featured-title">
+      <h2 class="section-title" id="featured-title" style="font-size:2.15rem; margin:0 0 .8rem;">Featured categories</h2>
+      <div class="feature-grid">
+        <article class="card feature-card reveal delay-1"><p class="eyebrow">Regional</p><h3>State Life Lists</h3><p>Long-tail checklist products tailored to local birding communities.</p></article>
+        <article class="card feature-card reveal delay-2"><p class="eyebrow">Seasonal</p><h3>Migration Trackers</h3><p>Time-bound field tools for spring/fall migration peaks.</p></article>
+        <article class="card feature-card reveal delay-3"><p class="eyebrow">Species</p><h3>Warbler Journals</h3><p>For birders who know what warbler neck means.</p></article>
+      </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Support</h2>
-      <p>Email: <a href="mailto:support@fieldandfeather.co">support@fieldandfeather.co</a></p>
-      <p>Target response time: within 24 hours.</p>
+    <div class="divider" aria-hidden="true"></div>
+
+    <section aria-labelledby="shop-preview-title">
+      <h2 class="section-title" id="shop-preview-title" style="font-size:2rem; margin:0 0 .8rem;">Shop preview</h2>
+      <p data-catalog-error style="color:var(--muted)"></p>
+      <div id="home-featured" class="grid"></div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section class="story" aria-labelledby="story-title">
+      <article class="card panel reveal delay-1">
+        <h2 class="section-title" id="story-title" style="font-size:1.9rem; margin:0 0 .6rem;">Brand story</h2>
+        <p>Field & Feather Co. pairs field-guide credibility with modern utility. We build printable and tablet-friendly systems that make observation data useful, not forgotten.</p>
+        <a class="btn btn-secondary" href="about.html">Read the full story</a>
+      </article>
+      <article class="card panel reveal delay-2">
+        <h2 class="section-title" style="font-size:1.9rem; margin:0 0 .6rem;">Instagram field notes</h2>
+        <div class="instagram-row" aria-label="Instagram feed preview">
+          <div role="img" aria-label="Birding journal preview tile 1"></div>
+          <div role="img" aria-label="Birding journal preview tile 2"></div>
+          <div role="img" aria-label="Birding journal preview tile 3"></div>
+          <div role="img" aria-label="Birding journal preview tile 4"></div>
+          <div role="img" aria-label="Birding journal preview tile 5"></div>
+          <div role="img" aria-label="Birding journal preview tile 6"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:1rem; padding:1rem 1.1rem;" aria-labelledby="newsletter-title">
+      <h2 class="section-title" id="newsletter-title" style="font-size:1.7rem; margin:.2rem 0 .5rem;">Field report newsletter</h2>
+      <p style="color:var(--muted)">Get seasonal product drops, migration reminders, and checklist updates.</p>
+      <form action="mailto:wing_bustle30@icloud.com" method="post" enctype="text/plain" style="display:flex; gap:.6rem; flex-wrap:wrap;">
+        <label for="email" class="sr-only">Email</label>
+        <input class="input" id="email" name="email" type="email" placeholder="your@email.com" required style="max-width:340px;" />
+        <button class="btn btn-primary" type="submit">Join Field Reports</button>
+      </form>
     </section>
   </main>
 
-  <footer>
-    <small>© Field & Feather Co. All rights reserved.</small>
-  </footer>
+  
+<footer class="footer container">
+  <p>© <span data-year></span> Field & Feather Co. · For those who hear the rustle and know exactly who's there.</p>
+</footer>
 
   <script src="app.js"></script>
 </body>

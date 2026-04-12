@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" class="grain">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Field & Feather Co.</title>
+  <meta name="description" content="Shop state life lists, migration trackers, and warbler journals from Field & Feather Co." />
+  <meta property="og:title" content="Shop · Field & Feather Co." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+<header class="topbar">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Field & Feather Co.</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="shop.html">Shop</a>
+      <a href="downloads.html">Digital Downloads</a>
+      <a href="about.html">About</a>
+      <button class="btn btn-secondary" data-theme-toggle aria-label="Toggle dark mode">Dark Mode</button>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section style="padding:1.5rem 0 .6rem;">
+      <p class="eyebrow">Shop</p>
+      <h1 class="section-title" style="font-size:2.5rem; margin:.25rem 0 .5rem;">Refined digital field tools</h1>
+      <p style="color:var(--muted)">Filter by species, region, and collection to quickly find your next field companion.</p>
+    </section>
+    <section class="filter-layout">
+      <aside class="filters card" aria-label="Product filters">
+        <h2 style="margin-top:.1rem;">Filters</h2>
+        <label for="filter-q">Search</label>
+        <input id="filter-q" class="input" placeholder="warbler, texas, migration" />
+        <label for="filter-type">Product type</label>
+        <select id="filter-type" class="select"><option value="">All types</option><option>Digital Download</option></select>
+        <label for="filter-species">Species</label>
+        <select id="filter-species" class="select"></select>
+        <label for="filter-region">Region</label>
+        <select id="filter-region" class="select"></select>
+      </aside>
+      <div>
+        <p id="shop-count" style="color:var(--muted); margin:.2rem 0 .75rem;">Loading products…</p>
+        <p data-catalog-error style="color:var(--muted)"></p>
+        <div id="shop-grid" class="grid"></div>
+      </div>
+    </section>
+  </main>
+  
+<footer class="footer container">
+  <p>© <span data-year></span> Field & Feather Co. · For those who hear the rustle and know exactly who's there.</p>
+</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

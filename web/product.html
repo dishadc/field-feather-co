@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="grain">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details | Field & Feather Co.</title>
+  <meta name="description" content="Product detail page for Field & Feather Co. digital birding downloads." />
+  <meta property="og:title" content="Product · Field & Feather Co." />
+  <meta property="og:type" content="product" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+<header class="topbar">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Field & Feather Co.</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="shop.html">Shop</a>
+      <a href="downloads.html">Digital Downloads</a>
+      <a href="about.html">About</a>
+      <button class="btn btn-secondary" data-theme-toggle aria-label="Toggle dark mode">Dark Mode</button>
+    </nav>
+  </div>
+</header>
+
+  <main class="container" style="padding-top:1.4rem;">
+    <section id="product-detail" class="detail-layout" aria-live="polite">
+      <p data-catalog-error>Loading product…</p>
+    </section>
+    <section style="margin-top:1.2rem;">
+      <h2 class="section-title" style="font-size:1.8rem;">Related products</h2>
+      <div id="related-grid" class="grid"></div>
+    </section>
+  </main>
+  
+<footer class="footer container">
+  <p>© <span data-year></span> Field & Feather Co. · For those who hear the rustle and know exactly who's there.</p>
+</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
