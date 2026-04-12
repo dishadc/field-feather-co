@@ -1,37 +1,88 @@
-
 const state = { products: [], filtered: [] };
 
 async function loadProducts() {
   const res = await fetch('products.json');
-  state.products = await res.json();
+  const raw = await res.json();
+  state.products = raw.map(normalizeProduct);
   state.filtered = [...state.products];
 }
 
-function money(v) { return `$${Number(v).toFixed(2)}`; }
+function money(v) { return `$${Number(v || 0).toFixed(2)}`; }
 
-function badge(status) {
-  const klass = status === 'ready' ? '' : 'pending';
-  return `<span class="badge ${klass}">${status}</span>`;
+function seed(text) {
+  return encodeURIComponent(String(text || 'bird-journal').toLowerCase().replace(/[^a-z0-9]+/g, '-'));
+}
+
+function inferType(p) {
+  if (p.type) return p.type;
+  return (p.sku || '').startsWith('POD-') ? 'Print-on-Demand' : 'Digital Download';
+}
+
+function inferCollection(p) {
+  if (p.collection) return p.collection;
+  const sku = p.sku || '';
+  if (sku.includes('STATE')) return 'Regional';
+  if (sku.includes('MIGRATION')) return 'Seasonal';
+  if (sku.includes('WARBLER')) return 'Species';
+  return 'Field Notes';
+}
+
+function inferSpecies(p) {
+  if (p.species) return p.species;
+  const sku = p.sku || '';
+  if (sku.includes('WARBLER')) return 'Warbler';
+  if (sku.includes('MIGRATION')) return 'Mixed Species';
+  if (sku.includes('STATE')) return 'Regional Mix';
+  return 'Mixed Species';
+}
+
+function inferRegion(p) {
+  if (p.region) return p.region;
+  const m = (p.sku || '').match(/DIGI-STATE-([A-Z-]+)/);
+  if (m) return m[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  return 'United States';
+}
+
+function deliveryLine(type) {
+  return type === 'Print-on-Demand' ? 'Print-on-Demand · Ships in 3–5 days' : 'Digital Download · PDF';
+}
+
+function resolveImage(p) {
+  if (p.image && (/^https?:\/\//.test(p.image) || p.image.startsWith('assets/'))) return p.image;
+  const sku = (p.sku || '').toLowerCase();
+  if (sku) return `assets/previews/${sku}.svg`;
+  return `https://picsum.photos/seed/${seed(p.title || p.keyword || 'bird')}/400/300`;
+}
+
+function normalizeProduct(p) {
+  const type = inferType(p);
+  return {
+    ...p,
+    type,
+    collection: inferCollection(p),
+    species: inferSpecies(p),
+    region: inferRegion(p),
+    delivery: p.delivery || deliveryLine(type),
+    image: resolveImage(p)
+  };
 }
 
 function productCard(p, i = 0, feature = false) {
   const hasLink = p.checkout_url && p.checkout_url.startsWith('http');
-  const cta = hasLink ? 'Start Your Life List' : 'Checkout Coming Soon';
-  const disabled = hasLink ? '' : 'aria-disabled="true"';
   const featureClass = feature ? 'feature-span' : '';
   return `
   <article class="card product-card ${featureClass} reveal delay-${i % 4}">
     <figure>
-      ${p.image ? `<img src="${p.image}" alt="Preview of ${p.title}" loading="lazy" />` : '<div aria-hidden="true"></div>'}
+      <img class="product-thumb" src="${p.image}" alt="Preview of ${p.title}" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/${seed('${p.sku}')}/400/300';" />
     </figure>
     <div class="product-meta">
-      <div class="badges">${badge(p.status)} <span class="badge">${p.collection}</span></div>
+      <div class="badges"><span class="badge">${p.type}</span>${p.sku.includes('WARBLER') ? '<span class="badge">Limited Edition</span>' : ''}</div>
       <h3>${p.title}</h3>
       <p class="price">${money(p.price)}</p>
-      <p><small>${p.delivery} · ${p.region}</small></p>
-      <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.6rem;">
-        <a class="btn btn-primary" href="${hasLink ? p.checkout_url : '#'}" target="_blank" rel="noopener" ${disabled}>${cta}</a>
-        <a class="btn btn-secondary" href="product.html?sku=${encodeURIComponent(p.sku)}">Details</a>
+      <p class="meta-line"><small>${p.delivery}</small></p>
+      <div class="card-actions" style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.6rem;">
+        ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : ''}
+        <a class="btn btn-secondary" href="product.html?sku=${encodeURIComponent(p.sku)}">Details →</a>
       </div>
     </div>
   </article>`;
@@ -40,13 +91,21 @@ function productCard(p, i = 0, feature = false) {
 function initTheme() {
   const root = document.documentElement;
   const pref = localStorage.getItem('ff-theme');
-  if (pref) root.setAttribute('data-theme', pref);
+  if (pref === 'dark' || pref === 'light') root.setAttribute('data-theme', pref);
   const toggles = document.querySelectorAll('[data-theme-toggle]');
   toggles.forEach(btn => btn.addEventListener('click', () => {
     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     localStorage.setItem('ff-theme', next);
   }));
+}
+
+function initTopbarScroll() {
+  const bar = document.querySelector('.topbar');
+  if (!bar) return;
+  const update = () => bar.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', update, { passive: true });
+  update();
 }
 
 function initParallax() {
@@ -92,7 +151,7 @@ function renderShop() {
       if (typeSel.value && p.type !== typeSel.value) return false;
       if (speciesSel.value && p.species !== speciesSel.value) return false;
       if (regionSel.value && p.region !== regionSel.value) return false;
-      if (needle && !(p.title.toLowerCase().includes(needle) || p.sku.toLowerCase().includes(needle) || p.keyword.toLowerCase().includes(needle))) return false;
+      if (needle && !(String(p.title).toLowerCase().includes(needle) || String(p.sku).toLowerCase().includes(needle) || String(p.keyword || '').toLowerCase().includes(needle))) return false;
       return true;
     });
     grid.innerHTML = state.filtered.map((p,i) => productCard(p,i)).join('');
@@ -114,13 +173,14 @@ function renderProductDetail() {
   const hasLink = p.checkout_url && p.checkout_url.startsWith('http');
   root.innerHTML = `
     <div class="card detail-image">
-      <img src="${p.image}" alt="Preview image for ${p.title}" />
+      <img src="${p.image}" alt="Preview image for ${p.title}" onerror="this.onerror=null; this.src='https://picsum.photos/seed/${seed('${p.sku}')}/800/600';" />
     </div>
     <div class="card" style="padding:1rem 1.1rem;">
       <p class="eyebrow">${p.collection}</p>
       <h1 class="section-title" style="font-size:2.2rem; margin:.2rem 0 0.7rem;">${p.title}</h1>
       <p class="price" style="font-size:1.28rem; margin:.2rem 0 .8rem;">${money(p.price)}</p>
-      <a class="btn btn-primary" href="${hasLink ? p.checkout_url : '#'}" target="_blank" rel="noopener">${hasLink ? 'Start Your Life List' : 'Checkout Coming Soon'}</a>
+      <p class="meta-line">${p.delivery}</p>
+      ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : ''}
       <div class="tabs" role="tablist" aria-label="Product info tabs">
         <button class="tab-btn" role="tab" aria-selected="true" data-tab="desc">Description</button>
         <button class="tab-btn" role="tab" aria-selected="false" data-tab="specs">Specs</button>
@@ -166,6 +226,7 @@ function renderDownloads() {
 
 (async function boot() {
   initTheme();
+  initTopbarScroll();
   initParallax();
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
