@@ -1,9 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e8f0e5"/><stop offset="100%" stop-color="#cdddc9"/></linearGradient></defs>
-<rect width="1200" height="900" fill="url(#g)"/>
-<rect x="70" y="70" width="1060" height="760" rx="28" fill="#fffaf2" stroke="#9e8f73"/>
-<text x="110" y="180" font-family="Georgia, serif" font-size="54" fill="#3f4f3d">Field &amp; Feather Co.</text>
-<text x="110" y="250" font-family="Inter, Arial" font-size="34" fill="#5d6d5a">GoodNotes Planner</text>
-<text x="110" y="350" font-family="Inter, Arial" font-size="42" fill="#2f3b2d">Birding Planner for GoodNotes Seasonal Migration Edition PDF</text>
-<text x="110" y="770" font-family="Inter, Arial" font-size="26" fill="#6f7b69">SKU: DIGI-PLANNER-GOODNOTES-SEASONAL-017</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="Premium mockup preview for Birding Planner for GoodNotes Seasonal Migration Edition PDF">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3efe8"/>
+      <stop offset="100%" stop-color="#d4c7bb"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="35%" cy="26%" r="70%">
+      <stop offset="0%" stop-color="#fffdf8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fffdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#efe4d3" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#8f7d67" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#8f7d67" flood-opacity="0.16"/>
+    </filter>
+    <filter id="innerGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ffffff" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="heroClip">
+      <rect x="0" y="0" width="520" height="720" rx="22"/>
+    </clipPath>
+    <pattern id="pinstripe" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+      <rect width="14" height="14" fill="transparent"/>
+      <rect x="0" y="0" width="2" height="14" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1600" height="1200" fill="url(#pinstripe)" opacity="0.22"/>
+
+  <g opacity="0.18" fill="none" stroke="#42535f" stroke-width="2.2" stroke-linecap="round">
+    <path d="M121 1031c48-63 78-137 89-220 10-70 8-137-6-201"/>
+    <path d="M155 1002c44-54 76-122 91-192 8-36 12-79 10-128"/>
+    <path d="M1413 176c-48 63-78 137-89 220-10 70-8 137 6 201"/>
+    <path d="M1379 205c-44 54-76 122-91 192-8 36-12 79-10 128"/>
+    <path d="M203 927c25-19 49-42 69-71 24-35 42-74 53-118" opacity="0.75"/>
+    <path d="M1311 279c-25 19-49 42-69 71-24 35-42 74-53 118" opacity="0.75"/>
+  </g>
+
+  <ellipse cx="1135" cy="846" rx="344" ry="118" fill="#93816b" opacity="0.15"/>
+  <ellipse cx="1080" cy="895" rx="262" ry="72" fill="#93816b" opacity="0.1"/>
+
+  <g>
+    <text x="120" y="112" font-family="Arial, sans-serif" font-size="20" letter-spacing="5" fill="#42535f" font-weight="700">FIELD &amp; FEATHER CO.</text>
+    <text x="120" y="150" font-family="Arial, sans-serif" font-size="22" fill="#786d5f">Premium printable stationery mockup</text>
+
+    <rect x="120" y="190" width="232" height="40" rx="20" fill="#e8ecef"/>
+    <text x="145" y="216" font-family="Arial, sans-serif" font-size="18" fill="#42535f" font-weight="700">GOODNOTES ATELIER</text>
+
+    <text x="120" y="256" font-family="Georgia, serif" font-size="52" fill="#24303a" font-weight="700">Birding Planner for</text><text x="120" y="326" font-family="Georgia, serif" font-size="52" fill="#24303a" font-weight="700">GoodNotes Seasonal</text><text x="120" y="396" font-family="Georgia, serif" font-size="52" fill="#24303a" font-weight="700">Migration Edition PDF</text>
+
+    <text x="120" y="504" font-family="Arial, sans-serif" font-size="24" fill="#645b50">Luxury digital planner mockup with note-sheet layering</text>
+
+    <g transform="translate(120 592)">
+      <rect x="0" y="0" width="500" height="212" rx="26" fill="#fffaf3" opacity="0.76"/>
+      <rect x="32" y="34" width="10" height="142" rx="5" fill="#c38b5a" opacity="0.9"/>
+      <text x="64" y="72" font-family="Georgia, serif" font-size="30" fill="#24303a" font-weight="700">Refined card presentation</text>
+      <text x="64" y="114" font-family="Arial, sans-serif" font-size="22" fill="#5f5c55">Layered paper, gallery lighting, archival palette.</text>
+      <text x="64" y="152" font-family="Arial, sans-serif" font-size="22" fill="#5f5c55">Built from the original sheet artwork for continuity.</text>
+      <text x="64" y="190" font-family="Arial, sans-serif" font-size="20" fill="#c38b5a" font-weight="700">Digital download • SVG/PDF preview</text>
+    </g>
+
+    <g transform="translate(120 978)">
+      <text x="0" y="0" font-family="Georgia, serif" font-size="46" fill="#24303a" font-weight="700">$12.99</text>
+      <text x="138" y="0" font-family="Arial, sans-serif" font-size="23" fill="#6b655d">instant delivery • polished preview art</text>
+    </g>
+  </g>
+
+  <g filter="url(#softShadow)" transform="translate(888 230) rotate(-7)">
+    <rect x="80" y="58" width="510" height="715" rx="24" fill="#f7edde" opacity="0.9"/>
+    <rect x="36" y="94" width="510" height="715" rx="24" fill="#f2e7d6" opacity="0.9"/>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(920 168) rotate(-7)">
+    <rect x="0" y="0" width="520" height="720" rx="26" fill="#fffaf4"/>
+    <rect x="18" y="18" width="484" height="684" rx="22" fill="url(#cardEdge)" opacity="0.46"/>
+    <g clip-path="url(#heroClip)">
+      <image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjkwMCIgdmlld0JveD0iMCAwIDEyMDAgOTAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U4ZjBlNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NkZGRjOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgo8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjZykiLz4KPHJlY3QgeD0iNzAiIHk9IjcwIiB3aWR0aD0iMTA2MCIgaGVpZ2h0PSI3NjAiIHJ4PSIyOCIgZmlsbD0iI2ZmZmFmMiIgc3Ryb2tlPSIjOWU4ZjczIi8+Cjx0ZXh0IHg9IjExMCIgeT0iMTgwIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iNTQiIGZpbGw9IiMzZjRmM2QiPkZpZWxkICZhbXA7IEZlYXRoZXIgQ28uPC90ZXh0Pgo8dGV4dCB4PSIxMTAiIHk9IjI1MCIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCIgZm9udC1zaXplPSIzNCIgZmlsbD0iIzVkNmQ1YSI+R29vZE5vdGVzIFBsYW5uZXI8L3RleHQ+Cjx0ZXh0IHg9IjExMCIgeT0iMzUwIiBmb250LWZhbWlseT0iSW50ZXIsIEFyaWFsIiBmb250LXNpemU9IjQyIiBmaWxsPSIjMmYzYjJkIj5CaXJkaW5nIFBsYW5uZXIgZm9yIEdvb2ROb3RlcyBTZWFzb25hbCBNaWdyYXRpb24gRWRpdGlvbiBQREY8L3RleHQ+Cjx0ZXh0IHg9IjExMCIgeT0iNzcwIiBmb250LWZhbWlseT0iSW50ZXIsIEFyaWFsIiBmb250LXNpemU9IjI2IiBmaWxsPSIjNmY3YjY5Ij5TS1U6IERJR0ktUExBTk5FUi1HT09ETk9URVMtU0VBU09OQUwtMDE3PC90ZXh0Pgo8L3N2Zz4=" x="0" y="0" width="520" height="720" preserveAspectRatio="xMidYMid slice"/>
+      <rect x="0" y="0" width="520" height="720" fill="#fff9f2" opacity="0.06"/>
+    </g>
+    <rect x="0.5" y="0.5" width="519" height="719" rx="26" fill="none" stroke="#dccfbd"/>
+  </g>
+
+  <g filter="url(#innerGlow)" transform="translate(820 760)">
+    <rect x="0" y="0" width="238" height="164" rx="22" fill="#fff8ef" opacity="0.92"/>
+    <text x="28" y="46" font-family="Arial, sans-serif" font-size="18" letter-spacing="3" fill="#42535f">CURATED DETAILS</text>
+    <text x="28" y="84" font-family="Georgia, serif" font-size="26" fill="#24303a" font-weight="700">Editorial crop</text>
+    <text x="28" y="116" font-family="Arial, sans-serif" font-size="18" fill="#60574f">soft depth</text>
+    <text x="28" y="142" font-family="Arial, sans-serif" font-size="18" fill="#60574f">premium paper stack</text>
+  </g>
+
+  <circle cx="1324" cy="202" r="56" fill="#fff8ee" opacity="0.68"/>
+  <circle cx="1324" cy="202" r="18" fill="#c38b5a" opacity="0.45"/>
 </svg>

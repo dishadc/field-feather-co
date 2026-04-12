@@ -3,506 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Field & Feather Co. | Refined birding tools for modern field journaling</title>
-  <meta name="description" content="Refined naturalist birding printables: state life lists, migration trackers, and warbler journals with instant digital delivery." />
+  <title>Field & Feather Co. | Premium birding stationery and refined digital field notes</title>
+  <meta name="description" content="Premium birding stationery and digital field-note downloads with editorial calm, generous whitespace, and seasonal naturalist collections." />
   <meta property="og:title" content="Field & Feather Co." />
-  <meta property="og:description" content="Every bird has a story. We help you record yours." />
+  <meta property="og:description" content="Premium birding stationery with an editorial, paper-goods sensibility." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dishadc.github.io/field-feather-co/" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap');
-
-    :root {
-      --forest: #2D4A2D;
-      --cream: #F5F0E8;
-      --robin: #7EC8C8;
-      --terracotta: #C4714A;
-      --deep-slate: #1A2332;
-      --ink: #243022;
-      --muted: #5e635c;
-      --surface: #fffdf8;
-      --card: #fff;
-      --divider: rgba(196, 113, 74, 0.32);
-      --shadow: 0 8px 26px rgba(23, 36, 27, 0.08);
-    }
-
-    [data-theme="dark"] {
-      --cream: #1A2332;
-      --deep-slate: #1A2332;
-      --ink: #E8E4DC;
-      --muted: #c7c0b3;
-      --surface: #243044;
-      --card: #243044;
-      --divider: rgba(232, 228, 220, 0.16);
-      --shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'DM Sans', sans-serif;
-      background: var(--cream);
-      color: var(--ink);
-      line-height: 1.55;
-    }
-
-    .grain::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image: radial-gradient(rgba(0,0,0,0.5) 0.5px, transparent 0.6px);
-      background-size: 3px 3px;
-      opacity: .03;
-      z-index: 999;
-    }
-
-    .container { max-width: 1160px; margin: 0 auto; padding: 0 1rem; }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      border-bottom: 1px solid var(--divider);
-      background: rgba(245, 240, 232, 0.98);
-      transition: background .3s ease, backdrop-filter .3s ease, border-color .3s ease;
-    }
-    [data-theme="dark"] .topbar { background: rgba(26, 35, 50, 0.95); }
-    .topbar.scrolled {
-      backdrop-filter: blur(12px);
-      background: rgba(245, 240, 232, 0.85);
-    }
-    [data-theme="dark"] .topbar.scrolled { background: rgba(26, 35, 50, 0.82); }
-
-    .nav-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: .95rem 0;
-    }
-
-    .brand {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.15rem;
-      font-weight: 700;
-      color: var(--forest);
-      text-decoration: none;
-      letter-spacing: .01em;
-    }
-    [data-theme="dark"] .brand { color: var(--ink); }
-
-    .nav-links { display: flex; align-items: center; gap: 1rem; }
-    .nav-links a { color: var(--muted); text-decoration: none; font-weight: 500; }
-
-    .btn {
-      border: 1px solid transparent;
-      border-radius: 999px;
-      padding: .62rem 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: .4rem;
-    }
-    .btn-primary { background: var(--terracotta); color: #fff; }
-    .btn-secondary { background: transparent; color: var(--forest); border-color: rgba(45, 74, 45, .28); }
-    [data-theme="dark"] .btn-secondary { color: var(--ink); border-color: rgba(232,228,220,.28); }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.08fr .92fr;
-      gap: 1.2rem;
-      align-items: center;
-      padding: 2.4rem 0 1.5rem;
-    }
-    .eyebrow { text-transform: uppercase; letter-spacing: .11em; font-size: .76rem; font-weight: 700; color: var(--forest); }
-    [data-theme="dark"] .eyebrow { color: var(--robin); }
-
-    h1, h2, h3 { font-family: 'Playfair Display', serif; margin: 0; }
-    .hero h1 { font-size: clamp(2.2rem, 4.7vw, 4.4rem); line-height: 1.03; margin: .3rem 0 1rem; }
-    .hero p { color: var(--muted); max-width: 55ch; }
-    .hero-cta { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1rem; }
-
-    .hero-art {
-      min-height: 420px;
-      border-radius: 24px;
-      background: linear-gradient(140deg, rgba(126,200,200,.35), rgba(245,240,232,.6));
-      border: 1px solid rgba(45,74,45,.18);
-      box-shadow: var(--shadow);
-      display: grid;
-      place-items: center;
-      padding: 1rem;
-      overflow: hidden;
-    }
-    [data-theme="dark"] .hero-art { background: linear-gradient(145deg, rgba(126,200,200,.12), rgba(36,48,68,.92)); border-color: rgba(232,228,220,.14); }
-
-    .journal-mockup {
-      width: min(94%, 420px);
-      filter: drop-shadow(0 16px 24px rgba(0,0,0,.16));
-    }
-
-    .marquee {
-      margin: 1.2rem 0 1.6rem;
-      border-top: 1px solid var(--divider);
-      border-bottom: 1px solid var(--divider);
-      overflow: hidden;
-      white-space: nowrap;
-      background: rgba(255,255,255,.55);
-    }
-    [data-theme="dark"] .marquee { background: rgba(36,48,68,.6); }
-    .marquee-track {
-      display: inline-flex;
-      align-items: center;
-      gap: 1.4rem;
-      padding: .75rem 0;
-      min-width: 200%;
-      animation: ticker 26s linear infinite;
-    }
-    .marquee-item { font-weight: 600; color: var(--forest); }
-    [data-theme="dark"] .marquee-item { color: var(--ink); }
-    @keyframes ticker {
-      0% { transform: translateX(-50%); }
-      100% { transform: translateX(0); }
-    }
-
-    .season-banner {
-      margin: 0 0 1.6rem;
-      padding: 1.2rem 1.2rem 1.25rem;
-      border-radius: 16px;
-      border: 1px solid rgba(196,113,74,.45);
-      border-left: 6px solid var(--terracotta);
-      background: linear-gradient(90deg, rgba(196,113,74,.12), rgba(255,255,255,.2));
-      overflow: visible;
-    }
-
-    .section-title { font-size: 2rem; margin: 0 0 .85rem; }
-
-    .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; margin-bottom: 1.8rem; }
-    .feature-card {
-      background: #fff;
-      border: 1px solid rgba(45,74,45,.14);
-      border-left: 4px solid var(--terracotta);
-      border-radius: 14px;
-      padding: 1rem;
-      transition: background .25s ease, border-color .25s ease, transform .25s ease;
-    }
-    [data-theme="dark"] .feature-card { background: #243044; border-color: rgba(232,228,220,.16); }
-    .feature-card:hover { background: var(--cream); border-color: rgba(196,113,74,.7); transform: translateY(-2px); }
-    .feature-icon { width: 28px; height: 28px; color: var(--forest); margin-bottom: .35rem; }
-    [data-theme="dark"] .feature-icon { color: var(--robin); }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1rem; }
-
-    .product-card {
-      background: var(--card);
-      border: 1px solid rgba(45,74,45,.14);
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-    .product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-    }
-
-    .product-thumb {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      display: block;
-      background: #eee;
-    }
-
-    .product-meta { padding: .92rem; }
-    .badges { display: flex; gap: .45rem; flex-wrap: wrap; margin-bottom: .5rem; }
-    .badge {
-      background: #7EC8C8;
-      color: #1A2332;
-      border-radius: 999px;
-      padding: .2rem .55rem;
-      font-size: .72rem;
-      font-weight: 700;
-    }
-    .product-meta h3 { font-size: 1.03rem; margin: 0 0 .35rem; }
-    .price { font-size: 1.25rem; font-weight: 600; color: var(--forest); margin: .2rem 0 .4rem; }
-    [data-theme="dark"] .price { color: var(--robin); }
-    .meta-line { color: var(--muted); font-size: .88rem; margin-bottom: .7rem; }
-    .card-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
-
-    .footer {
-      border-top: 1px solid var(--divider);
-      margin-top: 2.2rem;
-      padding: 1.6rem 0 2rem;
-    }
-    .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 1.2rem; }
-    .footer h4 { margin: 0 0 .45rem; font-family: 'Playfair Display', serif; font-size: 1.15rem; }
-    .footer a { display: block; color: var(--muted); text-decoration: none; margin: .2rem 0; }
-    .newsletter { display: flex; gap: .5rem; margin-top: .35rem; }
-    .newsletter input {
-      flex: 1;
-      border: 1px solid rgba(45,74,45,.22);
-      border-radius: 10px;
-      padding: .6rem .65rem;
-      background: var(--surface);
-      color: var(--ink);
-    }
-    .copyright { margin-top: 1rem; color: var(--muted); font-size: .9rem; }
-
-    @media (max-width: 920px) {
-      .hero { grid-template-columns: 1fr; }
-      .feature-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .nav-wrap { flex-direction: column; align-items: flex-start; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.v8.css" />
 </head>
 <body>
-  <header class="topbar" id="topbar">
+  <header class="topbar">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html">Field & Feather Co.</a>
-      <nav class="nav-links" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Field and Feather home">Field <span class="amp">&amp;</span> Feather</a>
+      <nav class="nav-links desktop-nav" aria-label="Primary navigation">
         <a href="shop.html">Shop</a>
-        <a href="downloads.html">Digital Downloads</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="blog/index.html">Journal</a>
         <a href="about.html">About</a>
-        <button class="btn btn-secondary" type="button" data-theme-toggle>Dark Mode</button>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme"></button>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation"></button>
+      </div>
+    </div>
+    <div class="container mobile-panel" data-mobile-panel>
+      <nav class="nav-links" aria-label="Mobile navigation">
+        <a href="shop.html">Shop</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="blog/index.html">Journal</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero" aria-labelledby="hero-heading">
-      <div>
-        <p class="eyebrow">Refined Naturalist Collection</p>
-        <h1 id="hero-heading">Every bird has a story.<br>We help you record yours.</h1>
-        <p>Vintage field-guide soul, modern editorial clarity. Build your life list with state checklists, migration trackers, and warbler-focused journals designed for serious but joyful birders.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="shop.html">Start Your Life List</a>
-          <a class="btn btn-secondary" href="downloads.html">Browse Digital Downloads</a>
+  <main class="site-shell">
+    <section class="container hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Luxury field stationery</p>
+        <h1 class="hero-title">Paper goods for the birder with a careful eye.</h1>
+        <p class="lede">Field &amp; Feather pairs the romance of an heirloom journal with the usefulness of a serious birding tool: state life lists, migration trackers, and quietly refined downloads made to be revisited season after season.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="shop.html">Explore the collection</a>
+          <a class="btn btn-quiet" href="downloads.html">Browse digital downloads</a>
         </div>
       </div>
-      <aside class="hero-art" aria-label="Warbler journal artwork">
-        <svg class="journal-mockup" viewBox="0 0 420 320" role="img" aria-label="Stylized journal mockup with bird illustration">
-          <defs>
-            <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#f3e8d7"/>
-              <stop offset="1" stop-color="#e4d5bc"/>
-            </linearGradient>
-          </defs>
-          <rect x="54" y="20" width="300" height="278" rx="16" fill="url(#cover)" stroke="#cdbb9e" />
-          <rect x="72" y="38" width="264" height="242" rx="10" fill="#fffaf2" stroke="#d9c8ad"/>
-          <path d="M128 174c19-29 44-44 74-44 26 0 48 10 67 31" fill="none" stroke="#2D4A2D" stroke-width="4" stroke-linecap="round"/>
-          <path d="M156 142c18-17 38-18 60-5-16 5-29 15-39 28-4-10-11-18-21-23z" fill="#7EC8C8" stroke="#2D4A2D"/>
-          <circle cx="221" cy="133" r="3" fill="#1A2332"/>
-          <path d="M180 221h122M180 236h84M180 251h104" stroke="#C4714A" stroke-width="3" stroke-linecap="round"/>
-          <text x="210" y="88" text-anchor="middle" font-family="Playfair Display" font-size="20" fill="#2D4A2D">Warbler Field Journal</text>
+      <aside class="hero-art reveal delay-1" data-parallax aria-label="Editorial stationery illustration">
+        <div class="hero-sheet">
+          <p class="sheet-label">Seasonal release</p>
+          <h2 class="sheet-title">Spring migration notes</h2>
+          <p class="sheet-copy">Generous layouts for first sightings, route details, habitat observations, and all the little marks that make a season memorable.</p>
+          <div class="sheet-lines" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <svg class="hero-bird" viewBox="0 0 320 260" role="img" aria-label="Illustrated songbird perched on a branch">
+          <path d="M73 181c26-27 44-39 70-45 8-30 28-54 61-66 39-14 83 4 104 38-23-10-53-11-80 1-16 7-31 19-42 34 6 6 14 11 26 16 23 10 48 9 70 1-18 24-47 41-79 44-20 2-37-2-52-12-10 17-24 31-44 43 8-17 14-34 16-54-16 4-32 4-50 0z" fill="#D9B69F" stroke="#1C2B1A" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M163 112c21-11 44-13 67-6-14-18-39-25-61-17-19 7-33 22-39 41 10-7 21-13 33-18z" fill="#7EC8C8" opacity="0.95"/>
+          <path d="M210 105c8-2 16 0 23 6-8 1-14 4-20 9-1-6-2-10-3-15z" fill="#C4714A"/>
+          <circle cx="219" cy="114" r="3.5" fill="#1C2B1A"/>
+          <path d="M236 118l23-2-21 10z" fill="#1C2B1A"/>
+          <path d="M29 210c39-5 73-17 100-35" fill="none" stroke="#1C2B1A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M65 229c36-12 71-31 96-59" fill="none" stroke="#1C2B1A" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
         </svg>
       </aside>
     </section>
 
-    <section class="marquee" aria-label="Bird species ticker">
+    <section class="editorial-marquee" aria-label="Collection highlights">
       <div class="marquee-track" id="bird-track"></div>
     </section>
 
-    <section class="season-banner" aria-label="Seasonal collection">
-      <strong>Seasonal Collection — Spring Migration</strong>
-      <p id="live-count" style="margin:.35rem 0 0;color:var(--muted)">Catalog syncing…</p>
+    <section class="seasonal-banner reveal">
+      <div class="container seasonal-content">
+        <div>
+          <p class="section-kicker">Seasonal callout</p>
+          <h2 class="seasonal-title">Spring migration, arranged with editorial calm.</h2>
+        </div>
+        <p class="seasonal-meta" id="live-count">Gathering today’s availability from the catalog.</p>
+      </div>
     </section>
 
-    <section aria-labelledby="featured-title">
-      <h2 class="section-title" id="featured-title">Featured categories</h2>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 14c4-1 7-4 9-8 2 4 5 7 9 8-3 1-5 3-7 6-2-3-4-5-11-6z"/></svg>
-          <p class="eyebrow">Regional</p><h3>State Life Lists</h3>
-          <p>Long-tail checklist products tailored to local birding communities.</p>
+    <section class="container section">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-kicker">Featured categories</p>
+          <h2 class="section-title">A refined toolkit for sightings, lists, and seasonal rhythms.</h2>
+        </div>
+      </div>
+      <div class="category-grid">
+        <article class="category-card reveal">
+          <div class="category-mark">✦</div>
+          <h3>State Life Lists</h3>
+          <p>Beautifully organized regional checklists designed for birders who want a life list that feels worth keeping.</p>
+          <a class="category-link" href="shop.html">Browse the regional edit</a>
         </article>
-        <article class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 12c3 0 5-2 6-5 2 3 4 5 8 5-3 1-5 3-7 6-2-3-3-5-7-6z"/></svg>
-          <p class="eyebrow">Seasonal</p><h3>Migration Trackers</h3>
-          <p>Time-bound field tools for spring/fall migration peaks.</p>
+        <article class="category-card reveal delay-1">
+          <div class="category-mark">✦</div>
+          <h3>Migration Trackers</h3>
+          <p>Seasonal pages for first arrivals, peak movement, weather notes, and the small details that define a migration year.</p>
+          <a class="category-link" href="downloads.html">See seasonal downloads</a>
         </article>
-        <article class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 15c6-1 10-5 12-10 2 5 4 9 8 10-3 1-6 3-8 7-2-4-5-6-12-7z"/></svg>
-          <p class="eyebrow">Species</p><h3>Warbler Journals</h3>
-          <p>For birders who know what warbler neck means.</p>
+        <article class="category-card reveal delay-2">
+          <div class="category-mark">✦</div>
+          <h3>Warbler Journals</h3>
+          <p>For the birder who knows a quiet woodland morning deserves more than a hurried line in an ordinary notebook.</p>
+          <a class="category-link" href="shop.html">Discover the species collection</a>
         </article>
       </div>
     </section>
 
-    <section aria-labelledby="shop-preview-title">
-      <h2 class="section-title" id="shop-preview-title">Shop preview</h2>
+    <section class="container section">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-kicker">Shop preview</p>
+          <h2 class="section-title">Selected pieces from the current storefront.</h2>
+        </div>
+        <a class="hairline-link" href="shop.html">View all products</a>
+      </div>
       <div id="home-featured" class="grid"></div>
+      <p data-catalog-error class="microcopy"></p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>Shop</h4>
-        <a href="shop.html">All Products</a>
-        <a href="shop.html">State Life Lists</a>
-        <a href="shop.html">Warbler Collection</a>
+    <div class="container">
+      <div class="wordmark">Field <span class="amp">&amp;</span> Feather</div>
+      <div class="footer-grid">
+        <div>
+          <h4>Collection</h4>
+          <nav class="footer-nav" aria-label="Footer collection links">
+            <a href="shop.html">Shop all pieces</a>
+            <a href="downloads.html">Digital downloads</a>
+            <a href="product.html">Product details</a>
+          </nav>
+        </div>
+        <div>
+          <h4>House</h4>
+          <nav class="footer-nav" aria-label="Footer company links">
+            <a href="about.html">About the brand</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Field notes by email</h4>
+          <p>Occasional releases, seasonal edits, and quiet announcements from the studio.</p>
+          <form class="newsletter" action="mailto:wing_bustle30@icloud.com" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Your email address" required />
+            <button class="btn btn-primary" type="submit">Join</button>
+          </form>
+        </div>
       </div>
-      <div>
-        <h4>Digital Downloads</h4>
-        <a href="downloads.html">Printable Bundles</a>
-        <a href="downloads.html">Migration Logs</a>
-        <a href="downloads.html">GoodNotes Planners</a>
-      </div>
-      <div>
-        <h4>About & Legal</h4>
-        <a href="about.html">Our Story</a>
-        <a href="terms.html">Terms</a>
-        <a href="privacy.html">Privacy</a>
-        <form class="newsletter" action="mailto:wing_bustle30@icloud.com" method="post" enctype="text/plain">
-          <input type="email" name="email" placeholder="Email for field reports" required>
-          <button class="btn btn-primary" type="submit">Join</button>
-        </form>
-      </div>
+      <div class="footer-bottom">© <span data-year></span> Field &amp; Feather Co. All rights reserved.</div>
     </div>
-    <div class="container copyright">© 2026 Field & Feather Co. Made for birders.</div>
   </footer>
 
-  <script>
-    const state = { products: [] };
-
-    function money(v) { return `$${Number(v || 0).toFixed(2)}`; }
-
-    function slugSeed(text) {
-      return encodeURIComponent((text || 'bird-journal').toLowerCase().replace(/[^a-z0-9]+/g, '-'));
-    }
-
-    function inferType(p) {
-      if (p.type) return p.type;
-      return (p.sku || '').startsWith('POD-') ? 'Print-on-Demand' : 'Digital Download';
-    }
-
-    function inferFormat(type) {
-      return type === 'Print-on-Demand' ? 'Ships in 3–5 days' : 'PDF';
-    }
-
-    function inferCollection(p) {
-      if (p.collection) return p.collection;
-      const sku = p.sku || '';
-      if (sku.includes('STATE')) return 'Regional';
-      if (sku.includes('MIGRATION')) return 'Seasonal';
-      if (sku.includes('WARBLER')) return 'Species';
-      return 'Field Notes';
-    }
-
-    function normalizeProduct(p) {
-      const type = inferType(p);
-      const format = inferFormat(type);
-      const deliveryMeta = `${type} · ${format}`;
-      const image = p.image && /^https?:|^assets\//.test(p.image)
-        ? p.image
-        : `https://picsum.photos/seed/${slugSeed(p.title || p.sku)}/400/300`;
-      const published = p.published === true || p.published === 'true';
-      const hasLink = !!(p.checkout_url && p.checkout_url.startsWith('http'));
-      const purchasable = p.purchasable === true || p.purchasable === 'true' || (published && hasLink);
-      return {
-        ...p,
-        type,
-        format,
-        collection: inferCollection(p),
-        deliveryMeta,
-        image,
-        published,
-        purchasable
-      };
-    }
-
-    function productCard(p) {
-      const cta = p.purchasable
-        ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>`
-        : `<span class="btn btn-secondary" aria-disabled="true" title="Checkout opens after payout setup">Coming Soon</span>`;
-      return `
-        <article class="product-card">
-          <img class="product-thumb" src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.src='https://picsum.photos/seed/fallback-bird/400/300'" />
-          <div class="product-meta">
-            <div class="badges">
-              <span class="badge">${p.type}</span>
-              ${p.sku && p.sku.includes('WARBLER') ? '<span class="badge">Limited Edition</span>' : ''}
-              ${!p.purchasable ? '<span class="badge">Coming Soon</span>' : ''}
-            </div>
-            <h3>${p.title}</h3>
-            <p class="price">${money(p.price)}</p>
-            <p class="meta-line">${p.deliveryMeta}</p>
-            <div class="card-actions">
-              ${cta}
-              <a class="btn btn-secondary" href="product.html?sku=${encodeURIComponent(p.sku || '')}">Details →</a>
-            </div>
-          </div>
-        </article>
-      `;
-    }
-
-    function initTheme() {
-      const root = document.documentElement;
-      const stored = localStorage.getItem('ff-theme');
-      if (stored === 'dark' || stored === 'light') root.setAttribute('data-theme', stored);
-
-      document.querySelectorAll('[data-theme-toggle]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-          localStorage.setItem('ff-theme', next);
-        });
-      });
-    }
-
-    function initTopbarScroll() {
-      const bar = document.getElementById('topbar');
-      if (!bar) return;
-      const update = () => bar.classList.toggle('scrolled', window.scrollY > 8);
-      window.addEventListener('scroll', update, { passive: true });
-      update();
-    }
-
-    function initTicker() {
-      const names = [
-        'Yellow-rumped Warbler', 'Black-throated Blue Warbler', 'Scarlet Tanager', 'Cedar Waxwing',
-        'American Goldfinch', 'Northern Cardinal', 'Painted Bunting', 'Ruby-crowned Kinglet'
-      ];
-      const track = document.getElementById('bird-track');
-      if (!track) return;
-      const markup = names.map(n => `<span class="marquee-item">🐦 ${n}</span>`).join('');
-      track.innerHTML = markup + markup;
-    }
-
-    async function renderProducts() {
-      const grid = document.getElementById('home-featured');
-      try {
-        const res = await fetch('products.json');
-        const raw = await res.json();
-        state.products = raw.map(normalizeProduct);
-      } catch (_) {
-        state.products = [];
-      }
-
-      if (!grid) return;
-      const featured = [
-        ...state.products.filter(p => p.purchasable),
-        ...state.products.filter(p => !p.purchasable)
-      ].slice(0, 6);
-      grid.innerHTML = featured.map(productCard).join('');
-
-      const countEl = document.getElementById('live-count');
-      if (countEl) {
-        const live = state.products.filter(p => p.purchasable).length;
-        countEl.textContent = live > 0
-          ? `${live} live downloads now available`
-          : 'Catalog preview mode: checkout opens after payout setup is completed.';
-      }
-    }
-
-    initTheme();
-    initTopbarScroll();
-    initTicker();
-    renderProducts();
-  </script>
+  <script src="app.v8.js"></script>
 </body>
 </html>

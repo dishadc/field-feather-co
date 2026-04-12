@@ -24,6 +24,11 @@ Weekly cadence:
 - Thursday: publish + Pinterest pins
 - Friday: KPI review + backlog reprioritization
 
+Leadership cadence:
+- CEO reviews C-suite/agent-team/workstream status every few hours during active execution windows.
+- Each review checks progress, blockers, quality, and reallocation opportunities.
+- These are operational check-ins, not permission pauses.
+
 Initial SKU roadmap (first 30 days):
 - 20 state checklist listings
 - 5 warbler products

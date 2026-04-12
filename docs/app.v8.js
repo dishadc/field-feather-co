@@ -1,13 +1,8 @@
 const state = { products: [], filtered: [] };
 
-async function loadProducts() {
-  const res = await fetch('products.json');
-  const raw = await res.json();
-  state.products = raw.map(normalizeProduct);
-  state.filtered = [...state.products];
+function money(v) {
+  return `$${Number(v || 0).toFixed(2)}`;
 }
-
-function money(v) { return `$${Number(v || 0).toFixed(2)}`; }
 
 function seed(text) {
   return encodeURIComponent(String(text || 'bird-journal').toLowerCase().replace(/[^a-z0-9]+/g, '-'));
@@ -21,9 +16,9 @@ function inferType(p) {
 function inferCollection(p) {
   if (p.collection) return p.collection;
   const sku = p.sku || '';
-  if (sku.includes('STATE')) return 'Regional';
-  if (sku.includes('MIGRATION')) return 'Seasonal';
-  if (sku.includes('WARBLER')) return 'Species';
+  if (sku.includes('STATE')) return 'State Life Lists';
+  if (sku.includes('MIGRATION')) return 'Migration Trackers';
+  if (sku.includes('WARBLER')) return 'Warbler Journals';
   return 'Field Notes';
 }
 
@@ -38,8 +33,8 @@ function inferSpecies(p) {
 
 function inferRegion(p) {
   if (p.region) return p.region;
-  const m = (p.sku || '').match(/DIGI-STATE-([A-Z-]+)/);
-  if (m) return m[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const match = (p.sku || '').match(/DIGI-STATE-([A-Z-]+)/);
+  if (match) return match[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   return 'United States';
 }
 
@@ -51,7 +46,7 @@ function resolveImage(p) {
   if (p.image && /^https?:\/\//.test(p.image)) return p.image;
   const sku = (p.sku || '').toLowerCase();
   if (sku) return `assets/previews/${sku}.svg`;
-  return `https://picsum.photos/seed/${seed(p.sku || p.title || p.keyword || 'bird')}/400/300`;
+  return `https://picsum.photos/seed/${seed(p.sku || p.title || p.keyword || 'bird')}/800/600`;
 }
 
 function normalizeProduct(p) {
@@ -59,6 +54,7 @@ function normalizeProduct(p) {
   const hasCheckout = !!(p.checkout_url && p.checkout_url.startsWith('http'));
   const published = p.published === true || p.published === 'true';
   const purchasable = p.purchasable === true || p.purchasable === 'true' || (hasCheckout && published);
+
   return {
     ...p,
     published,
@@ -72,37 +68,72 @@ function normalizeProduct(p) {
   };
 }
 
-function productCard(p, i = 0, feature = false) {
-  const hasLink = !!p.purchasable;
-  const featureClass = feature ? 'feature-span' : '';
+async function loadProducts() {
+  const res = await fetch('products.json');
+  const raw = await res.json();
+  state.products = raw.map(normalizeProduct);
+  state.filtered = [...state.products];
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function badgeMarkup(p) {
+  if (!p.purchasable) return '<span class="badge neutral">Coming Soon</span>';
+  if (p.type === 'Digital Download') return '<span class="badge download">Digital Download</span>';
+  return '<span class="badge">Print Edition</span>';
+}
+
+function productCard(p, i = 0) {
   return `
-  <article class="card product-card ${featureClass} reveal delay-${i % 4}">
-    <figure>
-      <img class="product-thumb" src="${p.image}" alt="Preview of ${p.title}" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/field-feather-fallback/400/300';" />
-    </figure>
-    <div class="product-meta">
-      <div class="badges"><span class="badge">${p.type}</span>${p.sku.includes('WARBLER') ? '<span class="badge">Limited Edition</span>' : ''}${!hasLink ? '<span class="badge">Coming Soon</span>' : ''}</div>
-      <h3>${p.title}</h3>
-      <p class="price">${money(p.price)}</p>
-      <p class="meta-line"><small>${p.delivery}</small></p>
-      <div class="card-actions" style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.6rem;">
-        ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : '<button class="btn btn-primary" disabled aria-disabled="true" title="Pending payouts setup">Coming Soon</button>'}
-        <a class="btn btn-secondary" href="product.html?sku=${encodeURIComponent(p.sku)}">Details →</a>
+    <article class="card product-card reveal delay-${i % 4}">
+      <a class="card-hit" href="product.html?sku=${encodeURIComponent(p.sku)}" aria-label="View details for ${escapeHtml(p.title)}"></a>
+      <div class="product-media">
+        <img class="product-thumb" src="${p.image}" alt="Preview of ${escapeHtml(p.title)}" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/field-feather-fallback/800/600';" />
       </div>
-    </div>
-  </article>`;
+      <div class="product-meta">
+        <div class="product-meta-top">
+          ${badgeMarkup(p)}
+        </div>
+        <h3 class="product-title">${escapeHtml(p.title)}</h3>
+        <p class="product-meta-line">${escapeHtml(p.collection)} &middot; ${escapeHtml(p.delivery)}</p>
+        <div class="product-bottom">
+          <span class="price">${money(p.price)}</span>
+          <span class="card-link-text">Details →</span>
+        </div>
+      </div>
+    </article>`;
+}
+
+function setActiveThemeIcon(button, theme) {
+  if (!button) return;
+  button.innerHTML = theme === 'dark'
+    ? '<span class="sr-only">Switch to light mode</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2.4M12 19.6V22M4.93 4.93l1.7 1.7M17.37 17.37l1.7 1.7M2 12h2.4M19.6 12H22M4.93 19.07l1.7-1.7M17.37 6.63l1.7-1.7"></path></svg>'
+    : '<span class="sr-only">Switch to dark mode</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"></path></svg>';
 }
 
 function initTheme() {
   const root = document.documentElement;
-  const pref = localStorage.getItem('ff-theme');
-  if (pref === 'dark' || pref === 'light') root.setAttribute('data-theme', pref);
+  const saved = localStorage.getItem('ff-theme');
+  const preferred = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  root.setAttribute('data-theme', preferred);
+
   const toggles = document.querySelectorAll('[data-theme-toggle]');
-  toggles.forEach(btn => btn.addEventListener('click', () => {
-    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    localStorage.setItem('ff-theme', next);
-  }));
+  toggles.forEach(button => setActiveThemeIcon(button, preferred));
+  toggles.forEach(button => {
+    button.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('ff-theme', next);
+      toggles.forEach(btn => setActiveThemeIcon(btn, next));
+    });
+  });
 }
 
 function initTopbarScroll() {
@@ -113,29 +144,96 @@ function initTopbarScroll() {
   update();
 }
 
+function initMobileNav() {
+  const button = document.querySelector('[data-nav-toggle]');
+  const panel = document.querySelector('[data-mobile-panel]');
+  if (!button || !panel) return;
+
+  button.innerHTML = '<span class="sr-only">Toggle navigation</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>';
+
+  const setOpen = open => {
+    button.setAttribute('aria-expanded', String(open));
+    panel.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+  };
+
+  button.addEventListener('click', () => {
+    const open = button.getAttribute('aria-expanded') !== 'true';
+    setOpen(open);
+  });
+
+  panel.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', () => setOpen(false));
+  });
+}
+
 function initParallax() {
   const art = document.querySelector('[data-parallax]');
-  if (!art) return;
-  window.addEventListener('scroll', () => {
-    const y = Math.min(18, window.scrollY * 0.045);
-    art.style.setProperty('--parallax', `${y}px`);
-  }, { passive: true });
+  if (!art || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const update = () => {
+    const y = Math.min(26, window.scrollY * 0.03);
+    art.style.transform = `translateY(${y}px)`;
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}
+
+function initReveals() {
+  const items = document.querySelectorAll('.reveal');
+  if (!items.length) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    items.forEach(el => el.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  items.forEach(el => observer.observe(el));
+}
+
+function renderMarquee() {
+  const track = document.getElementById('bird-track');
+  if (!track) return;
+  const names = [
+    'Warbler field journals',
+    'State life lists',
+    'Migration observation logs',
+    'Quietly refined downloads',
+    'Made for generous note-taking',
+    'Seasonal paper rituals'
+  ];
+  const joined = names.map(item => `<span class="marquee-item">${item}</span>`).join('<span class="marquee-item" aria-hidden="true">•</span>');
+  track.innerHTML = `${joined}<span class="marquee-item" aria-hidden="true">•</span>${joined}`;
 }
 
 function renderHome() {
   const target = document.getElementById('home-featured');
-  if (!target) return;
-  const featured = [...state.products].sort((a,b) => (b.purchasable ? 1 : 0) - (a.purchasable ? 1 : 0)).slice(0,6);
-  target.innerHTML = featured.map((p, i) => productCard(p, i, i===0)).join('');
+  if (target) {
+    const featured = [...state.products]
+      .sort((a, b) => Number(b.purchasable) - Number(a.purchasable))
+      .slice(0, 6);
+    target.innerHTML = featured.map((p, i) => productCard(p, i)).join('');
+  }
 
   const countEl = document.getElementById('live-count');
   if (countEl) {
     const live = state.products.filter(p => p.purchasable).length;
-    countEl.textContent = live > 0 ? `${live} live downloads now available` : 'Catalog preview mode — checkout opens after payouts are enabled';
+    countEl.textContent = live > 0
+      ? `${live} field-ready pieces are available for immediate download today.`
+      : 'The collection is in preview while checkout finishes its final setup.';
   }
 }
 
-function uniq(arr) { return [...new Set(arr.filter(Boolean))].sort(); }
+function uniq(arr) {
+  return [...new Set(arr.filter(Boolean))].sort();
+}
 
 function renderShop() {
   const grid = document.getElementById('shop-grid');
@@ -147,8 +245,9 @@ function renderShop() {
   const q = document.getElementById('filter-q');
   if (!typeSel || !speciesSel || !regionSel || !q) return;
 
-  speciesSel.innerHTML = '<option value="">All species</option>' + uniq(state.products.map(p => p.species)).map(s => `<option>${s}</option>`).join('');
-  regionSel.innerHTML = '<option value="">All regions</option>' + uniq(state.products.map(p => p.region)).map(r => `<option>${r}</option>`).join('');
+  typeSel.innerHTML = '<option value="">All formats</option>' + uniq(state.products.map(p => p.type)).map(s => `<option>${escapeHtml(s)}</option>`).join('');
+  speciesSel.innerHTML = '<option value="">All species</option>' + uniq(state.products.map(p => p.species)).map(s => `<option>${escapeHtml(s)}</option>`).join('');
+  regionSel.innerHTML = '<option value="">All regions</option>' + uniq(state.products.map(p => p.region)).map(s => `<option>${escapeHtml(s)}</option>`).join('');
 
   function apply() {
     const needle = (q.value || '').toLowerCase().trim();
@@ -156,22 +255,29 @@ function renderShop() {
       if (typeSel.value && p.type !== typeSel.value) return false;
       if (speciesSel.value && p.species !== speciesSel.value) return false;
       if (regionSel.value && p.region !== regionSel.value) return false;
-      if (needle && !(String(p.title).toLowerCase().includes(needle) || String(p.sku).toLowerCase().includes(needle) || String(p.keyword || '').toLowerCase().includes(needle))) return false;
+      if (needle) {
+        const haystack = [p.title, p.sku, p.keyword, p.collection, p.region, p.species].join(' ').toLowerCase();
+        if (!haystack.includes(needle)) return false;
+      }
       return true;
     });
-    grid.innerHTML = state.filtered.map((p,i) => productCard(p,i)).join('');
+
+    grid.innerHTML = state.filtered.map((p, i) => productCard(p, i)).join('');
+    initReveals();
+
     const total = document.getElementById('shop-count');
-    if (total) total.textContent = `${state.filtered.length} products`;
+    if (total) total.textContent = `${state.filtered.length} pieces in the collection`;
+
     const note = document.getElementById('shop-live-note');
     if (note) {
       const liveVisible = state.filtered.filter(p => p.purchasable).length;
       note.textContent = liveVisible > 0
-        ? `${liveVisible} items currently purchasable`
-        : 'No items are currently checkout-enabled. Browse details and save favorites while checkout setup completes.';
+        ? `${liveVisible} are ready for checkout right now.`
+        : 'Browse the collection while checkout-enabled releases are being staged.';
     }
   }
 
-  [typeSel, speciesSel, regionSel, q].forEach(el => el && el.addEventListener('input', apply));
+  [typeSel, speciesSel, regionSel, q].forEach(el => el.addEventListener('input', apply));
   apply();
 }
 
@@ -179,79 +285,102 @@ function renderProductDetail() {
   const root = document.getElementById('product-detail');
   if (!root) return;
   const sku = new URLSearchParams(location.search).get('sku');
-  const p = state.products.find(x => x.sku === sku) || state.products[0];
+  const p = state.products.find(item => item.sku === sku) || state.products[0];
   if (!p) return;
 
-  const hasLink = !!p.purchasable;
   root.innerHTML = `
-    <div class="card detail-image">
-      <img src="${p.image}" alt="Preview image for ${p.title}" onerror="this.onerror=null; this.src='https://picsum.photos/seed/field-feather-detail-fallback/800/600';" />
+    <div class="card detail-image reveal">
+      <img src="${p.image}" alt="Preview image for ${escapeHtml(p.title)}" onerror="this.onerror=null;this.src='https://picsum.photos/seed/field-feather-detail-fallback/1200/900';" />
     </div>
-    <div class="card" style="padding:1rem 1.1rem;">
-      <p class="eyebrow">${p.collection}</p>
-      <h1 class="section-title" style="font-size:2.2rem; margin:.2rem 0 0.7rem;">${p.title}</h1>
-      <p class="price" style="font-size:1.28rem; margin:.2rem 0 .8rem;">${money(p.price)}</p>
-      <p class="meta-line">${p.delivery}</p>
-      ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : '<button class="btn btn-primary" disabled aria-disabled="true" title="Pending payouts setup">Coming Soon</button>'}
-      <div class="tabs" role="tablist" aria-label="Product info tabs">
-        <button class="tab-btn" role="tab" aria-selected="true" data-tab="desc">Description</button>
-        <button class="tab-btn" role="tab" aria-selected="false" data-tab="specs">Specs</button>
-        <button class="tab-btn" role="tab" aria-selected="false" data-tab="reviews">Reviews</button>
+    <article class="card detail-card reveal delay-1">
+      <p class="eyebrow">${escapeHtml(p.collection)}</p>
+      <h1 class="section-title">${escapeHtml(p.title)}</h1>
+      <p class="editorial-copy">A composed field companion for birders who want useful structure, generous writing space, and a product that feels as considered as the observations it holds.</p>
+      <div class="detail-price-row">
+        <span class="price">${money(p.price)}</span>
+        ${badgeMarkup(p)}
+      </div>
+      <p class="microcopy">${escapeHtml(p.delivery)} &middot; Region focus: ${escapeHtml(p.region)} &middot; Species focus: ${escapeHtml(p.species)}</p>
+      <div class="detail-actions">
+        ${p.purchasable
+          ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Purchase</a>`
+          : '<span class="badge neutral">Coming Soon</span>'}
+        <a class="btn btn-quiet" href="downloads.html">View more downloads</a>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Product information tabs">
+        <button class="tab-btn" role="tab" aria-selected="true" data-tab="desc">Overview</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="specs">Details</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="reviews">Notes</button>
       </div>
       <section class="tab-panel active" id="tab-desc" role="tabpanel">
-        <p>Every bird has a story. This download helps you record yours with clear, printable layouts and clean field-note structure.</p>
+        <p>Designed with clean hierarchy and quiet margins so sightings, seasonal observations, and route notes feel orderly from the first page to the last.</p>
       </section>
       <section class="tab-panel" id="tab-specs" role="tabpanel">
         <ul>
-          <li>Format: PDF / printable worksheet source</li>
-          <li>Delivery: Instant digital download</li>
-          <li>Use: Personal field journaling and life-list tracking</li>
-          <li>Region focus: ${p.region}</li>
+          <li>Collection: ${escapeHtml(p.collection)}</li>
+          <li>Format: ${escapeHtml(p.type)}</li>
+          <li>Delivery: ${escapeHtml(p.delivery)}</li>
+          <li>Best for: ${escapeHtml(p.region)} birding sessions and personal record-keeping</li>
         </ul>
       </section>
       <section class="tab-panel" id="tab-reviews" role="tabpanel">
-        <p>New release collection — customer review module activates as orders complete.</p>
+        <p>Customer notes will appear here as the collection grows. For now, each release is written to feel thoughtful, useful, and easy to revisit season after season.</p>
       </section>
-    </div>`;
+    </article>`;
 
   const tabs = root.querySelectorAll('.tab-btn');
-  tabs.forEach(btn => btn.addEventListener('click', () => {
-    tabs.forEach(b => b.setAttribute('aria-selected', 'false'));
-    btn.setAttribute('aria-selected', 'true');
-    root.querySelectorAll('.tab-panel').forEach(pn => pn.classList.remove('active'));
-    root.querySelector('#tab-' + btn.dataset.tab).classList.add('active');
-  }));
+  tabs.forEach(button => {
+    button.addEventListener('click', () => {
+      tabs.forEach(tab => tab.setAttribute('aria-selected', 'false'));
+      button.setAttribute('aria-selected', 'true');
+      root.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+      root.querySelector(`#tab-${button.dataset.tab}`).classList.add('active');
+    });
+  });
 
-  const rel = document.getElementById('related-grid');
-  if (rel) {
-    const related = state.products.filter(x => x.collection === p.collection && x.sku !== p.sku).slice(0,4);
-    rel.innerHTML = related.map((x,i) => productCard(x,i)).join('');
+  const related = document.getElementById('related-grid');
+  if (related) {
+    const items = state.products.filter(item => item.collection === p.collection && item.sku !== p.sku).slice(0, 4);
+    related.innerHTML = items.map((item, i) => productCard(item, i)).join('');
   }
 }
 
 function renderDownloads() {
   const grid = document.getElementById('downloads-grid');
   if (!grid) return;
-  const all = state.products.filter(p => p.type === 'Digital Download');
-  grid.innerHTML = all.map((p,i) => productCard(p,i, i % 7 === 0)).join('');
+  const items = state.products.filter(p => p.type === 'Digital Download');
+  grid.innerHTML = items.map((p, i) => productCard(p, i)).join('');
+
+  const total = document.getElementById('downloads-count');
+  if (total) total.textContent = `${items.length} instant-download pieces currently shown.`;
 }
 
 (async function boot() {
   initTheme();
   initTopbarScroll();
+  initMobileNav();
   initParallax();
+  renderMarquee();
+
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
 
   try {
     await loadProducts();
-  } catch (e) {
-    const targets = document.querySelectorAll('[data-catalog-error]');
-    targets.forEach(t => t.textContent = 'Catalog is updating. Please refresh in a moment.');
+  } catch (error) {
+    document.querySelectorAll('[data-catalog-error]').forEach(node => {
+      node.textContent = 'The catalog is being refreshed. Please try again in a moment.';
+    });
     return;
   }
 
   [renderHome, renderShop, renderProductDetail, renderDownloads].forEach(fn => {
-    try { fn(); } catch (e) { console.error(e); }
+    try {
+      fn();
+    } catch (error) {
+      console.error(error);
+    }
   });
+
+  initReveals();
 })();

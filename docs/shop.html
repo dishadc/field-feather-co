@@ -4,55 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shop | Field & Feather Co.</title>
-  <meta name="description" content="Shop state life lists, migration trackers, and warbler journals from Field & Feather Co." />
+  <meta name="description" content="Shop premium birding stationery, state life lists, migration trackers, and digital field-note tools from Field & Feather Co." />
   <meta property="og:title" content="Shop · Field & Feather Co." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="styles.v8.css" />
 </head>
 <body>
-  
-<header class="topbar">
-  <div class="nav-wrap">
-    <a class="brand" href="index.html">Field & Feather Co.</a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="shop.html">Shop</a>
-      <a href="downloads.html">Digital Downloads</a>
-      <a href="about.html">About</a>
-      <button class="btn btn-secondary" data-theme-toggle aria-label="Toggle dark mode">Dark Mode</button>
-    </nav>
-  </div>
-</header>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Field and Feather home">Field <span class="amp">&amp;</span> Feather</a>
+      <nav class="nav-links desktop-nav" aria-label="Primary navigation">
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="blog/index.html">Journal</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme"></button>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation"></button>
+      </div>
+    </div>
+    <div class="container mobile-panel" data-mobile-panel>
+      <nav class="nav-links" aria-label="Mobile navigation">
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="blog/index.html">Journal</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
 
-  <main class="container">
-    <section style="padding:1.5rem 0 .6rem;">
-      <p class="eyebrow">Shop</p>
-      <h1 class="section-title" style="font-size:2.5rem; margin:.25rem 0 .5rem;">Refined digital field tools</h1>
-      <p style="color:var(--muted)">Filter by species, region, and collection to quickly find your next field companion.</p>
+  <main class="site-shell">
+    <section class="container page-hero reveal">
+      <p class="eyebrow">The collection</p>
+      <h1 class="section-title">A curated storefront for birders who love paper, order, and quiet beauty.</h1>
+      <p class="lede">Filter by format, species, and region to find the piece that fits your next outing or your long-term record of the year.</p>
     </section>
-    <section class="filter-layout">
-      <aside class="filters card" aria-label="Product filters">
-        <h2 style="margin-top:.1rem;">Filters</h2>
+
+    <section class="container section filter-layout">
+      <aside class="editorial-panel filters reveal" aria-label="Product filters">
+        <p class="section-kicker">Refine</p>
+        <h2>Filter the shop</h2>
+        <p class="panel-copy">Use a simple set of editorial filters to narrow the catalog without losing the calm of the browse.</p>
         <label for="filter-q">Search</label>
-        <input id="filter-q" class="input" placeholder="warbler, texas, migration" />
-        <label for="filter-type">Product type</label>
-        <select id="filter-type" class="select"><option value="">All types</option><option>Digital Download</option></select>
+        <input id="filter-q" class="input" placeholder="Warbler, Texas, migration" />
+        <label for="filter-type">Format</label>
+        <select id="filter-type" class="select"></select>
         <label for="filter-species">Species</label>
         <select id="filter-species" class="select"></select>
         <label for="filter-region">Region</label>
         <select id="filter-region" class="select"></select>
       </aside>
-      <div>
-        <p id="shop-count" style="color:var(--muted); margin:.2rem 0 .35rem;">Loading products…</p>
-        <p id="shop-live-note" style="color:var(--muted); margin:.1rem 0 .9rem; font-size:.95rem;">Checking checkout availability…</p>
-        <p data-catalog-error style="color:var(--muted)"></p>
+
+      <div class="reveal delay-1">
+        <div class="catalog-meta">
+          <p id="shop-count">Loading the collection.</p>
+          <p id="shop-live-note">Checking live availability.</p>
+        </div>
+        <p data-catalog-error class="microcopy"></p>
         <div id="shop-grid" class="grid"></div>
       </div>
     </section>
   </main>
-  
-<footer class="footer container">
-  <p>© <span data-year></span> Field & Feather Co. · For those who hear the rustle and know exactly who's there.</p>
-</footer>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="wordmark">Field <span class="amp">&amp;</span> Feather</div>
+      <div class="footer-grid">
+        <div>
+          <h4>Collection</h4>
+          <nav class="footer-nav" aria-label="Footer collection links">
+            <a href="shop.html">Shop all pieces</a>
+            <a href="downloads.html">Digital downloads</a>
+            <a href="product.html">Product details</a>
+          </nav>
+        </div>
+        <div>
+          <h4>House</h4>
+          <nav class="footer-nav" aria-label="Footer company links">
+            <a href="about.html">About the brand</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Field notes by email</h4>
+          <p>Occasional releases, seasonal edits, and quiet announcements from the studio.</p>
+          <form class="newsletter" action="mailto:wing_bustle30@icloud.com" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Your email address" required />
+            <button class="btn btn-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span data-year></span> Field &amp; Feather Co. All rights reserved.</div>
+    </div>
+  </footer>
 
   <script src="app.v8.js"></script>
 </body>

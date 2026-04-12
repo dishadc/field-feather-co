@@ -4,51 +4,105 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Field & Feather Co.</title>
-  <meta name="description" content="About Field & Feather Co. and our conservation-minded birding mission." />
+  <meta name="description" content="Learn about Field & Feather Co. and the editorial birding-stationery vision behind the storefront." />
   <meta property="og:title" content="About · Field & Feather Co." />
   <meta property="og:type" content="article" />
   <link rel="stylesheet" href="styles.v8.css" />
 </head>
 <body>
-  
-<header class="topbar">
-  <div class="nav-wrap">
-    <a class="brand" href="index.html">Field & Feather Co.</a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="shop.html">Shop</a>
-      <a href="downloads.html">Digital Downloads</a>
-      <a href="about.html">About</a>
-      <button class="btn btn-secondary" data-theme-toggle aria-label="Toggle dark mode">Dark Mode</button>
-    </nav>
-  </div>
-</header>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Field and Feather home">Field <span class="amp">&amp;</span> Feather</a>
+      <nav class="nav-links desktop-nav" aria-label="Primary navigation">
+        <a href="shop.html">Shop</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="blog/index.html">Journal</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme"></button>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation"></button>
+      </div>
+    </div>
+    <div class="container mobile-panel" data-mobile-panel>
+      <nav class="nav-links" aria-label="Mobile navigation">
+        <a href="shop.html">Shop</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="blog/index.html">Journal</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+    </div>
+  </header>
 
-  <main class="container" style="padding-top:1.5rem;">
-    <section class="story">
-      <article class="card panel">
-        <p class="eyebrow">About</p>
-        <h1 class="section-title" style="font-size:2.4rem; margin:.2rem 0 .7rem;">For those who hear the rustle.</h1>
-        <p>Field & Feather Co. began with one simple belief: the best birding tools should feel as considered as a trusted field guide. Our products are designed for serious observation, poetic notes, and repeatable data you can actually use.</p>
+  <main class="site-shell">
+    <section class="container page-hero reveal">
+      <p class="eyebrow">About the house</p>
+      <h1 class="section-title">Field &amp; Feather is built for birders who want their tools to feel as thoughtful as their observations.</h1>
+      <p class="lede">We design digital stationery and naturalist paper goods with the manners of an editorial studio: generous margins, restrained color, and a calm structure that lets the bird take center stage.</p>
+    </section>
+
+    <section class="container section story-grid">
+      <article class="editorial-panel reveal">
+        <p class="section-kicker">Our point of view</p>
+        <h2 class="panel-title">Useful enough for records, lovely enough to keep.</h2>
+        <p class="panel-copy">The best field note is both practical and personal. Our collections are arranged to help you track migration, build a life list, and preserve the quiet details that would otherwise vanish after the walk home.</p>
+        <div class="split-rule"></div>
+        <p class="panel-copy">Everything begins with structure: clean hierarchy, soft hairlines, and space that respects the pace of close looking.</p>
       </article>
-      <article class="card panel" aria-label="Founder photo placeholder">
-        <div style="height:260px; border-radius:12px; background: linear-gradient(135deg, color-mix(in srgb, var(--robin) 45%, transparent), color-mix(in srgb, var(--terracotta) 30%, transparent)); display:flex; align-items:center; justify-content:center; color:var(--forest); font-weight:700;">Founder Photo Placeholder</div>
+      <article class="editorial-panel portrait-panel reveal delay-1" aria-label="Brand portrait illustration">
+        <div class="portrait-copy">
+          <p class="small-cap">Studio note</p>
+          <h2>Made for the long season.</h2>
+        </div>
       </article>
     </section>
 
-    <section class="card" style="margin-top:1rem; padding:1rem 1.2rem;">
-      <h2 class="section-title" style="font-size:1.8rem; margin:.1rem 0 .5rem;">Conservation mission</h2>
-      <p>We support birders in creating richer personal records and stronger local awareness. As the catalog scales, we will allocate a share of profits to habitat and migration-corridor conservation partners.</p>
-    </section>
-
-    <section class="card" style="margin-top:1rem; padding:1rem 1.2rem;">
-      <h2 class="section-title" style="font-size:1.8rem; margin:.1rem 0 .5rem;">Why We Bird</h2>
-      <p>Because attention is a form of care. A field note is not just data; it is evidence that you were fully present when the world rustled. Our mission is to make that practice beautifully repeatable.</p>
+    <section class="container section editorial-columns">
+      <article class="editorial-panel reveal">
+        <p class="section-kicker">Conservation</p>
+        <h2 class="panel-title">Attention is a form of care.</h2>
+        <p class="panel-copy">We believe the habit of recording what you see deepens local awareness. As the storefront grows, Field &amp; Feather will direct a portion of proceeds toward habitat and migration-corridor work that supports the birds inspiring the collection.</p>
+      </article>
+      <article class="editorial-panel reveal delay-1">
+        <p class="section-kicker">Design language</p>
+        <h2 class="panel-title">Editorial calm over clutter.</h2>
+        <p class="panel-copy">Our visual system favors cream paper tones, terracotta restraint, quiet typography, and the sort of whitespace that makes writing by hand feel ceremonial rather than rushed.</p>
+      </article>
     </section>
   </main>
-  
-<footer class="footer container">
-  <p>© <span data-year></span> Field & Feather Co. · For those who hear the rustle and know exactly who's there.</p>
-</footer>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="wordmark">Field <span class="amp">&amp;</span> Feather</div>
+      <div class="footer-grid">
+        <div>
+          <h4>Collection</h4>
+          <nav class="footer-nav" aria-label="Footer collection links">
+            <a href="shop.html">Shop all pieces</a>
+            <a href="downloads.html">Digital downloads</a>
+            <a href="product.html">Product details</a>
+          </nav>
+        </div>
+        <div>
+          <h4>House</h4>
+          <nav class="footer-nav" aria-label="Footer company links">
+            <a href="about.html">About the brand</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Field notes by email</h4>
+          <p>Occasional releases, seasonal edits, and quiet announcements from the studio.</p>
+          <form class="newsletter" action="mailto:wing_bustle30@icloud.com" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Your email address" required />
+            <button class="btn btn-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span data-year></span> Field &amp; Feather Co. All rights reserved.</div>
+    </div>
+  </footer>
 
   <script src="app.v8.js"></script>
 </body>

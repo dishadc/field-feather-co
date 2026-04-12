@@ -1,29 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Texas Birding Life List Checklist Printable, Birdwatch Log preview">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="Premium mockup preview for Texas Birding Life List Checklist Printable, Birdwatch Log">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f5f0e8"/>
-      <stop offset="100%" stop-color="#e8dcc8"/>
+      <stop offset="0%" stop-color="#f6f1e8"/>
+      <stop offset="100%" stop-color="#ded1be"/>
     </linearGradient>
-    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fffdf8"/>
-      <stop offset="100%" stop-color="#f7efe2"/>
+    <radialGradient id="glow" cx="35%" cy="26%" r="70%">
+      <stop offset="0%" stop-color="#fffdf8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fffdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#efe4d3" stop-opacity="0.9"/>
     </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#8f7d67" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#8f7d67" flood-opacity="0.16"/>
+    </filter>
+    <filter id="innerGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ffffff" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="heroClip">
+      <rect x="0" y="0" width="520" height="720" rx="22"/>
+    </clipPath>
+    <pattern id="pinstripe" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+      <rect width="14" height="14" fill="transparent"/>
+      <rect x="0" y="0" width="2" height="14" fill="#ffffff" opacity="0.16"/>
+    </pattern>
   </defs>
-  <rect width="1200" height="900" fill="url(#bg)"/>
-  <rect x="90" y="70" width="1020" height="760" rx="28" fill="url(#panel)" stroke="#d2c2a8" stroke-width="3"/>
-  <rect x="90" y="70" width="16" height="760" fill="#c4714a" rx="8"/>
-  <g transform="translate(770,170)">
-    <ellipse cx="150" cy="260" rx="170" ry="130" fill="#7ec8c8" opacity="0.30"/>
-    <path d="M40 300c45-82 102-130 173-144 67-14 130 6 192 66" fill="none" stroke="#2d4a2d" stroke-width="15" stroke-linecap="round"/>
-    <path d="M116 201c46-33 96-31 150 6-39 12-72 38-99 74-9-29-26-55-51-80z" fill="#7ec8c8" stroke="#2d4a2d" stroke-width="5"/>
-    <circle cx="252" cy="199" r="7" fill="#1a2332"/>
-    <path d="M278 212l28 10-30 8z" fill="#c4714a"/>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1600" height="1200" fill="url(#pinstripe)" opacity="0.22"/>
+
+  <g opacity="0.18" fill="none" stroke="#7b8763" stroke-width="2.2" stroke-linecap="round">
+    <path d="M121 1031c48-63 78-137 89-220 10-70 8-137-6-201"/>
+    <path d="M155 1002c44-54 76-122 91-192 8-36 12-79 10-128"/>
+    <path d="M1413 176c-48 63-78 137-89 220-10 70-8 137 6 201"/>
+    <path d="M1379 205c-44 54-76 122-91 192-8 36-12 79-10 128"/>
+    <path d="M203 927c25-19 49-42 69-71 24-35 42-74 53-118" opacity="0.75"/>
+    <path d="M1311 279c-25 19-49 42-69 71-24 35-42 74-53 118" opacity="0.75"/>
   </g>
-  <text x="140" y="176" font-family="'Playfair Display', Georgia, serif" font-size="58" fill="#2d4a2d">Field &amp; Feather Co.</text>
-  <text x="140" y="250" font-family="'DM Sans', Arial, sans-serif" font-size="34" fill="#1a2332" font-weight="700">Digital Download · PDF</text>
-  <text x="140" y="300" font-family="'DM Sans', Arial, sans-serif" font-size="32" fill="#c4714a" font-weight="700">State Checklist</text>
-  <text x="140" y="390" font-family="'Playfair Display', Georgia, serif" font-size="42" fill="#2d4a2d">Texas Birding Life List Checklist Printable, Birdwat</text>
-  <text x="140" y="444" font-family="'Playfair Display', Georgia, serif" font-size="42" fill="#2d4a2d">ch Log</text>
-  <text x="140" y="760" font-family="'DM Sans', Arial, sans-serif" font-size="38" fill="#1a2332" font-weight="700">$5.99</text>
-  <text x="245" y="760" font-family="'DM Sans', Arial, sans-serif" font-size="28" fill="#5e635c">Instant digital delivery</text>
+
+  <ellipse cx="1135" cy="846" rx="344" ry="118" fill="#93816b" opacity="0.15"/>
+  <ellipse cx="1080" cy="895" rx="262" ry="72" fill="#93816b" opacity="0.1"/>
+
+  <g>
+    <text x="120" y="112" font-family="Arial, sans-serif" font-size="20" letter-spacing="5" fill="#476c64" font-weight="700">FIELD &amp; FEATHER CO.</text>
+    <text x="120" y="150" font-family="Arial, sans-serif" font-size="22" fill="#786d5f">Premium printable stationery mockup</text>
+
+    <rect x="120" y="190" width="232" height="40" rx="20" fill="#e4eee8"/>
+    <text x="145" y="216" font-family="Arial, sans-serif" font-size="18" fill="#476c64" font-weight="700">CENTRAL FLYWAY</text>
+
+    <text x="120" y="256" font-family="Georgia, serif" font-size="52" fill="#243130" font-weight="700">Texas Birding Life</text><text x="120" y="326" font-family="Georgia, serif" font-size="52" fill="#243130" font-weight="700">List Checklist</text><text x="120" y="396" font-family="Georgia, serif" font-size="52" fill="#243130" font-weight="700">Printable • Birdwatch Log</text>
+
+    <text x="120" y="504" font-family="Arial, sans-serif" font-size="24" fill="#645b50">Hill country sage + warm stone</text>
+
+    <g transform="translate(120 592)">
+      <rect x="0" y="0" width="500" height="212" rx="26" fill="#fffaf3" opacity="0.76"/>
+      <rect x="32" y="34" width="10" height="142" rx="5" fill="#b86d4b" opacity="0.9"/>
+      <text x="64" y="72" font-family="Georgia, serif" font-size="30" fill="#243130" font-weight="700">Refined card presentation</text>
+      <text x="64" y="114" font-family="Arial, sans-serif" font-size="22" fill="#5f5c55">Layered paper, gallery lighting, archival palette.</text>
+      <text x="64" y="152" font-family="Arial, sans-serif" font-size="22" fill="#5f5c55">Built from the original sheet artwork for continuity.</text>
+      <text x="64" y="190" font-family="Arial, sans-serif" font-size="20" fill="#b86d4b" font-weight="700">Digital download • SVG/PDF preview</text>
+    </g>
+
+    <g transform="translate(120 978)">
+      <text x="0" y="0" font-family="Georgia, serif" font-size="46" fill="#243130" font-weight="700">$5.99</text>
+      <text x="138" y="0" font-family="Arial, sans-serif" font-size="23" fill="#6b655d">instant delivery • polished preview art</text>
+    </g>
+  </g>
+
+  <g filter="url(#softShadow)" transform="translate(888 230) rotate(-7)">
+    <rect x="80" y="58" width="510" height="715" rx="24" fill="#f7edde" opacity="0.9"/>
+    <rect x="36" y="94" width="510" height="715" rx="24" fill="#f2e7d6" opacity="0.9"/>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(920 168) rotate(-7)">
+    <rect x="0" y="0" width="520" height="720" rx="26" fill="#fffaf2"/>
+    <rect x="18" y="18" width="484" height="684" rx="22" fill="url(#cardEdge)" opacity="0.46"/>
+    <g clip-path="url(#heroClip)">
+      <image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjkwMCIgdmlld0JveD0iMCAwIDEyMDAgOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlRleGFzIEJpcmRpbmcgTGlmZSBMaXN0IENoZWNrbGlzdCBQcmludGFibGUsIEJpcmR3YXRjaCBMb2cgcHJldmlldyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmNWYwZTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZThkY2M4Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJwYW5lbCIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZGY4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y3ZWZlMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iOTAwIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxyZWN0IHg9IjkwIiB5PSI3MCIgd2lkdGg9IjEwMjAiIGhlaWdodD0iNzYwIiByeD0iMjgiIGZpbGw9InVybCgjcGFuZWwpIiBzdHJva2U9IiNkMmMyYTgiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxyZWN0IHg9IjkwIiB5PSI3MCIgd2lkdGg9IjE2IiBoZWlnaHQ9Ijc2MCIgZmlsbD0iI2M0NzE0YSIgcng9IjgiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3NzAsMTcwKSI+CiAgICA8ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMjYwIiByeD0iMTcwIiByeT0iMTMwIiBmaWxsPSIjN2VjOGM4IiBvcGFjaXR5PSIwLjMwIi8+CiAgICA8cGF0aCBkPSJNNDAgMzAwYzQ1LTgyIDEwMi0xMzAgMTczLTE0NCA2Ny0xNCAxMzAgNiAxOTIgNjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJkNGEyZCIgc3Ryb2tlLXdpZHRoPSIxNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNMTE2IDIwMWM0Ni0zMyA5Ni0zMSAxNTAgNi0zOSAxMi03MiAzOC05OSA3NC05LTI5LTI2LTU1LTUxLTgweiIgZmlsbD0iIzdlYzhjOCIgc3Ryb2tlPSIjMmQ0YTJkIiBzdHJva2Utd2lkdGg9IjUiLz4KICAgIDxjaXJjbGUgY3g9IjI1MiIgY3k9IjE5OSIgcj0iNyIgZmlsbD0iIzFhMjMzMiIvPgogICAgPHBhdGggZD0iTTI3OCAyMTJsMjggMTAtMzAgOHoiIGZpbGw9IiNjNDcxNGEiLz4KICA8L2c+CiAgPHRleHQgeD0iMTQwIiB5PSIxNzYiIGZvbnQtZmFtaWx5PSInUGxheWZhaXIgRGlzcGxheScsIEdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjU4IiBmaWxsPSIjMmQ0YTJkIj5GaWVsZCAmYW1wOyBGZWF0aGVyIENvLjwvdGV4dD4KICA8dGV4dCB4PSIxNDAiIHk9IjI1MCIgZm9udC1mYW1pbHk9IidETSBTYW5zJywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzQiIGZpbGw9IiMxYTIzMzIiIGZvbnQtd2VpZ2h0PSI3MDAiPkRpZ2l0YWwgRG93bmxvYWQgwrcgUERGPC90ZXh0PgogIDx0ZXh0IHg9IjE0MCIgeT0iMzAwIiBmb250LWZhbWlseT0iJ0RNIFNhbnMnLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMiIgZmlsbD0iI2M0NzE0YSIgZm9udC13ZWlnaHQ9IjcwMCI+U3RhdGUgQ2hlY2tsaXN0PC90ZXh0PgogIDx0ZXh0IHg9IjE0MCIgeT0iMzkwIiBmb250LWZhbWlseT0iJ1BsYXlmYWlyIERpc3BsYXknLCBHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSI0MiIgZmlsbD0iIzJkNGEyZCI+VGV4YXMgQmlyZGluZyBMaWZlIExpc3QgQ2hlY2tsaXN0IFByaW50YWJsZSwgQmlyZHdhdDwvdGV4dD4KICA8dGV4dCB4PSIxNDAiIHk9IjQ0NCIgZm9udC1mYW1pbHk9IidQbGF5ZmFpciBEaXNwbGF5JywgR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iNDIiIGZpbGw9IiMyZDRhMmQiPmNoIExvZzwvdGV4dD4KICA8dGV4dCB4PSIxNDAiIHk9Ijc2MCIgZm9udC1mYW1pbHk9IidETSBTYW5zJywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzgiIGZpbGw9IiMxYTIzMzIiIGZvbnQtd2VpZ2h0PSI3MDAiPiQ1Ljk5PC90ZXh0PgogIDx0ZXh0IHg9IjI0NSIgeT0iNzYwIiBmb250LWZhbWlseT0iJ0RNIFNhbnMnLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZmlsbD0iIzVlNjM1YyI+SW5zdGFudCBkaWdpdGFsIGRlbGl2ZXJ5PC90ZXh0Pgo8L3N2Zz4=" x="0" y="0" width="520" height="720" preserveAspectRatio="xMidYMid slice"/>
+      <rect x="0" y="0" width="520" height="720" fill="#fff9f2" opacity="0.06"/>
+    </g>
+    <rect x="0.5" y="0.5" width="519" height="719" rx="26" fill="none" stroke="#dccfbd"/>
+  </g>
+
+  <g filter="url(#innerGlow)" transform="translate(820 760)">
+    <rect x="0" y="0" width="238" height="164" rx="22" fill="#fff8ef" opacity="0.92"/>
+    <text x="28" y="46" font-family="Arial, sans-serif" font-size="18" letter-spacing="3" fill="#476c64">CURATED DETAILS</text>
+    <text x="28" y="84" font-family="Georgia, serif" font-size="26" fill="#243130" font-weight="700">Editorial crop</text>
+    <text x="28" y="116" font-family="Arial, sans-serif" font-size="18" fill="#60574f">soft depth</text>
+    <text x="28" y="142" font-family="Arial, sans-serif" font-size="18" fill="#60574f">premium paper stack</text>
+  </g>
+
+  <circle cx="1324" cy="202" r="56" fill="#fff8ee" opacity="0.68"/>
+  <circle cx="1324" cy="202" r="18" fill="#b86d4b" opacity="0.45"/>
 </svg>
