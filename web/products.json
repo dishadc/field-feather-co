@@ -178,5 +178,23 @@
     "channel": "etsy",
     "checkout_url": "",
     "keyword": "spring migration tracker printable"
+  },
+  {
+    "sku": "DIGI-MIGRATION-FIRST-SEEN-010",
+    "title": "First Seen Migration Log Printable, Bird Arrival Tracker PDF",
+    "price": 4.99,
+    "status": "draft",
+    "channel": "etsy",
+    "checkout_url": "",
+    "keyword": "first seen migration log printable"
+  },
+  {
+    "sku": "DIGI-WARBLER-PEAK-WEEK-011",
+    "title": "Warbler Peak Week Planner Printable, Daily Migration Notes PDF",
+    "price": 5.99,
+    "status": "draft",
+    "channel": "etsy",
+    "checkout_url": "",
+    "keyword": "warbler peak week planner printable"
   }
 ]
