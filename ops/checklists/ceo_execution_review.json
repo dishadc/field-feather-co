@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-12T20:46:53.809900+00:00",
+  "generated_at_utc": "2026-04-12T20:51:39.962084+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
@@ -36,7 +36,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-12T20:46:51.535308+00:00",
+      "generated_at_utc": "2026-04-12T20:51:26.139627+00:00",
       "status": "PASS",
       "results": [
         {
@@ -113,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-12T20:46:21.109Z",
+      "generated_at_utc": "2026-04-12T20:51:33.308Z",
       "status": "PASS",
       "results": [
         {
@@ -153,7 +153,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-12T20:46:16.226858+00:00",
+      "generated_at_utc": "2026-04-12T20:51:28.830567+00:00",
       "status": "PASS",
       "article_results": [
         {
