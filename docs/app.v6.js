@@ -56,8 +56,13 @@ function resolveImage(p) {
 
 function normalizeProduct(p) {
   const type = inferType(p);
+  const hasCheckout = !!(p.checkout_url && p.checkout_url.startsWith('http'));
+  const published = p.published === true || p.published === 'true';
+  const purchasable = p.purchasable === true || p.purchasable === 'true' || (hasCheckout && published);
   return {
     ...p,
+    published,
+    purchasable,
     type,
     collection: inferCollection(p),
     species: inferSpecies(p),
@@ -68,7 +73,7 @@ function normalizeProduct(p) {
 }
 
 function productCard(p, i = 0, feature = false) {
-  const hasLink = p.checkout_url && p.checkout_url.startsWith('http');
+  const hasLink = !!p.purchasable;
   const featureClass = feature ? 'feature-span' : '';
   return `
   <article class="card product-card ${featureClass} reveal delay-${i % 4}">
@@ -76,12 +81,12 @@ function productCard(p, i = 0, feature = false) {
       <img class="product-thumb" src="${p.image}" alt="Preview of ${p.title}" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/field-feather-fallback/400/300';" />
     </figure>
     <div class="product-meta">
-      <div class="badges"><span class="badge">${p.type}</span>${p.sku.includes('WARBLER') ? '<span class="badge">Limited Edition</span>' : ''}</div>
+      <div class="badges"><span class="badge">${p.type}</span>${p.sku.includes('WARBLER') ? '<span class="badge">Limited Edition</span>' : ''}${!hasLink ? '<span class="badge">Coming Soon</span>' : ''}</div>
       <h3>${p.title}</h3>
       <p class="price">${money(p.price)}</p>
       <p class="meta-line"><small>${p.delivery}</small></p>
       <div class="card-actions" style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.6rem;">
-        ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : ''}
+        ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : '<button class="btn btn-primary" disabled aria-disabled="true" title="Pending payouts setup">Coming Soon</button>'}
         <a class="btn btn-secondary" href="product.html?sku=${encodeURIComponent(p.sku)}">Details →</a>
       </div>
     </div>
@@ -120,12 +125,12 @@ function initParallax() {
 function renderHome() {
   const target = document.getElementById('home-featured');
   if (!target) return;
-  const featured = [...state.products].sort((a,b) => (b.checkout_url ? 1 : 0) - (a.checkout_url ? 1 : 0)).slice(0,6);
+  const featured = [...state.products].sort((a,b) => (b.purchasable ? 1 : 0) - (a.purchasable ? 1 : 0)).slice(0,6);
   target.innerHTML = featured.map((p, i) => productCard(p, i, i===0)).join('');
 
   const countEl = document.getElementById('live-count');
   if (countEl) {
-    const live = state.products.filter(p => p.checkout_url && p.checkout_url.startsWith('http')).length;
+    const live = state.products.filter(p => p.purchasable).length;
     countEl.textContent = `${live} live downloads now available`;
   }
 }
@@ -170,7 +175,7 @@ function renderProductDetail() {
   const p = state.products.find(x => x.sku === sku) || state.products[0];
   if (!p) return;
 
-  const hasLink = p.checkout_url && p.checkout_url.startsWith('http');
+  const hasLink = !!p.purchasable;
   root.innerHTML = `
     <div class="card detail-image">
       <img src="${p.image}" alt="Preview image for ${p.title}" onerror="this.onerror=null; this.src='https://picsum.photos/seed/field-feather-detail-fallback/800/600';" />
@@ -180,7 +185,7 @@ function renderProductDetail() {
       <h1 class="section-title" style="font-size:2.2rem; margin:.2rem 0 0.7rem;">${p.title}</h1>
       <p class="price" style="font-size:1.28rem; margin:.2rem 0 .8rem;">${money(p.price)}</p>
       <p class="meta-line">${p.delivery}</p>
-      ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : ''}
+      ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : '<button class="btn btn-primary" disabled aria-disabled="true" title="Pending payouts setup">Coming Soon</button>'}
       <div class="tabs" role="tablist" aria-label="Product info tabs">
         <button class="tab-btn" role="tab" aria-selected="true" data-tab="desc">Description</button>
         <button class="tab-btn" role="tab" aria-selected="false" data-tab="specs">Specs</button>

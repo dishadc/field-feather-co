@@ -6,6 +6,8 @@
     "status": "ready",
     "channel": "gumroad",
     "checkout_url": "https://wingbustle.gumroad.com/l/digi-warbler-bundle-001",
+    "published": false,
+    "purchasable": false,
     "keyword": "warbler journal printable"
   },
   {
@@ -15,6 +17,8 @@
     "status": "ready",
     "channel": "gumroad",
     "checkout_url": "https://wingbustle.gumroad.com/l/digi-state-california",
+    "published": false,
+    "purchasable": false,
     "keyword": "california bird checklist printable"
   },
   {
@@ -24,6 +28,8 @@
     "status": "ready",
     "channel": "gumroad",
     "checkout_url": "https://wingbustle.gumroad.com/l/digi-state-texas",
+    "published": false,
+    "purchasable": false,
     "keyword": "texas bird checklist printable"
   },
   {
@@ -33,6 +39,8 @@
     "status": "ready",
     "channel": "gumroad",
     "checkout_url": "https://wingbustle.gumroad.com/l/digi-state-florida",
+    "published": false,
+    "purchasable": false,
     "keyword": "florida bird checklist printable"
   },
   {
@@ -42,6 +50,8 @@
     "status": "ready",
     "channel": "gumroad",
     "checkout_url": "https://wingbustle.gumroad.com/l/digi-state-new-york",
+    "published": false,
+    "purchasable": false,
     "keyword": "new york bird checklist printable"
   },
   {
@@ -51,6 +61,8 @@
     "status": "ready",
     "channel": "gumroad",
     "checkout_url": "https://wingbustle.gumroad.com/l/digi-state-washington",
+    "published": false,
+    "purchasable": false,
     "keyword": "washington bird checklist printable"
   },
   {
@@ -60,6 +72,8 @@
     "status": "ready",
     "channel": "gumroad",
     "checkout_url": "https://wingbustle.gumroad.com/l/digi-state-colorado",
+    "published": false,
+    "purchasable": false,
     "keyword": "colorado bird checklist printable"
   },
   {
@@ -69,6 +83,8 @@
     "status": "ready",
     "channel": "gumroad",
     "checkout_url": "https://wingbustle.gumroad.com/l/digi-state-north-carolina",
+    "published": false,
+    "purchasable": false,
     "keyword": "north carolina bird checklist printable"
   },
   {
@@ -78,6 +94,8 @@
     "status": "ready",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "arizona bird checklist printable"
   },
   {
@@ -87,6 +105,8 @@
     "status": "ready",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "oregon bird checklist printable"
   },
   {
@@ -96,6 +116,8 @@
     "status": "ready",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "pennsylvania bird checklist printable"
   },
   {
@@ -105,6 +127,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -114,6 +138,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -123,6 +149,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -132,6 +160,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -141,6 +171,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -150,6 +182,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -159,6 +193,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -168,6 +204,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -177,6 +215,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "spring migration tracker printable"
   },
   {
@@ -186,6 +226,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "first seen migration log printable"
   },
   {
@@ -195,6 +237,8 @@
     "status": "draft",
     "channel": "etsy",
     "checkout_url": "",
+    "published": false,
+    "purchasable": false,
     "keyword": "warbler peak week planner printable"
   }
 ]
