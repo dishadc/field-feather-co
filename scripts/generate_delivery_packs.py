@@ -15,6 +15,7 @@ MANIFEST = ROOT / 'data' / 'product_asset_manifest.csv'
 STATE_ASSETS = ROOT / 'products' / 'digital' / 'state-checklists' / 'assets'
 MIGRATION_ASSETS = ROOT / 'products' / 'digital' / 'migration-trackers' / 'assets'
 WARBLER_ASSETS = ROOT / 'products' / 'digital' / 'warbler-pack' / 'assets'
+GOODNOTES_ASSETS = ROOT / 'products' / 'digital' / 'goodnotes-planners' / 'assets'
 
 
 def load_catalog():
@@ -35,6 +36,10 @@ def resolve_interior_assets(sku: str) -> list[Path]:
         p = MIGRATION_ASSETS / f'migration-weekly-{num}.svg'
         return [p] if p.exists() else []
 
+    if sku == 'DIGI-MIGRATION-FIRST-SEEN-010':
+        p = MIGRATION_ASSETS / 'migration-first-seen-010.svg'
+        return [p] if p.exists() else []
+
     if sku == 'DIGI-WARBLER-BUNDLE-001':
         return sorted(WARBLER_ASSETS.glob('*.svg'))
 
@@ -42,8 +47,28 @@ def resolve_interior_assets(sku: str) -> list[Path]:
         p = WARBLER_ASSETS / '02-spring-migration-tracker.svg'
         return [p] if p.exists() else []
 
+    if sku == 'DIGI-WARBLER-SONG-CODES-012':
+        p = WARBLER_ASSETS / '06-warbler-song-codes.svg'
+        return [p] if p.exists() else []
+
+    if sku == 'DIGI-WARBLER-HABITAT-013':
+        p = WARBLER_ASSETS / '07-warbler-habitat-finder.svg'
+        return [p] if p.exists() else []
+
     if sku == 'DIGI-WARBLER-LIFER-CHECKLIST-014':
         p = WARBLER_ASSETS / '03-county-life-list.svg'
+        return [p] if p.exists() else []
+
+    if sku == 'DIGI-PLANNER-GOODNOTES-DAILY-015':
+        p = GOODNOTES_ASSETS / 'goodnotes-daily-015.svg'
+        return [p] if p.exists() else []
+
+    if sku == 'DIGI-PLANNER-GOODNOTES-WEEKLY-016':
+        p = GOODNOTES_ASSETS / 'goodnotes-weekly-016.svg'
+        return [p] if p.exists() else []
+
+    if sku == 'DIGI-PLANNER-GOODNOTES-SEASONAL-017':
+        p = GOODNOTES_ASSETS / 'goodnotes-seasonal-017.svg'
         return [p] if p.exists() else []
 
     return []
