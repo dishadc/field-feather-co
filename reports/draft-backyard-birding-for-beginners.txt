@@ -1,0 +1,16 @@
+title: Backyard Birding for Beginners: Feeders, Habitats, and First Species
+slug: backyard-birding-for-beginners
+word_count: 2904
+meta_description: Backyard birding for beginners: choose smart feeders, build bird-friendly habitat, and learn the first species most likely to visit your yard this season.
+meta_length: 154
+primary_keyword: backyard birding for beginners
+categories: Beginner birding, Backyard birding, Bird feeding
+affiliate_y_n: Y
+authoritative sources used:
+- https://www.allaboutbirds.org/guide/Northern_Cardinal/overview
+- https://www.allaboutbirds.org/guide/Black-capped_Chickadee/overview
+- https://www.allaboutbirds.org/guide/Mourning_Dove/overview
+- https://www.allaboutbirds.org/guide/Downy_Woodpecker/overview
+- https://www.allaboutbirds.org/guide/American_Goldfinch/overview
+- https://www.audubon.org/conservation/project/native-plants-birds
+- https://www.audubon.org/content/why-native-plants-matter
