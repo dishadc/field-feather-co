@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-04-12T20:51:28.830567+00:00",
-  "status": "PASS",
+  "generated_at_utc": "2026-04-12T21:15:18.312902+00:00",
+  "status": "FAIL",
   "article_results": [
     {
       "title": "Birdwatching for Beginners: The Complete 2026 Guide",
@@ -11,7 +11,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 11
+      "internal_links": 14
     },
     {
       "title": "Best Binoculars for Birding in 2026: Tested and Ranked",
@@ -55,7 +55,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 14
+      "internal_links": 17
     },
     {
       "title": "Common Backyard and Park Birds in Texas: A Practical Local Guide",
@@ -66,7 +66,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 11
+      "internal_links": 14
     },
     {
       "title": "How to Identify Warblers: Field Marks, Songs, and Migration Timing",
@@ -430,6 +430,190 @@
       "expected": "digi-planner-goodnotes-seasonal-017.svg",
       "docs_exists": true,
       "web_exists": true
+    }
+  ],
+  "public_surface_results": [
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/product.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/about.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/terms.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/shop.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/downloads.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/privacy.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-birding-apps/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/essential-birding-gear-for-beginners/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-birds/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-hawks/index.html",
+      "exists": true,
+      "forbidden_markers": [
+        "GitHub Pages"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-for-beginners/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-etiquette/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-start-birdwatching-alone/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-binoculars-for-birding/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-spotting-scopes-for-birding/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/welcome/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-california/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-shorebirds/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-florida/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-backyard-bird-feeders/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-use-ebird-migration/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/backyard-birding-for-beginners/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-bird-field-guides/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-texas/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/spring-bird-migration/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/attract-birds-to-your-yard/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/hawk-migration/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-warblers/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
     }
   ]
 }

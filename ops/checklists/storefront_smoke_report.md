@@ -1,8 +1,8 @@
 # Storefront Smoke Report
 
-Generated (UTC): 2026-04-12T20:51:26.139627+00:00
+Generated (UTC): 2026-04-12T21:15:15.241922+00:00
 
-Overall status: PASS
+Overall status: FAIL
 
 ## Checks
 - home: PASS — https://dishadc.github.io/field-feather-co/index.html
@@ -19,8 +19,9 @@ Overall status: PASS
   - HTTP: 200
 - product_shell: PASS — https://dishadc.github.io/field-feather-co/product.html?sku=DIGI-STATE-TEXAS
   - HTTP: 200
-- journal_hub: PASS — https://dishadc.github.io/field-feather-co/blog/
+- journal_hub: FAIL — https://dishadc.github.io/field-feather-co/blog/
   - HTTP: 200
+  - Missing markers: Featured coverage
 - article_beginner: PASS — https://dishadc.github.io/field-feather-co/blog/birdwatching-for-beginners/
   - HTTP: 200
 - article_binoculars: PASS — https://dishadc.github.io/field-feather-co/blog/best-binoculars-for-birding/

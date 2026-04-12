@@ -1,8 +1,8 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-12T20:51:28.830567+00:00
+Generated (UTC): 2026-04-12T21:15:18.312902+00:00
 
-Overall status: PASS
+Overall status: FAIL
 
 ## Published article checks
 - Birdwatching for Beginners: The Complete 2026 Guide: PASS
@@ -12,7 +12,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 11
+  - internal links: 14
 - Best Binoculars for Birding in 2026: Tested and Ranked: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/best-binoculars-for-birding/
   - local file exists: True
@@ -44,7 +44,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 14
+  - internal links: 17
 - Common Backyard and Park Birds in Texas: A Practical Local Guide: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/birds-in-texas/
   - local file exists: True
@@ -52,7 +52,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 11
+  - internal links: 14
 - How to Identify Warblers: Field Marks, Songs, and Migration Timing: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-warblers/
   - local file exists: True
@@ -176,3 +176,36 @@ Overall status: PASS
 
 ## Preview asset checks
 - All expected preview assets exist in docs/ and web/.
+
+## Public surface leakage checks
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/product.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/about.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/terms.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/shop.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/downloads.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/privacy.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-birding-apps/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-birds/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-hawks/index.html: FAIL
+  - forbidden markers: GitHub Pages
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-for-beginners/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-etiquette/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-start-birdwatching-alone/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-binoculars-for-birding/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/welcome/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-california/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-shorebirds/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-florida/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-backyard-bird-feeders/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-use-ebird-migration/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/backyard-birding-for-beginners/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-bird-field-guides/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-texas/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/spring-bird-migration/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/attract-birds-to-your-yard/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/hawk-migration/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-warblers/index.html: PASS
