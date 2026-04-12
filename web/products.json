@@ -240,5 +240,71 @@
     "published": false,
     "purchasable": false,
     "keyword": "warbler peak week planner printable"
+  },
+  {
+    "sku": "DIGI-WARBLER-SONG-CODES-012",
+    "title": "Warbler Song Codes Cheat Sheet Printable, Mnemonic Calls PDF",
+    "price": 5.99,
+    "status": "draft",
+    "channel": "etsy",
+    "checkout_url": "",
+    "published": false,
+    "purchasable": false,
+    "keyword": "warbler song cheat sheet printable"
+  },
+  {
+    "sku": "DIGI-WARBLER-HABITAT-013",
+    "title": "Warbler Habitat Finder Worksheet, Spring Stopover Tracker PDF",
+    "price": 5.99,
+    "status": "draft",
+    "channel": "etsy",
+    "checkout_url": "",
+    "published": false,
+    "purchasable": false,
+    "keyword": "warbler habitat worksheet printable"
+  },
+  {
+    "sku": "DIGI-WARBLER-LIFER-CHECKLIST-014",
+    "title": "North America Warbler Lifer Checklist Printable, Progress Tracker",
+    "price": 6.99,
+    "status": "draft",
+    "channel": "etsy",
+    "checkout_url": "",
+    "published": false,
+    "purchasable": false,
+    "keyword": "warbler lifer checklist printable"
+  },
+  {
+    "sku": "DIGI-PLANNER-GOODNOTES-DAILY-015",
+    "title": "Birding Planner for GoodNotes Daily Edition, Hyperlinked PDF",
+    "price": 9.99,
+    "status": "draft",
+    "channel": "etsy",
+    "checkout_url": "",
+    "published": false,
+    "purchasable": false,
+    "keyword": "birding goodnotes planner daily"
+  },
+  {
+    "sku": "DIGI-PLANNER-GOODNOTES-WEEKLY-016",
+    "title": "Birding Planner for GoodNotes Weekly Edition, Hyperlinked PDF",
+    "price": 9.99,
+    "status": "draft",
+    "channel": "etsy",
+    "checkout_url": "",
+    "published": false,
+    "purchasable": false,
+    "keyword": "birding goodnotes planner weekly"
+  },
+  {
+    "sku": "DIGI-PLANNER-GOODNOTES-SEASONAL-017",
+    "title": "Birding Planner for GoodNotes Seasonal Migration Edition PDF",
+    "price": 12.99,
+    "status": "draft",
+    "channel": "etsy",
+    "checkout_url": "",
+    "published": false,
+    "purchasable": false,
+    "keyword": "birding goodnotes planner seasonal"
   }
 ]
