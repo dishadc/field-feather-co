@@ -13,9 +13,20 @@ IMPORT_CSV = ROOT / "imports" / "gumroad_products.csv"
 LINKS_CSV = ROOT / "data" / "product_links.csv"
 MAP_CSV = ROOT / "data" / "gumroad_product_map.csv"
 
-ACCESS_TOKEN = os.getenv("GUMROAD_ACCESS_TOKEN", "").strip()
+def load_token():
+    tok = os.getenv("GUMROAD_ACCESS_TOKEN", "").strip()
+    if tok:
+        return tok
+    env_file = ROOT / '.env'
+    if env_file.exists():
+        for line in env_file.read_text().splitlines():
+            if line.startswith('GUMROAD_ACCESS_TOKEN='):
+                return line.split('=', 1)[1].strip()
+    return ''
+
+ACCESS_TOKEN = load_token()
 if not ACCESS_TOKEN:
-    raise SystemExit("Missing GUMROAD_ACCESS_TOKEN env var")
+    raise SystemExit("Missing GUMROAD_ACCESS_TOKEN env var (or .env entry)")
 
 
 def api_get(path, params):
