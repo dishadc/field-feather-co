@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-12T19:47:03.563350+00:00",
+  "generated_at_utc": "2026-04-12T20:22:06.399778+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
@@ -36,7 +36,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-12T19:46:20.802645+00:00",
+      "generated_at_utc": "2026-04-12T20:22:04.141640+00:00",
       "status": "PASS",
       "results": [
         {
@@ -113,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-12T19:46:42.676Z",
+      "generated_at_utc": "2026-04-12T20:21:34.813Z",
       "status": "PASS",
       "results": [
         {
@@ -153,7 +153,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-12T19:46:23.683133+00:00",
+      "generated_at_utc": "2026-04-12T20:21:28.086348+00:00",
       "status": "PASS",
       "article_results": [
         {
@@ -291,6 +291,39 @@
         {
           "title": "Birds in Florida: 25 Species Every Birder Should Know",
           "url": "https://dishadc.github.io/field-feather-co/blog/birds-in-florida/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 13
+        },
+        {
+          "title": "Hawk Migration Explained: Best Times, Weather, and Watch Sites",
+          "url": "https://dishadc.github.io/field-feather-co/blog/hawk-migration/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 19
+        },
+        {
+          "title": "Best Birding Apps in 2026: Merlin, eBird, and More Compared",
+          "url": "https://dishadc.github.io/field-feather-co/blog/best-birding-apps/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 15
+        },
+        {
+          "title": "Birdwatching Etiquette: 12 Rules Every Beginner Should Learn",
+          "url": "https://dishadc.github.io/field-feather-co/blog/birdwatching-etiquette/",
           "status": "PASS",
           "local_exists": true,
           "http_status": 200,
@@ -503,42 +536,42 @@
   },
   "content_calendar": {
     "total": 21,
-    "published": 13,
-    "queued": 8
+    "published": 16,
+    "queued": 5
   },
   "published_articles": {
-    "count": 13,
+    "count": 16,
     "latest": [
       {
-        "post_id": "static-20260412-best-backyard-bird-feeders",
-        "title": "Best Backyard Bird Feeders for Cardinals, Finches, and Chickadees",
-        "url": "https://dishadc.github.io/field-feather-co/blog/best-backyard-bird-feeders/",
+        "post_id": "static-20260412-hawk-migration",
+        "title": "Hawk Migration Explained: Best Times, Weather, and Watch Sites",
+        "url": "https://dishadc.github.io/field-feather-co/blog/hawk-migration/",
         "publish_date": "2026-04-12",
-        "primary_keyword": "best bird feeders for cardinals and finches",
-        "word_count": "3089",
-        "categories": "backyard-birding;gear",
-        "has_affiliate": "y",
-        "status": "LIVE_STATIC_TEMP"
-      },
-      {
-        "post_id": "static-20260412-how-to-identify-hawks",
-        "title": "How to Identify Hawks in Flight: Shape, Behavior, and Habitat Clues",
-        "url": "https://dishadc.github.io/field-feather-co/blog/how-to-identify-hawks/",
-        "publish_date": "2026-04-12",
-        "primary_keyword": "how to identify hawks",
-        "word_count": "3185",
-        "categories": "bird-id;hawks",
+        "primary_keyword": "hawk migration",
+        "word_count": "3128",
+        "categories": "migration;hawks;bird-id",
         "has_affiliate": "n",
         "status": "LIVE_STATIC_TEMP"
       },
       {
-        "post_id": "static-20260412-birds-in-florida",
-        "title": "Birds in Florida: 25 Species Every Birder Should Know",
-        "url": "https://dishadc.github.io/field-feather-co/blog/birds-in-florida/",
+        "post_id": "static-20260412-best-birding-apps",
+        "title": "Best Birding Apps in 2026: Merlin, eBird, and More Compared",
+        "url": "https://dishadc.github.io/field-feather-co/blog/best-birding-apps/",
         "publish_date": "2026-04-12",
-        "primary_keyword": "birds in florida",
-        "word_count": "3620",
-        "categories": "regional;florida;bird-id",
+        "primary_keyword": "best birding apps",
+        "word_count": "3555",
+        "categories": "gear;apps;birding-basics",
+        "has_affiliate": "y",
+        "status": "LIVE_STATIC_TEMP"
+      },
+      {
+        "post_id": "static-20260412-birdwatching-etiquette",
+        "title": "Birdwatching Etiquette: 12 Rules Every Beginner Should Learn",
+        "url": "https://dishadc.github.io/field-feather-co/blog/birdwatching-etiquette/",
+        "publish_date": "2026-04-12",
+        "primary_keyword": "birdwatching etiquette",
+        "word_count": "3049",
+        "categories": "beginner;ethics;birding-basics",
         "has_affiliate": "n",
         "status": "LIVE_STATIC_TEMP"
       }

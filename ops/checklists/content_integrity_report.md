@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-12T19:46:23.683133+00:00
+Generated (UTC): 2026-04-12T20:21:28.086348+00:00
 
 Overall status: PASS
 
@@ -103,6 +103,30 @@ Overall status: PASS
   - internal links: 18
 - Birds in Florida: 25 Species Every Birder Should Know: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/birds-in-florida/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 13
+- Hawk Migration Explained: Best Times, Weather, and Watch Sites: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/hawk-migration/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 19
+- Best Birding Apps in 2026: Merlin, eBird, and More Compared: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/best-birding-apps/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 15
+- Birdwatching Etiquette: 12 Rules Every Beginner Should Learn: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/birdwatching-etiquette/
   - local file exists: True
   - HTTP: 200
   - title present: True

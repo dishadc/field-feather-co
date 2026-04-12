@@ -1,6 +1,6 @@
 # CEO Execution Review
 
-Generated (UTC): 2026-04-12T19:47:03.563350+00:00
+Generated (UTC): 2026-04-12T20:22:06.399778+00:00
 
 Overall status: PASS
 
@@ -12,14 +12,14 @@ Overall status: PASS
 
 ## Content pipeline
 - planned articles: 21
-- published in calendar: 13
-- still queued: 8
-- published-articles rows: 13
+- published in calendar: 16
+- still queued: 5
+- published-articles rows: 16
 
 ## Latest published entries
-- 2026-04-12 — Best Backyard Bird Feeders for Cardinals, Finches, and Chickadees — LIVE_STATIC_TEMP
-- 2026-04-12 — How to Identify Hawks in Flight: Shape, Behavior, and Habitat Clues — LIVE_STATIC_TEMP
-- 2026-04-12 — Birds in Florida: 25 Species Every Birder Should Know — LIVE_STATIC_TEMP
+- 2026-04-12 — Hawk Migration Explained: Best Times, Weather, and Watch Sites — LIVE_STATIC_TEMP
+- 2026-04-12 — Best Birding Apps in 2026: Merlin, eBird, and More Compared — LIVE_STATIC_TEMP
+- 2026-04-12 — Birdwatching Etiquette: 12 Rules Every Beginner Should Learn — LIVE_STATIC_TEMP
 
 ## CEO review guidance
 - If any report is FAIL, redirect active work toward fixes first.

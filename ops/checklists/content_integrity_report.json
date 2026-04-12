@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-12T19:46:23.683133+00:00",
+  "generated_at_utc": "2026-04-12T20:21:28.086348+00:00",
   "status": "PASS",
   "article_results": [
     {
@@ -137,6 +137,39 @@
     {
       "title": "Birds in Florida: 25 Species Every Birder Should Know",
       "url": "https://dishadc.github.io/field-feather-co/blog/birds-in-florida/",
+      "status": "PASS",
+      "local_exists": true,
+      "http_status": 200,
+      "title_present": true,
+      "meta_present": true,
+      "sources_present": true,
+      "internal_links": 13
+    },
+    {
+      "title": "Hawk Migration Explained: Best Times, Weather, and Watch Sites",
+      "url": "https://dishadc.github.io/field-feather-co/blog/hawk-migration/",
+      "status": "PASS",
+      "local_exists": true,
+      "http_status": 200,
+      "title_present": true,
+      "meta_present": true,
+      "sources_present": true,
+      "internal_links": 19
+    },
+    {
+      "title": "Best Birding Apps in 2026: Merlin, eBird, and More Compared",
+      "url": "https://dishadc.github.io/field-feather-co/blog/best-birding-apps/",
+      "status": "PASS",
+      "local_exists": true,
+      "http_status": 200,
+      "title_present": true,
+      "meta_present": true,
+      "sources_present": true,
+      "internal_links": 15
+    },
+    {
+      "title": "Birdwatching Etiquette: 12 Rules Every Beginner Should Learn",
+      "url": "https://dishadc.github.io/field-feather-co/blog/birdwatching-etiquette/",
       "status": "PASS",
       "local_exists": true,
       "http_status": 200,
