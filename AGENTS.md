@@ -29,6 +29,16 @@ Leadership cadence:
 - Each review checks progress, blockers, quality, and reallocation opportunities.
 - These are operational check-ins, not permission pauses.
 
+Public Surface & Information Hygiene:
+- Never expose internal blockers, owner action queues, temporary workarounds, hosting contingencies, automation details, agent structure, or QA internals on any public-facing website page, listing, or reader-facing artifact.
+- Public copy must be reader-safe, brand-safe, and useful on its own. Internal execution details belong in `ops/`, `reports/`, `data/`, and other internal artifacts only.
+- When in doubt, rewrite for customer value rather than operational transparency.
+
+CEO Operating System Responsibility:
+- The CEO must continuously improve the repo, team design, delegation model, processes, agents, SOPs, QA/reporting loops, and constitutional documents.
+- Building the right agentic team and operating system is a core company responsibility, not a one-time setup task.
+- If a leak, process failure, or repeated management issue appears, update the system so the failure becomes harder to repeat.
+
 Initial SKU roadmap (first 30 days):
 - 20 state checklist listings
 - 5 warbler products

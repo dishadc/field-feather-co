@@ -15,6 +15,24 @@ PUBLISHED = ROOT / 'data' / 'published-articles.csv'
 PRODUCTS = ROOT / 'docs' / 'products.json'
 PREVIEWS_DOCS = ROOT / 'docs' / 'assets' / 'previews'
 PREVIEWS_WEB = ROOT / 'web' / 'assets' / 'previews'
+PUBLIC_PAGES = list((ROOT / 'docs').rglob('*.html'))
+FORBIDDEN_PUBLIC_MARKERS = [
+    'Temporary editorial HQ',
+    'Editorial ops',
+    'GitHub Pages',
+    'Cloudways',
+    'CMS credentials',
+    'owner action',
+    'temporary placeholders',
+    'Affiliate placeholders',
+    'placeholder pending',
+    'pending Amazon setup',
+    'pending Bookshop.org',
+    'temporary live publishing home',
+    'temporary publishing layer',
+    'Temporary journal host live on GitHub Pages',
+    'WordPress cutover',
+]
 
 
 def fetch(url):
@@ -35,6 +53,17 @@ def count_internal_links(html):
         if href.startswith('../') or 'dishadc.github.io/field-feather-co/blog/' in href:
             count += 1
     return count
+
+
+def scan_forbidden_markers(path):
+    text = path.read_text() if path.exists() else ''
+    found = [marker for marker in FORBIDDEN_PUBLIC_MARKERS if marker in text]
+    return {
+        'path': str(path),
+        'exists': path.exists(),
+        'forbidden_markers': found,
+        'status': 'PASS' if path.exists() and not found else 'FAIL',
+    }
 
 
 def main():
@@ -85,11 +114,17 @@ def main():
                 overall = 'FAIL'
         asset_results.append(item)
 
+    public_surface_results = [scan_forbidden_markers(path) for path in PUBLIC_PAGES]
+    for item in public_surface_results:
+        if item['status'] != 'PASS':
+            overall = 'FAIL'
+
     payload = {
         'generated_at_utc': ts,
         'status': overall,
         'article_results': article_results,
         'asset_results': asset_results,
+        'public_surface_results': public_surface_results,
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(payload, indent=2) + '\n')
@@ -115,6 +150,12 @@ def main():
             lines.append(f"- {item['sku']}: FAIL (docs={item.get('docs_exists')}, web={item.get('web_exists')})")
     else:
         lines.append('- All expected preview assets exist in docs/ and web/.')
+
+    lines.extend(['', '## Public surface leakage checks'])
+    for item in public_surface_results:
+        lines.append(f"- {item['path']}: {item['status']}")
+        if item.get('forbidden_markers'):
+            lines.append(f"  - forbidden markers: {', '.join(item['forbidden_markers'])}")
 
     OUT_MD.write_text('\n'.join(lines) + '\n')
     print(json.dumps({'status': overall, 'out_json': str(OUT_JSON), 'out_md': str(OUT_MD)}))
