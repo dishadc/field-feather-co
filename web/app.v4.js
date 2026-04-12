@@ -71,7 +71,7 @@ function productCard(p, i = 0, feature = false) {
   return `
   <article class="card product-card ${featureClass} reveal delay-${i % 4}">
     <figure>
-      <img class="product-thumb" src="${p.image}" alt="Preview of ${p.title}" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/${seed(p.sku || p.title)}/400/300';" />
+      <img class="product-thumb" src="${p.image}" alt="Preview of ${p.title}" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/field-feather-fallback/400/300';" />
     </figure>
     <div class="product-meta">
       <div class="badges"><span class="badge">${p.type}</span>${p.sku.includes('WARBLER') ? '<span class="badge">Limited Edition</span>' : ''}</div>
@@ -171,7 +171,7 @@ function renderProductDetail() {
   const hasLink = p.checkout_url && p.checkout_url.startsWith('http');
   root.innerHTML = `
     <div class="card detail-image">
-      <img src="${p.image}" alt="Preview image for ${p.title}" onerror="this.onerror=null; this.src='https://picsum.photos/seed/${seed(p.sku || p.title)}/800/600';" />
+      <img src="${p.image}" alt="Preview image for ${p.title}" onerror="this.onerror=null; this.src='https://picsum.photos/seed/field-feather-detail-fallback/800/600';" />
     </div>
     <div class="card" style="padding:1rem 1.1rem;">
       <p class="eyebrow">${p.collection}</p>
