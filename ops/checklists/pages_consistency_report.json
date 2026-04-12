@@ -1,0 +1,32 @@
+{
+  "generated_at_utc": "2026-04-12T07:38:12.543424+00:00",
+  "status": "PASS",
+  "reasons": [],
+  "urls": {
+    "live": "https://dishadc.github.io/field-feather-co/index.html",
+    "raw": "https://raw.githubusercontent.com/dishadc/field-feather-co/main/docs/index.html"
+  },
+  "sha256": {
+    "local_docs_index": "713f38c5003996cda239746af9d267e51d76a8f44f26f3895e6a3e14b7c1c580",
+    "raw_main_docs_index": "713f38c5003996cda239746af9d267e51d76a8f44f26f3895e6a3e14b7c1c580",
+    "live_docs_index": "713f38c5003996cda239746af9d267e51d76a8f44f26f3895e6a3e14b7c1c580"
+  },
+  "checks": {
+    "raw_matches_local": true,
+    "live_matches_raw": true,
+    "live_has_catalog_preview_copy": true,
+    "live_has_coming_soon": true,
+    "live_has_legacy_live_copy": true
+  },
+  "latest_pages_run": {
+    "ok": true,
+    "run": {
+      "conclusion": "success",
+      "createdAt": "2026-04-12T07:35:52Z",
+      "databaseId": 24301585875,
+      "status": "completed",
+      "updatedAt": "2026-04-12T07:36:19Z",
+      "url": "https://github.com/dishadc/field-feather-co/actions/runs/24301585875"
+    }
+  }
+}

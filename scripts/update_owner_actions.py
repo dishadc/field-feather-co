@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+import json
 from datetime import datetime
 from pathlib import Path
 
@@ -13,10 +14,20 @@ def load_rows(path: Path):
         return list(csv.DictReader(f))
 
 
+def load_json(path: Path):
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text())
+    except Exception:
+        return {}
+
+
 def main() -> None:
     catalog = load_rows(ROOT / 'data' / 'catalog_master.csv')
     links = load_rows(ROOT / 'data' / 'product_links.csv')
     gmap = load_rows(ROOT / 'data' / 'gumroad_product_map.csv')
+    pages = load_json(ROOT / 'ops' / 'checklists' / 'pages_consistency_report.json')
 
     ready = {r.get('sku', '').strip() for r in catalog if (r.get('status') or '').strip().lower() == 'ready'}
     ready.discard('')
@@ -44,6 +55,12 @@ def main() -> None:
     ])
 
     now = datetime.now().strftime('%Y-%m-%d %H:%M %Z')
+    pages_status = (pages.get('status') or 'UNKNOWN').upper()
+    pages_reasons = ', '.join(pages.get('reasons') or []) or 'none'
+    pages_checks = pages.get('checks') or {}
+    pages_live_sync = pages_checks.get('live_matches_raw', 'unknown')
+    pages_preview_copy = pages_checks.get('live_has_catalog_preview_copy', 'unknown')
+
     body = f'''# OWNER_ACTIONS_REQUIRED
 
 Purpose: single inbox for anything required from you.
@@ -87,6 +104,10 @@ Last updated: {now}
 - What I will do: update `.env` references and verify automation with new secrets.
 
 ## Diagnostic detail (agent-managed)
+- Pages consistency status: {pages_status}
+- Pages reasons: {pages_reasons}
+- Pages live matches raw main: {pages_live_sync}
+- Pages has catalog preview copy: {pages_preview_copy}
 - Unpublished ready SKUs with links:
   - {', '.join(unpublished) if unpublished else 'None'}
 - Ready SKUs missing checkout links:

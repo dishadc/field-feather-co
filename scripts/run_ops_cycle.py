@@ -10,6 +10,7 @@ STEPS = [
     ['python3', 'scripts/validate_launch_readiness.py'],
     ['python3', 'scripts/validate_catalog_completeness.py'],
     ['python3', 'scripts/build_publish_backlog.py'],
+    ['python3', 'scripts/verify_pages_consistency.py'],
     ['python3', 'scripts/update_owner_actions.py'],
     ['python3', 'scripts/daily_kpi_report.py'],
     ['python3', 'scripts/weekly_ops_brief.py'],

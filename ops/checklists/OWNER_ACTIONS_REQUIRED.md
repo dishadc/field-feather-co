@@ -3,7 +3,7 @@
 Purpose: single inbox for anything required from you.
 I keep this file updated continuously.
 
-Last updated: 2026-04-12 00:35 
+Last updated: 2026-04-12 00:38 
 
 ## OPEN (blocking revenue now)
 
@@ -41,6 +41,10 @@ Last updated: 2026-04-12 00:35
 - What I will do: update `.env` references and verify automation with new secrets.
 
 ## Diagnostic detail (agent-managed)
+- Pages consistency status: PASS
+- Pages reasons: none
+- Pages live matches raw main: True
+- Pages has catalog preview copy: True
 - Unpublished ready SKUs with links:
   - DIGI-STATE-CALIFORNIA, DIGI-STATE-COLORADO, DIGI-STATE-FLORIDA, DIGI-STATE-NEW-YORK, DIGI-STATE-NORTH-CAROLINA, DIGI-STATE-TEXAS, DIGI-STATE-WASHINGTON, DIGI-WARBLER-BUNDLE-001
 - Ready SKUs missing checkout links:
