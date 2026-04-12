@@ -400,18 +400,25 @@
       const image = p.image && /^https?:|^assets\//.test(p.image)
         ? p.image
         : `https://picsum.photos/seed/${slugSeed(p.title || p.sku)}/400/300`;
+      const published = p.published === true || p.published === 'true';
+      const hasLink = !!(p.checkout_url && p.checkout_url.startsWith('http'));
+      const purchasable = p.purchasable === true || p.purchasable === 'true' || (published && hasLink);
       return {
         ...p,
         type,
         format,
         collection: inferCollection(p),
         deliveryMeta,
-        image
+        image,
+        published,
+        purchasable
       };
     }
 
     function productCard(p) {
-      const hasLink = !!(p.checkout_url && p.checkout_url.startsWith('http'));
+      const cta = p.purchasable
+        ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>`
+        : `<span class="btn btn-secondary" aria-disabled="true" title="Checkout opens after payout setup">Coming Soon</span>`;
       return `
         <article class="product-card">
           <img class="product-thumb" src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.src='https://picsum.photos/seed/fallback-bird/400/300'" />
@@ -419,12 +426,13 @@
             <div class="badges">
               <span class="badge">${p.type}</span>
               ${p.sku && p.sku.includes('WARBLER') ? '<span class="badge">Limited Edition</span>' : ''}
+              ${!p.purchasable ? '<span class="badge">Coming Soon</span>' : ''}
             </div>
             <h3>${p.title}</h3>
             <p class="price">${money(p.price)}</p>
             <p class="meta-line">${p.deliveryMeta}</p>
             <div class="card-actions">
-              ${hasLink ? `<a class="btn btn-primary" href="${p.checkout_url}" target="_blank" rel="noopener">Add to Cart</a>` : ''}
+              ${cta}
               <a class="btn btn-secondary" href="product.html?sku=${encodeURIComponent(p.sku || '')}">Details →</a>
             </div>
           </div>
@@ -476,13 +484,18 @@
       }
 
       if (!grid) return;
-      const featured = state.products.slice(0, 6);
+      const featured = [
+        ...state.products.filter(p => p.purchasable),
+        ...state.products.filter(p => !p.purchasable)
+      ].slice(0, 6);
       grid.innerHTML = featured.map(productCard).join('');
 
       const countEl = document.getElementById('live-count');
       if (countEl) {
-        const live = state.products.filter(p => p.checkout_url && p.checkout_url.startsWith('http')).length;
-        countEl.textContent = `${live} live downloads now available`;
+        const live = state.products.filter(p => p.purchasable).length;
+        countEl.textContent = live > 0
+          ? `${live} live downloads now available`
+          : 'Catalog preview mode: checkout opens after payout setup is completed.';
       }
     }
 
