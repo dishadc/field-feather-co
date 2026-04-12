@@ -169,6 +169,7 @@ def main() -> None:
                 "slug": product.get("custom_permalink", slug),
                 "price_cents": product.get("price", price_cents),
                 "name": product.get("name", row["name"].strip()),
+                "published": str(bool(product.get("published", False))).lower(),
             }
         )
 
@@ -198,7 +199,7 @@ def main() -> None:
         w.writerows(updated)
 
     with MAP_CSV.open("w", newline="") as f:
-        fields = ["sku", "product_id", "slug", "checkout_url", "status", "price_cents", "name"]
+        fields = ["sku", "product_id", "slug", "checkout_url", "status", "price_cents", "name", "published"]
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         for r in rows_out:
