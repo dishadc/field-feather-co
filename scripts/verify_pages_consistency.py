@@ -16,7 +16,10 @@ LIVE_URL = 'https://dishadc.github.io/field-feather-co/index.html'
 RAW_URL = 'https://raw.githubusercontent.com/dishadc/field-feather-co/main/docs/index.html'
 
 NEEDLES = {
-    'catalog_preview_copy': 'Catalog preview mode: checkout opens after payout setup is completed.',
+    'catalog_preview_copy': [
+        'The collection is in preview while checkout finishes its final setup.',
+        'Gathering today’s availability from the catalog.'
+    ],
     'coming_soon_cta': 'Coming Soon',
     'legacy_live_copy': 'live downloads now available',
 }
@@ -60,7 +63,7 @@ def main() -> None:
     checks = {
         'raw_matches_local': raw_sha == local_sha,
         'live_matches_raw': live_sha == raw_sha,
-        'live_has_catalog_preview_copy': NEEDLES['catalog_preview_copy'] in live_text,
+        'live_has_catalog_preview_copy': any(needle in live_text for needle in NEEDLES['catalog_preview_copy']),
         'live_has_coming_soon': NEEDLES['coming_soon_cta'] in live_text,
         'live_has_legacy_live_copy': NEEDLES['legacy_live_copy'] in live_text,
     }

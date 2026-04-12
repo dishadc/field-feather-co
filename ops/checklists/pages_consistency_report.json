@@ -1,34 +1,32 @@
 {
-  "generated_at_utc": "2026-04-12T19:20:24.617422+00:00",
-  "status": "FAIL",
-  "reasons": [
-    "raw_github_not_matching_local_main"
-  ],
+  "generated_at_utc": "2026-04-12T19:28:34.696865+00:00",
+  "status": "PASS",
+  "reasons": [],
   "urls": {
     "live": "https://dishadc.github.io/field-feather-co/index.html",
     "raw": "https://raw.githubusercontent.com/dishadc/field-feather-co/main/docs/index.html"
   },
   "sha256": {
-    "local_docs_index": "8f174b0e4dac6426e82b23dfd868829ba113998a8bb55ed8c7f778e0f5265393",
-    "raw_main_docs_index": "637c7f72de768e35d7e84eeaab657fdf030991355b6438851c0b6e3355918085",
-    "live_docs_index": "637c7f72de768e35d7e84eeaab657fdf030991355b6438851c0b6e3355918085"
+    "local_docs_index": "a1a6b336babc7aef627df647b8f17b67deb1c1553f4eb84ec8d4b7bce62e5f61",
+    "raw_main_docs_index": "a1a6b336babc7aef627df647b8f17b67deb1c1553f4eb84ec8d4b7bce62e5f61",
+    "live_docs_index": "a1a6b336babc7aef627df647b8f17b67deb1c1553f4eb84ec8d4b7bce62e5f61"
   },
   "checks": {
-    "raw_matches_local": false,
+    "raw_matches_local": true,
     "live_matches_raw": true,
     "live_has_catalog_preview_copy": true,
-    "live_has_coming_soon": true,
-    "live_has_legacy_live_copy": true
+    "live_has_coming_soon": false,
+    "live_has_legacy_live_copy": false
   },
   "latest_pages_run": {
     "ok": true,
     "run": {
       "conclusion": "success",
-      "createdAt": "2026-04-12T12:52:58Z",
-      "databaseId": 24307202340,
+      "createdAt": "2026-04-12T19:24:50Z",
+      "databaseId": 24314504306,
       "status": "completed",
-      "updatedAt": "2026-04-12T12:53:22Z",
-      "url": "https://github.com/dishadc/field-feather-co/actions/runs/24307202340"
+      "updatedAt": "2026-04-12T19:25:16Z",
+      "url": "https://github.com/dishadc/field-feather-co/actions/runs/24314504306"
     }
   }
 }
