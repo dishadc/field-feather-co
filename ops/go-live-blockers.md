@@ -1,6 +1,6 @@
 # Final Go-Live Blockers (Credential-Dependent)
 
-Current hard blocker: checkout URLs are not populated for launch SKUs.
+Current hard blockers: checkout URLs are not populated for launch SKUs, and Etsy/Gumroad publishing is currently blocked in this automation environment by anti-bot/challenge responses (Etsy returns HTTP 403 to signin/join; Gumroad form submit is challenge-gated).
 
 ## What must be completed externally
 1. Etsy shop/listings must be published.
