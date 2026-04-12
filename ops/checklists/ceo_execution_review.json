@@ -1,0 +1,547 @@
+{
+  "generated_at_utc": "2026-04-12T19:47:03.563350+00:00",
+  "status": "PASS",
+  "reports": {
+    "pages_consistency": {
+      "generated_at_utc": "2026-04-12T19:28:34.696865+00:00",
+      "status": "PASS",
+      "reasons": [],
+      "urls": {
+        "live": "https://dishadc.github.io/field-feather-co/index.html",
+        "raw": "https://raw.githubusercontent.com/dishadc/field-feather-co/main/docs/index.html"
+      },
+      "sha256": {
+        "local_docs_index": "a1a6b336babc7aef627df647b8f17b67deb1c1553f4eb84ec8d4b7bce62e5f61",
+        "raw_main_docs_index": "a1a6b336babc7aef627df647b8f17b67deb1c1553f4eb84ec8d4b7bce62e5f61",
+        "live_docs_index": "a1a6b336babc7aef627df647b8f17b67deb1c1553f4eb84ec8d4b7bce62e5f61"
+      },
+      "checks": {
+        "raw_matches_local": true,
+        "live_matches_raw": true,
+        "live_has_catalog_preview_copy": true,
+        "live_has_coming_soon": false,
+        "live_has_legacy_live_copy": false
+      },
+      "latest_pages_run": {
+        "ok": true,
+        "run": {
+          "conclusion": "success",
+          "createdAt": "2026-04-12T19:24:50Z",
+          "databaseId": 24314504306,
+          "status": "completed",
+          "updatedAt": "2026-04-12T19:25:16Z",
+          "url": "https://github.com/dishadc/field-feather-co/actions/runs/24314504306"
+        }
+      },
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
+    },
+    "storefront_smoke": {
+      "generated_at_utc": "2026-04-12T19:46:20.802645+00:00",
+      "status": "PASS",
+      "results": [
+        {
+          "name": "home",
+          "url": "https://dishadc.github.io/field-feather-co/index.html",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "shop",
+          "url": "https://dishadc.github.io/field-feather-co/shop.html",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "downloads",
+          "url": "https://dishadc.github.io/field-feather-co/downloads.html",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "about",
+          "url": "https://dishadc.github.io/field-feather-co/about.html",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "privacy",
+          "url": "https://dishadc.github.io/field-feather-co/privacy.html",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "terms",
+          "url": "https://dishadc.github.io/field-feather-co/terms.html",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "product_shell",
+          "url": "https://dishadc.github.io/field-feather-co/product.html?sku=DIGI-STATE-TEXAS",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "journal_hub",
+          "url": "https://dishadc.github.io/field-feather-co/blog/",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "article_beginner",
+          "url": "https://dishadc.github.io/field-feather-co/blog/birdwatching-for-beginners/",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        },
+        {
+          "name": "article_binoculars",
+          "url": "https://dishadc.github.io/field-feather-co/blog/best-binoculars-for-birding/",
+          "status": "PASS",
+          "missing": [],
+          "http_status": 200
+        }
+      ],
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
+    },
+    "browser_qa": {
+      "generated_at_utc": "2026-04-12T19:46:42.676Z",
+      "status": "PASS",
+      "results": [
+        {
+          "name": "home_page",
+          "status": "PASS",
+          "hero": "Paper goods for the birder with a careful eye.",
+          "seasonal": "The collection is in preview while checkout finishes its final setup."
+        },
+        {
+          "name": "theme_toggle",
+          "status": "PASS",
+          "before": "light",
+          "after": "dark"
+        },
+        {
+          "name": "shop_filters",
+          "status": "PASS",
+          "initial_count": 28,
+          "filtered_titles": [
+            "Texas Birding Life List Checklist Printable, Birdwatch Log"
+          ]
+        },
+        {
+          "name": "product_detail",
+          "status": "PASS",
+          "title": "Texas Birding Life List Checklist Printable, Birdwatch Log",
+          "related_count": 4
+        },
+        {
+          "name": "mobile_nav",
+          "status": "PASS",
+          "opened": true
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
+    },
+    "content_integrity": {
+      "generated_at_utc": "2026-04-12T19:46:23.683133+00:00",
+      "status": "PASS",
+      "article_results": [
+        {
+          "title": "Birdwatching for Beginners: The Complete 2026 Guide",
+          "url": "https://dishadc.github.io/field-feather-co/blog/birdwatching-for-beginners/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 11
+        },
+        {
+          "title": "Best Binoculars for Birding in 2026: Tested and Ranked",
+          "url": "https://dishadc.github.io/field-feather-co/blog/best-binoculars-for-birding/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 11
+        },
+        {
+          "title": "How to Identify Birds: 8 Techniques Every Birder Needs",
+          "url": "https://dishadc.github.io/field-feather-co/blog/how-to-identify-birds/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 12
+        },
+        {
+          "title": "Essential Birding Gear for Beginners: What to Buy First",
+          "url": "https://dishadc.github.io/field-feather-co/blog/essential-birding-gear-for-beginners/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 12
+        },
+        {
+          "title": "Backyard Birding for Beginners: Feeders, Habitats, and First Species",
+          "url": "https://dishadc.github.io/field-feather-co/blog/backyard-birding-for-beginners/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 14
+        },
+        {
+          "title": "Common Backyard and Park Birds in Texas: A Practical Local Guide",
+          "url": "https://dishadc.github.io/field-feather-co/blog/birds-in-texas/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 11
+        },
+        {
+          "title": "How to Identify Warblers: Field Marks, Songs, and Migration Timing",
+          "url": "https://dishadc.github.io/field-feather-co/blog/how-to-identify-warblers/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 12
+        },
+        {
+          "title": "Spring Bird Migration: When to Watch, Where to Go, and What to Expect",
+          "url": "https://dishadc.github.io/field-feather-co/blog/spring-bird-migration/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 16
+        },
+        {
+          "title": "Best Spotting Scopes for Birding in 2026",
+          "url": "https://dishadc.github.io/field-feather-co/blog/best-spotting-scopes-for-birding/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 17
+        },
+        {
+          "title": "How to Start Birdwatching Alone and Build Confidence Fast",
+          "url": "https://dishadc.github.io/field-feather-co/blog/how-to-start-birdwatching-alone/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 20
+        },
+        {
+          "title": "Best Backyard Bird Feeders for Cardinals, Finches, and Chickadees",
+          "url": "https://dishadc.github.io/field-feather-co/blog/best-backyard-bird-feeders/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 15
+        },
+        {
+          "title": "How to Identify Hawks in Flight: Shape, Behavior, and Habitat Clues",
+          "url": "https://dishadc.github.io/field-feather-co/blog/how-to-identify-hawks/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 18
+        },
+        {
+          "title": "Birds in Florida: 25 Species Every Birder Should Know",
+          "url": "https://dishadc.github.io/field-feather-co/blog/birds-in-florida/",
+          "status": "PASS",
+          "local_exists": true,
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "sources_present": true,
+          "internal_links": 13
+        }
+      ],
+      "asset_results": [
+        {
+          "sku": "DIGI-WARBLER-BUNDLE-001",
+          "status": "PASS",
+          "expected": "digi-warbler-bundle-001.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-CALIFORNIA",
+          "status": "PASS",
+          "expected": "digi-state-california.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-TEXAS",
+          "status": "PASS",
+          "expected": "digi-state-texas.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-FLORIDA",
+          "status": "PASS",
+          "expected": "digi-state-florida.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-NEW-YORK",
+          "status": "PASS",
+          "expected": "digi-state-new-york.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-WASHINGTON",
+          "status": "PASS",
+          "expected": "digi-state-washington.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-COLORADO",
+          "status": "PASS",
+          "expected": "digi-state-colorado.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-NORTH-CAROLINA",
+          "status": "PASS",
+          "expected": "digi-state-north-carolina.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-ARIZONA",
+          "status": "PASS",
+          "expected": "digi-state-arizona.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-OREGON",
+          "status": "PASS",
+          "expected": "digi-state-oregon.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-STATE-PENNSYLVANIA",
+          "status": "PASS",
+          "expected": "digi-state-pennsylvania.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-001",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-001.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-002",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-002.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-003",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-003.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-004",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-004.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-005",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-005.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-006",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-006.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-007",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-007.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-008",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-008.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-WEEKLY-009",
+          "status": "PASS",
+          "expected": "digi-migration-weekly-009.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-MIGRATION-FIRST-SEEN-010",
+          "status": "PASS",
+          "expected": "digi-migration-first-seen-010.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-WARBLER-PEAK-WEEK-011",
+          "status": "PASS",
+          "expected": "digi-warbler-peak-week-011.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-WARBLER-SONG-CODES-012",
+          "status": "PASS",
+          "expected": "digi-warbler-song-codes-012.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-WARBLER-HABITAT-013",
+          "status": "PASS",
+          "expected": "digi-warbler-habitat-013.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-WARBLER-LIFER-CHECKLIST-014",
+          "status": "PASS",
+          "expected": "digi-warbler-lifer-checklist-014.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-PLANNER-GOODNOTES-DAILY-015",
+          "status": "PASS",
+          "expected": "digi-planner-goodnotes-daily-015.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-PLANNER-GOODNOTES-WEEKLY-016",
+          "status": "PASS",
+          "expected": "digi-planner-goodnotes-weekly-016.svg",
+          "docs_exists": true,
+          "web_exists": true
+        },
+        {
+          "sku": "DIGI-PLANNER-GOODNOTES-SEASONAL-017",
+          "status": "PASS",
+          "expected": "digi-planner-goodnotes-seasonal-017.svg",
+          "docs_exists": true,
+          "web_exists": true
+        }
+      ],
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/content_integrity_report.json"
+    }
+  },
+  "content_calendar": {
+    "total": 21,
+    "published": 13,
+    "queued": 8
+  },
+  "published_articles": {
+    "count": 13,
+    "latest": [
+      {
+        "post_id": "static-20260412-best-backyard-bird-feeders",
+        "title": "Best Backyard Bird Feeders for Cardinals, Finches, and Chickadees",
+        "url": "https://dishadc.github.io/field-feather-co/blog/best-backyard-bird-feeders/",
+        "publish_date": "2026-04-12",
+        "primary_keyword": "best bird feeders for cardinals and finches",
+        "word_count": "3089",
+        "categories": "backyard-birding;gear",
+        "has_affiliate": "y",
+        "status": "LIVE_STATIC_TEMP"
+      },
+      {
+        "post_id": "static-20260412-how-to-identify-hawks",
+        "title": "How to Identify Hawks in Flight: Shape, Behavior, and Habitat Clues",
+        "url": "https://dishadc.github.io/field-feather-co/blog/how-to-identify-hawks/",
+        "publish_date": "2026-04-12",
+        "primary_keyword": "how to identify hawks",
+        "word_count": "3185",
+        "categories": "bird-id;hawks",
+        "has_affiliate": "n",
+        "status": "LIVE_STATIC_TEMP"
+      },
+      {
+        "post_id": "static-20260412-birds-in-florida",
+        "title": "Birds in Florida: 25 Species Every Birder Should Know",
+        "url": "https://dishadc.github.io/field-feather-co/blog/birds-in-florida/",
+        "publish_date": "2026-04-12",
+        "primary_keyword": "birds in florida",
+        "word_count": "3620",
+        "categories": "regional;florida;bird-id",
+        "has_affiliate": "n",
+        "status": "LIVE_STATIC_TEMP"
+      }
+    ]
+  }
+}

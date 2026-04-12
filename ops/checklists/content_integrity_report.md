@@ -1,0 +1,114 @@
+# Content Integrity Report
+
+Generated (UTC): 2026-04-12T19:46:23.683133+00:00
+
+Overall status: PASS
+
+## Published article checks
+- Birdwatching for Beginners: The Complete 2026 Guide: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/birdwatching-for-beginners/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 11
+- Best Binoculars for Birding in 2026: Tested and Ranked: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/best-binoculars-for-birding/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 11
+- How to Identify Birds: 8 Techniques Every Birder Needs: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-birds/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 12
+- Essential Birding Gear for Beginners: What to Buy First: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/essential-birding-gear-for-beginners/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 12
+- Backyard Birding for Beginners: Feeders, Habitats, and First Species: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/backyard-birding-for-beginners/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 14
+- Common Backyard and Park Birds in Texas: A Practical Local Guide: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/birds-in-texas/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 11
+- How to Identify Warblers: Field Marks, Songs, and Migration Timing: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-warblers/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 12
+- Spring Bird Migration: When to Watch, Where to Go, and What to Expect: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/spring-bird-migration/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 16
+- Best Spotting Scopes for Birding in 2026: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/best-spotting-scopes-for-birding/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 17
+- How to Start Birdwatching Alone and Build Confidence Fast: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/how-to-start-birdwatching-alone/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 20
+- Best Backyard Bird Feeders for Cardinals, Finches, and Chickadees: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/best-backyard-bird-feeders/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 15
+- How to Identify Hawks in Flight: Shape, Behavior, and Habitat Clues: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-hawks/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 18
+- Birds in Florida: 25 Species Every Birder Should Know: PASS
+  - url: https://dishadc.github.io/field-feather-co/blog/birds-in-florida/
+  - local file exists: True
+  - HTTP: 200
+  - title present: True
+  - meta present: True
+  - sources present: True
+  - internal links: 13
+
+## Preview asset checks
+- All expected preview assets exist in docs/ and web/.

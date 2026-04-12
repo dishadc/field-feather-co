@@ -1,0 +1,76 @@
+{
+  "generated_at_utc": "2026-04-12T19:46:20.802645+00:00",
+  "status": "PASS",
+  "results": [
+    {
+      "name": "home",
+      "url": "https://dishadc.github.io/field-feather-co/index.html",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "shop",
+      "url": "https://dishadc.github.io/field-feather-co/shop.html",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "downloads",
+      "url": "https://dishadc.github.io/field-feather-co/downloads.html",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "about",
+      "url": "https://dishadc.github.io/field-feather-co/about.html",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "privacy",
+      "url": "https://dishadc.github.io/field-feather-co/privacy.html",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "terms",
+      "url": "https://dishadc.github.io/field-feather-co/terms.html",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "product_shell",
+      "url": "https://dishadc.github.io/field-feather-co/product.html?sku=DIGI-STATE-TEXAS",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "journal_hub",
+      "url": "https://dishadc.github.io/field-feather-co/blog/",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "article_beginner",
+      "url": "https://dishadc.github.io/field-feather-co/blog/birdwatching-for-beginners/",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    },
+    {
+      "name": "article_binoculars",
+      "url": "https://dishadc.github.io/field-feather-co/blog/best-binoculars-for-birding/",
+      "status": "PASS",
+      "missing": [],
+      "http_status": 200
+    }
+  ]
+}

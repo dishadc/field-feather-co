@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-04-12T19:46:42.676Z",
+  "status": "PASS",
+  "results": [
+    {
+      "name": "home_page",
+      "status": "PASS",
+      "hero": "Paper goods for the birder with a careful eye.",
+      "seasonal": "The collection is in preview while checkout finishes its final setup."
+    },
+    {
+      "name": "theme_toggle",
+      "status": "PASS",
+      "before": "light",
+      "after": "dark"
+    },
+    {
+      "name": "shop_filters",
+      "status": "PASS",
+      "initial_count": 28,
+      "filtered_titles": [
+        "Texas Birding Life List Checklist Printable, Birdwatch Log"
+      ]
+    },
+    {
+      "name": "product_detail",
+      "status": "PASS",
+      "title": "Texas Birding Life List Checklist Printable, Birdwatch Log",
+      "related_count": 4
+    },
+    {
+      "name": "mobile_nav",
+      "status": "PASS",
+      "opened": true
+    }
+  ],
+  "page_errors": [],
+  "console_errors": []
+}

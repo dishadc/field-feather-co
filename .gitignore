@@ -2,5 +2,9 @@
 .env
 .env.*
 
+# local planning + dependencies
+.hermes/
+node_modules/
+
 # macOS
 .DS_Store
