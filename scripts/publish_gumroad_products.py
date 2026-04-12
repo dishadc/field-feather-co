@@ -55,6 +55,27 @@ def api_post(path: str, params: dict, retries: int = 5) -> dict:
     return {"success": False, "error": last_err or "unknown error"}
 
 
+def api_put(path: str, params: dict, retries: int = 5) -> dict:
+    req = urllib.request.Request(
+        f"https://api.gumroad.com{path}",
+        data=urllib.parse.urlencode(params).encode(),
+        method="PUT",
+    )
+    last_err = None
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            body = e.read().decode(errors="ignore") if hasattr(e, "read") else ""
+            if e.code == 429 and attempt < retries - 1:
+                time.sleep(3 * (attempt + 1))
+                continue
+            last_err = f"PUT {path} failed {e.code}: {body[:200]}"
+            break
+    return {"success": False, "error": last_err or "unknown error"}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Publish/import Gumroad products and sync local link maps")
     parser.add_argument("--max-create", type=int, default=50, help="Maximum number of new products to create in this run")
@@ -72,6 +93,7 @@ def main() -> None:
     reused = 0
     errors = []
     rows_out = []
+    payment_blocked = False
 
     # ready first, then draft
     import_rows = list(csv.DictReader(IMPORT_CSV.open()))
@@ -90,6 +112,8 @@ def main() -> None:
 
         product = by_slug.get(slug)
         if not product:
+            if payment_blocked:
+                continue
             if created >= max_create:
                 continue
 
@@ -115,6 +139,24 @@ def main() -> None:
             time.sleep(0.6)
         else:
             reused += 1
+
+        product_id = product.get("id", "")
+        if product_id:
+            endpoint = f"/v2/products/{product_id}/enable" if status == "ready" else f"/v2/products/{product_id}/disable"
+            resp_state = api_put(endpoint, {"access_token": access_token})
+            if not resp_state.get("success", True):
+                err = (
+                    resp_state.get("error")
+                    or resp_state.get("message")
+                    or f"state change failed for {product_id}"
+                )
+                errors.append({"sku": row["sku"].strip(), "slug": slug, "error": err})
+                if "connect at least one payment method" in str(err).lower():
+                    payment_blocked = True
+                if "429" in str(err):
+                    break
+            else:
+                product = resp_state.get("product", product)
 
         checkout = product.get("short_url") or product.get("url") or ""
         rows_out.append(
@@ -171,6 +213,7 @@ def main() -> None:
                 "mapped": len(rows_out),
                 "links_updated": sum(1 for r in updated if r.get("channel") == "gumroad" and r.get("checkout_url")),
                 "max_create": max_create,
+                "payment_method_blocked": payment_blocked,
             },
             indent=2,
         )
