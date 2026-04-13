@@ -10,28 +10,14 @@ Field & Feather Co. helps birders build a calmer, richer birding life by pairing
 
 ## 2) Current Sprint (Now)
 
-### 1. Regional cluster session-depth optimization
-- Team responsible: Content / SEO / CEO
-- One-sentence description: Add stronger related-read architecture and hub journeys across regional birding articles so first-time readers keep moving deeper into the journal.
-- User story: As a reader landing on a state guide, I want obvious next articles that match what I am trying to learn, so the journal feels coherent and worth staying in.
-- Definition of done: Related-reads modules are added to the regional cluster, internal-link paths are intentional, and QA remains PASS.
-- Success metric: Regional articles each expose at least one clear onward path into beginner, ID, or gear content; internal-link density increases without content-integrity regressions.
+### 1. Lead magnet / subscriber entry-page selection
+- Team responsible: Growth / SEO / CEO
+- One-sentence description: Identify the strongest journal entry pages for future lead-magnet and subscriber placement based on search intent, hub strength, and likely conversion posture.
+- User story: As a reader who lands on one of our strongest articles, I want the next step into the brand to feel relevant and timely, so subscribing feels helpful rather than interruptive.
+- Definition of done: A prioritized list of entry pages exists, rationale is documented, and the board/roadmap reflect the placement strategy.
+- Success metric: The company has a clear shortlist of pages to use when branded subscriber capture is activated.
 
-### 2. Migration cluster session-depth optimization
-- Team responsible: Content / SEO / CEO
-- One-sentence description: Strengthen links among migration, hawk migration, eBird migration, warbler ID, and shorebird/movement-adjacent pages.
-- User story: As a migration-season reader, I want each article to help me decide what to read next, so I can go from general curiosity to practical field confidence quickly.
-- Definition of done: Migration cluster related-reads and bridge links are added, and CEO validation remains PASS.
-- Success metric: Migration articles each connect users to at least two adjacent use cases (timing, ID, tools, or field behavior).
-
-### 3. Gear cluster trust-and-conversion hardening
-- Team responsible: Content / Monetization / CEO
-- One-sentence description: Refine gear articles so recommendations remain useful and premium even before full affiliate infrastructure is live.
-- User story: As a reader comparing optics, guides, feeders, or apps, I want recommendations that feel polished and trustworthy, so I can act on them without feeling sold to or confused.
-- Definition of done: Gear cluster copy is customer-safe, no placeholder/process language remains, and onward journeys from gear into beginner or habitat content are stronger.
-- Success metric: Gear pages remain QA-clean and become clearer top-of-funnel trust assets for future monetization.
-
-### 4. Customer-safe subscriber capture foundation
+### 2. Customer-safe subscriber capture foundation
 - Team responsible: Growth / Ops / CEO
 - One-sentence description: Replace exposed fallback contact/signup mechanics with a branded newsletter architecture that is safe now and ready for Beehiiv later.
 - User story: As a customer interested in updates, I want a polished, trustworthy path into the brand’s newsletter, so the company feels real and worth following.

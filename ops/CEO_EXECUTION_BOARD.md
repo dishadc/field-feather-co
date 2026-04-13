@@ -27,12 +27,11 @@ Status: ACTIVE
 Goal: improve article-to-article journeys, strengthen authority clusters, and prepare future cadence publishing.
 Current state:
 - 21 foundational articles live
-- first related-reads optimization slice completed
+- related-reads optimization completed across regional, migration, and gear clusters
 Next actions:
-- related-reads modules added to Texas, Florida, and California regional hubs
-- related-reads modules added to spring migration, hawk migration, and eBird migration hubs
-- related-reads modules added to binoculars, birding apps, field guides, and spotting scopes hubs
 - identify best entry pages for future newsletter/lead magnet placement
+- define lead-magnet placement logic for the strongest entry pages
+- keep internal-link architecture compounding as new content ships
 
 ### 2) Public-surface hygiene and brand protection
 Status: ACTIVE
@@ -98,8 +97,7 @@ Run an immediate review when any of the following happens:
 - a workstream stalls or no longer compounds value
 
 ## Immediate next best actions
-- optimize regional article hubs next
-- optimize regional article hubs next
+- identify best entry pages for future lead magnet / subscriber placement
 - prepare branded subscriber capture once Beehiiv is ready
 - keep QA green while shipping non-blocked growth work
 
