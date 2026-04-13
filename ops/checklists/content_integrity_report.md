@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T03:07:14.591030+00:00
+Generated (UTC): 2026-04-13T03:12:14.989860+00:00
 
 Overall status: PASS
 
@@ -20,7 +20,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 14
+  - internal links: 15
 - How to Identify Birds: 8 Techniques Every Birder Needs: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-birds/
   - local file exists: True
@@ -76,7 +76,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 20
+  - internal links: 21
 - How to Start Birdwatching Alone and Build Confidence Fast: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/how-to-start-birdwatching-alone/
   - local file exists: True
@@ -124,7 +124,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 18
+  - internal links: 19
 - Birdwatching Etiquette: 12 Rules Every Beginner Should Learn: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/birdwatching-etiquette/
   - local file exists: True
@@ -172,7 +172,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 19
+  - internal links: 20
 
 ## Preview asset checks
 - All expected preview assets exist in docs/ and web/.
@@ -209,3 +209,57 @@ Overall status: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/attract-birds-to-your-yard/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/hawk-migration/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-warblers/index.html: PASS
+
+## Newsletter CTA attribution checks
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-birding-apps/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-for-beginners/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-binoculars-for-birding/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-california/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-florida/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-use-ebird-migration/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/backyard-birding-for-beginners/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-bird-field-guides/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-texas/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/spring-bird-migration/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/hawk-migration/index.html: PASS
+  - source attr: True
+  - offer attr: True
+  - cluster attr: True

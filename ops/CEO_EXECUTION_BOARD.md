@@ -35,6 +35,7 @@ Next actions:
 - CTA copy library written in marketing/newsletter/morning_warbler_cta_copy.md
 - execution-ready lead magnet packs prepared under marketing/newsletter/lead-magnets/
 - wave-2 Morning Warbler rollout now covers gear-trust pages: birding apps, field guides, binoculars, and spotting scopes
+- attribution-ready CTA routing now tags source article, offer, and cluster for every live Morning Warbler module
 - keep internal-link architecture compounding as new content ships
 
 ### 2) Public-surface hygiene and brand protection
@@ -105,7 +106,7 @@ Run an immediate review when any of the following happens:
 - keep wave-2 Morning Warbler rollout stable across gear-trust pages and use it to inform the first live capture swap later
 - continue refining customer-safe support and subscriber architecture while Beehiiv remains pending
 - keep QA green while shipping non-blocked growth work
-- prepare click and conversion instrumentation once the live subscriber path is available
+- keep attribution-ready CTA routing stable so the first live subscriber swap inherits clean source context
 
 ## Decision rule
 If a task improves both customer trust and operational durability, prioritize it over cosmetic-only work.

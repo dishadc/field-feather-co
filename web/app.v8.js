@@ -198,6 +198,72 @@ function initReveals() {
   items.forEach(el => observer.observe(el));
 }
 
+
+function slugToLabel(slug) {
+  return String(slug || '')
+    .split('-')
+    .filter(Boolean)
+    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+}
+
+function initNewsletterAttribution() {
+  const links = document.querySelectorAll('[data-newsletter-source]');
+  links.forEach(link => {
+    try {
+      const url = new URL(link.getAttribute('href'), window.location.href);
+      url.searchParams.set('mw_source', link.dataset.newsletterSource || 'unknown');
+      url.searchParams.set('mw_offer', link.dataset.newsletterOffer || 'Morning Warbler');
+      url.searchParams.set('mw_cluster', link.dataset.newsletterCluster || 'editorial');
+      link.setAttribute('href', url.pathname + url.search);
+    } catch (error) {
+      console.error(error);
+    }
+
+    link.addEventListener('click', () => {
+      try {
+        const key = 'ff-newsletter-clicks';
+        const current = JSON.parse(localStorage.getItem(key) || '[]');
+        current.push({
+          source: link.dataset.newsletterSource || 'unknown',
+          offer: link.dataset.newsletterOffer || 'Morning Warbler',
+          cluster: link.dataset.newsletterCluster || 'editorial',
+          ts: new Date().toISOString()
+        });
+        localStorage.setItem(key, JSON.stringify(current.slice(-100)));
+      } catch (error) {
+        console.error(error);
+      }
+    });
+  });
+}
+
+function initNewsletterWelcomeContext() {
+  const target = document.querySelector('[data-newsletter-context]');
+  if (!target) return;
+  const params = new URLSearchParams(window.location.search);
+  const source = params.get('mw_source');
+  const offer = params.get('mw_offer');
+  const cluster = params.get('mw_cluster');
+  if (!source && !offer && !cluster) return;
+
+  const clusterLabels = {
+    beginner: 'beginner birding',
+    'beginner-gear': 'beginner gear',
+    backyard: 'backyard birding',
+    migration: 'migration coverage',
+    'migration-tools': 'migration tools',
+    regional: 'regional birding',
+    'migration-event': 'hawkwatch coverage',
+    'gear-trust': 'gear comparisons'
+  };
+
+  const sourceLabel = slugToLabel(source);
+  const clusterLabel = clusterLabels[cluster] || 'the journal';
+  const offerLabel = offer || 'The Morning Warbler';
+  target.innerHTML = `<strong>Starting point:</strong> You arrived from ${sourceLabel || clusterLabel}. This guide will stay paired with ${offerLabel} so the next step feels connected to why you came.`;
+}
+
 function renderMarquee() {
   const track = document.getElementById('bird-track');
   if (!track) return;
@@ -361,6 +427,8 @@ function renderDownloads() {
   initMobileNav();
   initParallax();
   renderMarquee();
+  initNewsletterAttribution();
+  initNewsletterWelcomeContext();
 
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();

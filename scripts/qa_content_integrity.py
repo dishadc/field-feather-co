@@ -71,6 +71,26 @@ def scan_forbidden_markers(path):
     }
 
 
+
+
+def scan_newsletter_cta(path):
+    text = path.read_text() if path.exists() else ''
+    has_module = 'The Morning Warbler' in text and 'welcome/index.html' in text and 'Read about the journal' in text
+    has_source = 'data-newsletter-source=' in text
+    has_offer = 'data-newsletter-offer=' in text
+    has_cluster = 'data-newsletter-cluster=' in text
+    status = 'PASS'
+    if has_module and not (has_source and has_offer and has_cluster):
+        status = 'FAIL'
+    return {
+        'path': str(path),
+        'has_module': has_module,
+        'has_source': has_source,
+        'has_offer': has_offer,
+        'has_cluster': has_cluster,
+        'status': status,
+    }
+
 def main():
     ts = datetime.now(timezone.utc).isoformat()
     overall = 'PASS'
@@ -124,12 +144,18 @@ def main():
         if item['status'] != 'PASS':
             overall = 'FAIL'
 
+    newsletter_cta_results = [scan_newsletter_cta(path) for path in PUBLIC_PAGES]
+    for item in newsletter_cta_results:
+        if item['status'] != 'PASS':
+            overall = 'FAIL'
+
     payload = {
         'generated_at_utc': ts,
         'status': overall,
         'article_results': article_results,
         'asset_results': asset_results,
         'public_surface_results': public_surface_results,
+        'newsletter_cta_results': newsletter_cta_results,
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(payload, indent=2) + '\n')
@@ -161,6 +187,14 @@ def main():
         lines.append(f"- {item['path']}: {item['status']}")
         if item.get('forbidden_markers'):
             lines.append(f"  - forbidden markers: {', '.join(item['forbidden_markers'])}")
+
+    lines.extend(['', '## Newsletter CTA attribution checks'])
+    for item in newsletter_cta_results:
+        if item['has_module']:
+            lines.append(f"- {item['path']}: {item['status']}")
+            lines.append(f"  - source attr: {item['has_source']}")
+            lines.append(f"  - offer attr: {item['has_offer']}")
+            lines.append(f"  - cluster attr: {item['has_cluster']}")
 
     OUT_MD.write_text('\n'.join(lines) + '\n')
     print(json.dumps({'status': overall, 'out_json': str(OUT_JSON), 'out_md': str(OUT_MD)}))

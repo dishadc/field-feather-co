@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T03:07:14.591030+00:00",
+  "generated_at_utc": "2026-04-13T03:12:14.989860+00:00",
   "status": "PASS",
   "article_results": [
     {
@@ -22,7 +22,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 14
+      "internal_links": 15
     },
     {
       "title": "How to Identify Birds: 8 Techniques Every Birder Needs",
@@ -99,7 +99,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 20
+      "internal_links": 21
     },
     {
       "title": "How to Start Birdwatching Alone and Build Confidence Fast",
@@ -165,7 +165,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 18
+      "internal_links": 19
     },
     {
       "title": "Birdwatching Etiquette: 12 Rules Every Beginner Should Learn",
@@ -231,7 +231,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 19
+      "internal_links": 20
     }
   ],
   "asset_results": [
@@ -617,6 +617,256 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-warblers/index.html",
       "exists": true,
       "forbidden_markers": [],
+      "status": "PASS"
+    }
+  ],
+  "newsletter_cta_results": [
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/product.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/about.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/support.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/terms.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/shop.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/downloads.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/privacy.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-birding-apps/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/essential-birding-gear-for-beginners/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-birds/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-hawks/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-for-beginners/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-etiquette/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-start-birdwatching-alone/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-binoculars-for-birding/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-spotting-scopes-for-birding/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/welcome/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-california/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-shorebirds/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-florida/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-backyard-bird-feeders/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-use-ebird-migration/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/backyard-birding-for-beginners/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-bird-field-guides/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-texas/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/spring-bird-migration/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/attract-birds-to-your-yard/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/hawk-migration/index.html",
+      "has_module": true,
+      "has_source": true,
+      "has_offer": true,
+      "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-warblers/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
       "status": "PASS"
     }
   ]
