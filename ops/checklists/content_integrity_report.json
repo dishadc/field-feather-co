@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T01:34:18.124628+00:00",
+  "generated_at_utc": "2026-04-13T01:41:12.420378+00:00",
   "status": "PASS",
   "article_results": [
     {
@@ -88,7 +88,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 16
+      "internal_links": 19
     },
     {
       "title": "Best Spotting Scopes for Birding in 2026",
@@ -154,7 +154,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 19
+      "internal_links": 22
     },
     {
       "title": "Best Birding Apps in 2026: Merlin, eBird, and More Compared",
@@ -220,7 +220,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 14
+      "internal_links": 17
     },
     {
       "title": "Best Bird Field Guides Compared: Sibley vs Peterson vs National Geographic",

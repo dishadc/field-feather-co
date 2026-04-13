@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T01:34:18.124628+00:00
+Generated (UTC): 2026-04-13T01:41:12.420378+00:00
 
 Overall status: PASS
 
@@ -68,7 +68,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 16
+  - internal links: 19
 - Best Spotting Scopes for Birding in 2026: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/best-spotting-scopes-for-birding/
   - local file exists: True
@@ -116,7 +116,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 19
+  - internal links: 22
 - Best Birding Apps in 2026: Merlin, eBird, and More Compared: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/best-birding-apps/
   - local file exists: True
@@ -164,7 +164,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 14
+  - internal links: 17
 - Best Bird Field Guides Compared: Sibley vs Peterson vs National Geographic: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/best-bird-field-guides/
   - local file exists: True

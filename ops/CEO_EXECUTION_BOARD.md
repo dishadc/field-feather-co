@@ -31,7 +31,7 @@ Current state:
 Next actions:
 - related-reads modules added to Texas, Florida, and California regional hubs
 - related-reads modules added to spring migration, hawk migration, and eBird migration hubs
-- add related-reads modules to gear cluster
+- related-reads modules added to binoculars, birding apps, field guides, and spotting scopes hubs
 - identify best entry pages for future newsletter/lead magnet placement
 
 ### 2) Public-surface hygiene and brand protection
