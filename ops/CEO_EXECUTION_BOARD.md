@@ -98,7 +98,7 @@ Run an immediate review when any of the following happens:
 
 ## Immediate next best actions
 - continue expanding customer-safe Morning Warbler rollout patterns on the strongest pages
-- expand Morning Warbler rollout to regional and migration-adjacent state-checklist pages
+- Morning Warbler rollout extended to Texas, Florida, and California regional entry pages
 - prepare branded subscriber capture once Beehiiv is ready
 - keep QA green while shipping non-blocked growth work
 

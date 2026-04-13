@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T02:31:35.874355+00:00",
+  "generated_at_utc": "2026-04-13T02:42:32.057325+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
@@ -36,7 +36,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-13T02:31:24.282994+00:00",
+      "generated_at_utc": "2026-04-13T02:42:21.895880+00:00",
       "status": "PASS",
       "results": [
         {
@@ -113,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-13T02:31:30.432Z",
+      "generated_at_utc": "2026-04-13T02:42:27.027Z",
       "status": "PASS",
       "results": [
         {
@@ -153,7 +153,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-13T02:31:25.909961+00:00",
+      "generated_at_utc": "2026-04-13T02:42:23.484889+00:00",
       "status": "PASS",
       "article_results": [
         {
@@ -165,7 +165,7 @@
           "title_present": true,
           "meta_present": true,
           "sources_present": true,
-          "internal_links": 14
+          "internal_links": 15
         },
         {
           "title": "Best Binoculars for Birding in 2026: Tested and Ranked",
@@ -198,7 +198,7 @@
           "title_present": true,
           "meta_present": true,
           "sources_present": true,
-          "internal_links": 12
+          "internal_links": 13
         },
         {
           "title": "Backyard Birding for Beginners: Feeders, Habitats, and First Species",
@@ -209,7 +209,7 @@
           "title_present": true,
           "meta_present": true,
           "sources_present": true,
-          "internal_links": 17
+          "internal_links": 18
         },
         {
           "title": "Common Backyard and Park Birds in Texas: A Practical Local Guide",
@@ -242,7 +242,7 @@
           "title_present": true,
           "meta_present": true,
           "sources_present": true,
-          "internal_links": 19
+          "internal_links": 20
         },
         {
           "title": "Best Spotting Scopes for Birding in 2026",
@@ -374,7 +374,7 @@
           "title_present": true,
           "meta_present": true,
           "sources_present": true,
-          "internal_links": 17
+          "internal_links": 18
         },
         {
           "title": "Best Bird Field Guides Compared: Sibley vs Peterson vs National Geographic",

@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T02:31:25.909961+00:00
+Generated (UTC): 2026-04-13T02:42:23.484889+00:00
 
 Overall status: PASS
 
@@ -12,7 +12,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 14
+  - internal links: 15
 - Best Binoculars for Birding in 2026: Tested and Ranked: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/best-binoculars-for-birding/
   - local file exists: True
@@ -36,7 +36,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 12
+  - internal links: 13
 - Backyard Birding for Beginners: Feeders, Habitats, and First Species: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/backyard-birding-for-beginners/
   - local file exists: True
@@ -44,7 +44,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 17
+  - internal links: 18
 - Common Backyard and Park Birds in Texas: A Practical Local Guide: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/birds-in-texas/
   - local file exists: True
@@ -68,7 +68,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 19
+  - internal links: 20
 - Best Spotting Scopes for Birding in 2026: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/best-spotting-scopes-for-birding/
   - local file exists: True
@@ -164,7 +164,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 17
+  - internal links: 18
 - Best Bird Field Guides Compared: Sibley vs Peterson vs National Geographic: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/best-bird-field-guides/
   - local file exists: True
