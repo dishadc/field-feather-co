@@ -32,6 +32,8 @@ FORBIDDEN_PUBLIC_MARKERS = [
     'temporary publishing layer',
     'Temporary journal host live on GitHub Pages',
     'WordPress cutover',
+    'wing_bustle30@icloud.com',
+    'mailto:wing_bustle30@icloud.com',
 ]
 
 

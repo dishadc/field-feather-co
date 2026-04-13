@@ -41,8 +41,9 @@ Current state:
 - QA gate added
 - blog hub / welcome page sanitized
 Next actions:
-- review remaining storefront surfaces for private or low-polish contact/signup patterns
+- storefront newsletter/footer capture patterns sanitized across docs/ and web/
 - extend hygiene checks when new customer-facing surfaces are added
+- stand up real branded subscriber capture once Beehiiv integration is ready
 - treat any future leak as a process failure, not just a copy bug
 
 ### 3) Revenue activation and commerce rollout
@@ -95,7 +96,8 @@ Run an immediate review when any of the following happens:
 
 ## Immediate next best actions
 - optimize regional article hubs next
-- evaluate customer-safe newsletter/support/contact architecture next
+- optimize regional article hubs next
+- prepare branded subscriber capture once Beehiiv is ready
 - keep QA green while shipping non-blocked growth work
 
 ## Decision rule
