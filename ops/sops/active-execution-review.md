@@ -8,6 +8,12 @@ Purpose: enforce intraday CEO oversight of the C-suite, agent team, and active w
 - Do not pause delivery waiting for review approval; reviews are steering actions.
 
 ## Inputs to review
+0. CEO operating board
+   - `ops/CEO_EXECUTION_BOARD.md`
+   - current top priorities
+   - active workstreams
+   - external blockers
+   - operating-system improvement backlog
 1. Workstream status
    - active TODOs
    - delegated agent batches
@@ -37,6 +43,7 @@ Purpose: enforce intraday CEO oversight of the C-suite, agent team, and active w
 
 ## Required outputs
 Each review must leave a trace in at least one of:
+- updated `ops/CEO_EXECUTION_BOARD.md`
 - updated TODO state
 - `data/decision-log.csv`
 - `ops/checklists/ceo_execution_review.md`

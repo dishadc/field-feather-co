@@ -3,8 +3,9 @@
 ## Intraday execution review cadence
 - During active build/publish windows, the CEO runs an operational review every 2–4 hours.
 - Use `ops/sops/active-execution-review.md` as the intraday checklist.
+- Use `ops/CEO_EXECUTION_BOARD.md` as the single operating board for current priorities, workstreams, blockers, and system-improvement work.
 - Each review must inspect workstreams, delegated agents, blockers, deploy status, and validation reports.
-- Each review must leave a trace in TODO state, review artifacts, delegated-task summaries, or `data/decision-log.csv`.
+- Each review must leave a trace in TODO state, the CEO execution board, review artifacts, delegated-task summaries, or `data/decision-log.csv`.
 
 ## Friday review agenda (45 minutes)
 1. KPI snapshot:

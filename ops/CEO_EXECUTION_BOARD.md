@@ -1,0 +1,102 @@
+# CEO Execution Board
+
+Updated: 2026-04-12
+Owner: CEO, Field & Feather Co.
+
+Purpose: single operating board for the CEO to steer product, content, revenue, ops, and company-system improvement without losing momentum.
+
+## North-star status
+- Public website information hygiene: PASS after hardening + QA enforcement
+- Week 1 editorial blitz: COMPLETE (21/21 live)
+- Validation stack: PASS
+- Temporary editorial operation: live and stable
+- Revenue activation: BLOCKED by external platform/account dependencies
+
+## Current top priorities
+1. Turn the finished editorial corpus into better session depth, subscriber intent, and monetization readiness.
+2. Keep all public surfaces customer-safe and free of internal operations leakage.
+3. Clear revenue blockers in parallel where owner action is required, while continuing all non-blocked work.
+4. Continuously improve the operating system itself: repo, delegation, SOPs, QA, reporting, and constitutional enforcement.
+
+## Active workstreams
+
+### 1) Editorial growth and optimization
+Status: ACTIVE
+Goal: improve article-to-article journeys, strengthen authority clusters, and prepare future cadence publishing.
+Current state:
+- 21 foundational articles live
+- first related-reads optimization slice completed
+Next actions:
+- add related-reads modules to regional cluster
+- add related-reads modules to migration cluster
+- add related-reads modules to gear cluster
+- identify best entry pages for future newsletter/lead magnet placement
+
+### 2) Public-surface hygiene and brand protection
+Status: ACTIVE
+Goal: ensure no customer-facing pages leak internal operations, blockers, tooling, or temporary workarounds.
+Current state:
+- constitutional rule encoded
+- SOP created
+- QA gate added
+- blog hub / welcome page sanitized
+Next actions:
+- review remaining storefront surfaces for private or low-polish contact/signup patterns
+- extend hygiene checks when new customer-facing surfaces are added
+- treat any future leak as a process failure, not just a copy bug
+
+### 3) Revenue activation and commerce rollout
+Status: BLOCKED_EXTERNALLY
+Goal: convert ready catalog into purchasable live products.
+Current blockers:
+- Gumroad payout method not connected
+- Etsy app approval pending
+Next actions:
+- continue publish/sync/validation automation around blocker boundaries
+- keep owner-action inbox current
+- immediately resume launch automation once blockers clear
+
+### 4) Analytics and operating cadence
+Status: ACTIVE
+Goal: maintain recurring CEO reviews, KPI visibility, and periodic reporting.
+Current state:
+- recurring CEO execution review cron active
+- daily KPI + weekly ops scripts exist
+Next actions:
+- keep review artifacts current
+- tighten future content refresh prioritization once traffic data is meaningful
+- evolve reporting from activity-focused to leverage-focused
+
+### 5) CEO operating-system improvement
+Status: ACTIVE
+Goal: continuously improve the company’s repo, team/process architecture, agent flows, QA, and governance.
+Current state:
+- public-surface hygiene doctrine encoded
+- operating-system backlog created
+Next actions:
+- keep `ops/backlog/ceo-operating-system-improvements.md` current
+- add system improvements whenever recurring friction appears
+- review whether newsletter/support/contact surfaces need a more brand-safe capture architecture
+
+## Blockers requiring owner action
+1. Gumroad payout method connection
+2. Etsy app approval completion
+3. Credential rotation after setup stabilization
+
+Reference: `ops/checklists/OWNER_ACTIONS_REQUIRED.md`
+
+## CEO review triggers
+Run an immediate review when any of the following happens:
+- validation stack turns FAIL
+- major deploy ships
+- public-surface leak is detected
+- owner action clears a revenue blocker
+- a workstream stalls or no longer compounds value
+
+## Immediate next best actions
+- optimize regional article hubs next
+- evaluate customer-safe newsletter/support/contact architecture next
+- keep QA green while shipping non-blocked growth work
+
+## Decision rule
+If a task improves both customer trust and operational durability, prioritize it over cosmetic-only work.
