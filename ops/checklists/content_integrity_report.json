@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T01:41:12.420378+00:00",
+  "generated_at_utc": "2026-04-13T02:31:25.909961+00:00",
   "status": "PASS",
   "article_results": [
     {
@@ -22,7 +22,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 11
+      "internal_links": 14
     },
     {
       "title": "How to Identify Birds: 8 Techniques Every Birder Needs",
@@ -99,7 +99,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 17
+      "internal_links": 20
     },
     {
       "title": "How to Start Birdwatching Alone and Build Confidence Fast",
@@ -165,7 +165,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 15
+      "internal_links": 18
     },
     {
       "title": "Birdwatching Etiquette: 12 Rules Every Beginner Should Learn",
@@ -231,7 +231,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 16
+      "internal_links": 19
     }
   ],
   "asset_results": [

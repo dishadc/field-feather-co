@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T01:41:12.420378+00:00
+Generated (UTC): 2026-04-13T02:31:25.909961+00:00
 
 Overall status: PASS
 
@@ -20,7 +20,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 11
+  - internal links: 14
 - How to Identify Birds: 8 Techniques Every Birder Needs: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-birds/
   - local file exists: True
@@ -76,7 +76,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 17
+  - internal links: 20
 - How to Start Birdwatching Alone and Build Confidence Fast: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/how-to-start-birdwatching-alone/
   - local file exists: True
@@ -124,7 +124,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 15
+  - internal links: 18
 - Birdwatching Etiquette: 12 Rules Every Beginner Should Learn: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/birdwatching-etiquette/
   - local file exists: True
@@ -172,7 +172,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 16
+  - internal links: 19
 
 ## Preview asset checks
 - All expected preview assets exist in docs/ and web/.

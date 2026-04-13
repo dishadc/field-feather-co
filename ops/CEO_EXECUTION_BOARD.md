@@ -30,7 +30,7 @@ Current state:
 - related-reads optimization completed across regional, migration, and gear clusters
 Next actions:
 - subscriber-entry shortlist defined in reports/subscriber-entry-pages-2026-04-13.md
-- prepare first branded capture rollout around beginner, gear-beginner, backyard, and migration entry pages
+- soft Morning Warbler rollout added to the top shortlisted entry pages
 - keep internal-link architecture compounding as new content ships
 
 ### 2) Public-surface hygiene and brand protection
@@ -97,7 +97,7 @@ Run an immediate review when any of the following happens:
 - a workstream stalls or no longer compounds value
 
 ## Immediate next best actions
-- prepare first branded subscriber capture rollout from the shortlisted entry pages
+- continue expanding customer-safe Morning Warbler rollout patterns on the strongest pages
 - prepare branded subscriber capture once Beehiiv is ready
 - keep QA green while shipping non-blocked growth work
 
