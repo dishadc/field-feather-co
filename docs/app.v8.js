@@ -68,8 +68,14 @@ function normalizeProduct(p) {
   };
 }
 
+function siteRootUrl() {
+  const script = document.currentScript || document.querySelector('script[src*="app.v8.js"]');
+  if (script?.src) return new URL('.', script.src);
+  return new URL('../', window.location.href);
+}
+
 async function loadProducts() {
-  const res = await fetch('products.json');
+  const res = await fetch(new URL('products.json', siteRootUrl()));
   const raw = await res.json();
   state.products = raw.map(normalizeProduct);
   state.filtered = [...state.products];

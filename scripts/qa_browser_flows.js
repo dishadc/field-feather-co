@@ -91,6 +91,37 @@ const BASE = 'https://dishadc.github.io/field-feather-co';
     return { opened: true };
   });
 
+
+  await record('morning_warbler_beginner_flow', async () => {
+    await page.goto(`${BASE}/blog/morning-warbler/?mw_source=birdwatching-for-beginners&mw_offer=Beginner+Birding+Starter+Checklist&mw_cluster=beginner&qa=1`, { waitUntil: 'networkidle' });
+    await page.waitForSelector('[data-newsletter-context]');
+    const contextText = await page.locator('[data-newsletter-context]').textContent();
+    if (!contextText.includes('Birdwatching For Beginners')) throw new Error('Beginner context handoff missing source label');
+    if (!contextText.includes('Beginner Birding Starter Checklist')) throw new Error('Beginner context handoff missing offer label');
+    const cards = await page.locator('[data-newsletter-recommendation-grid] article').count();
+    if (cards !== 3) throw new Error(`Unexpected beginner recommendation count: ${cards}`);
+    const titles = await page.locator('[data-newsletter-recommendation-grid] h4').allTextContents();
+    const expected = ['Essential Birding Gear for Beginners', 'Backyard Birding for Beginners', 'Best Birding Apps in 2026'];
+    for (const name of expected) {
+      if (!titles.includes(name)) throw new Error(`Missing beginner recommendation: ${name}`);
+    }
+    return { recommendation_titles: titles };
+  });
+
+  await record('morning_warbler_gear_trust_flow', async () => {
+    await page.goto(`${BASE}/blog/morning-warbler/?mw_source=best-binoculars-for-birding&mw_offer=Binocular+Buying+Shortlist&mw_cluster=gear-trust&qa=1`, { waitUntil: 'networkidle' });
+    await page.waitForSelector('[data-newsletter-context]');
+    const contextText = await page.locator('[data-newsletter-context]').textContent();
+    if (!contextText.includes('Best Binoculars For Birding')) throw new Error('Gear-trust context handoff missing source label');
+    if (!contextText.includes('Binocular Buying Shortlist')) throw new Error('Gear-trust context handoff missing offer label');
+    const titles = await page.locator('[data-newsletter-recommendation-grid] h4').allTextContents();
+    const expected = ['Birdwatching for Beginners', 'Essential Birding Gear for Beginners', 'How to Identify Birds'];
+    for (const name of expected) {
+      if (!titles.includes(name)) throw new Error(`Missing gear-trust recommendation: ${name}`);
+    }
+    return { recommendation_titles: titles };
+  });
+
   await browser.close();
 
   if (pageErrors.length || consoleErrors.length) {

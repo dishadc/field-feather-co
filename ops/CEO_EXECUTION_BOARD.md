@@ -38,6 +38,8 @@ Next actions:
 - attribution-ready CTA routing now tags source article, offer, and cluster for every live Morning Warbler module
 - a dedicated Morning Warbler hub is now the branded destination for all live subscriber CTAs
 - the Morning Warbler hub now renders cluster-aware next-read recommendations from existing attribution context
+- browser-level QA now covers Morning Warbler attribution and recommendation behavior for beginner and gear-trust flows
+- nested blog pages no longer issue stray products.json 404s when shared app code runs on editorial pages
 - keep internal-link architecture compounding as new content ships
 
 ### 2) Public-surface hygiene and brand protection

@@ -40,6 +40,8 @@ Field & Feather Co. helps birders build a calmer, richer birding life by pairing
 - Attribution foundation: Morning Warbler CTAs now pass source, offer, and cluster context into the journal guide, documented in `reports/newsletter-attribution-foundation-2026-04-13.md`.
 - Current destination: live subscriber CTAs now route into a dedicated Morning Warbler hub documented in `reports/morning-warbler-hub-launch-2026-04-13.md`.
 - Morning Warbler hub behavior: recommendation personalization now adapts next reads by entry cluster, documented in `reports/morning-warbler-recommendation-personalization-2026-04-13.md`.
+- Validation coverage: browser QA now exercises Morning Warbler beginner and gear-trust flows, documented in `reports/morning-warbler-browser-qa-hardening-2026-04-13.md`.
+- Stability hardening: nested-page JS fetches no longer leak 404s from shared catalog code during Morning Warbler flows.
 
 ### 3. Editorial lead magnet and conversion path
 - User problem it solves: New readers need a compelling reason to return and subscribe beyond passive article consumption.
