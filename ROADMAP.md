@@ -35,6 +35,7 @@ Field & Feather Co. helps birders build a calmer, richer birding life by pairing
 - User problem it solves: Readers need high-context subscriber prompts that match why they arrived on the page.
 - Rough effort: Medium
 - Dependencies: subscriber-entry shortlist approved, CTA copy written, branded capture path ready.
+- Current artifact: `reports/branded-subscriber-rollout-spec-2026-04-13.md`
 
 ### 3. Editorial lead magnet and conversion path
 - User problem it solves: New readers need a compelling reason to return and subscribe beyond passive article consumption.
