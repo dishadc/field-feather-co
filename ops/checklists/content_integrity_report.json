@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T03:12:14.989860+00:00",
+  "generated_at_utc": "2026-04-13T03:17:01.990767+00:00",
   "status": "PASS",
   "article_results": [
     {
@@ -542,6 +542,12 @@
       "status": "PASS"
     },
     {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/morning-warbler/index.html",
+      "exists": true,
+      "forbidden_markers": [],
+      "status": "PASS"
+    },
+    {
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/welcome/index.html",
       "exists": true,
       "forbidden_markers": [],
@@ -763,6 +769,14 @@
       "has_source": true,
       "has_offer": true,
       "has_cluster": true,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/morning-warbler/index.html",
+      "has_module": false,
+      "has_source": false,
+      "has_offer": false,
+      "has_cluster": false,
       "status": "PASS"
     },
     {

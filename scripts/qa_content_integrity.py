@@ -75,7 +75,7 @@ def scan_forbidden_markers(path):
 
 def scan_newsletter_cta(path):
     text = path.read_text() if path.exists() else ''
-    has_module = 'The Morning Warbler' in text and 'welcome/index.html' in text and 'Read about the journal' in text
+    has_module = 'The Morning Warbler' in text and ('morning-warbler/index.html' in text or 'welcome/index.html' in text) and 'Read about the journal' in text
     has_source = 'data-newsletter-source=' in text
     has_offer = 'data-newsletter-offer=' in text
     has_cluster = 'data-newsletter-cluster=' in text

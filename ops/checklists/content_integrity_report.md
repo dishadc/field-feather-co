@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T03:12:14.989860+00:00
+Generated (UTC): 2026-04-13T03:17:01.990767+00:00
 
 Overall status: PASS
 
@@ -196,6 +196,7 @@ Overall status: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-start-birdwatching-alone/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-binoculars-for-birding/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/morning-warbler/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/welcome/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-california/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-shorebirds/index.html: PASS

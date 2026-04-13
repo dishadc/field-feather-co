@@ -261,7 +261,7 @@ function initNewsletterWelcomeContext() {
   const sourceLabel = slugToLabel(source);
   const clusterLabel = clusterLabels[cluster] || 'the journal';
   const offerLabel = offer || 'The Morning Warbler';
-  target.innerHTML = `<strong>Starting point:</strong> You arrived from ${sourceLabel || clusterLabel}. This guide will stay paired with ${offerLabel} so the next step feels connected to why you came.`;
+  target.innerHTML = `<strong>Starting point:</strong> You arrived from ${sourceLabel || clusterLabel}. This page stays paired with ${offerLabel} so the next step feels connected to why you came.`;
 }
 
 function renderMarquee() {

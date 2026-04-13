@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T03:12:17.610423+00:00",
+  "generated_at_utc": "2026-04-13T03:17:14.850445+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
@@ -36,7 +36,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-13T03:11:22.418184+00:00",
+      "generated_at_utc": "2026-04-13T03:17:00.192114+00:00",
       "status": "PASS",
       "results": [
         {
@@ -113,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-13T03:11:27.644Z",
+      "generated_at_utc": "2026-04-13T03:17:05.649Z",
       "status": "PASS",
       "results": [
         {
@@ -153,7 +153,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-13T03:12:14.989860+00:00",
+      "generated_at_utc": "2026-04-13T03:17:01.990767+00:00",
       "status": "PASS",
       "article_results": [
         {
@@ -696,6 +696,12 @@
           "status": "PASS"
         },
         {
+          "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/morning-warbler/index.html",
+          "exists": true,
+          "forbidden_markers": [],
+          "status": "PASS"
+        },
+        {
           "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/welcome/index.html",
           "exists": true,
           "forbidden_markers": [],
@@ -917,6 +923,14 @@
           "has_source": true,
           "has_offer": true,
           "has_cluster": true,
+          "status": "PASS"
+        },
+        {
+          "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/morning-warbler/index.html",
+          "has_module": false,
+          "has_source": false,
+          "has_offer": false,
+          "has_cluster": false,
           "status": "PASS"
         },
         {
