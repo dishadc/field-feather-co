@@ -29,7 +29,7 @@ Current state:
 - 21 foundational articles live
 - first related-reads optimization slice completed
 Next actions:
-- add related-reads modules to regional cluster
+- related-reads modules added to Texas, Florida, and California regional hubs
 - add related-reads modules to migration cluster
 - add related-reads modules to gear cluster
 - identify best entry pages for future newsletter/lead magnet placement
