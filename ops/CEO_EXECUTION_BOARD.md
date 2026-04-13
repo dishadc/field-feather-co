@@ -37,6 +37,7 @@ Next actions:
 - wave-2 Morning Warbler rollout now covers gear-trust pages: birding apps, field guides, binoculars, and spotting scopes
 - attribution-ready CTA routing now tags source article, offer, and cluster for every live Morning Warbler module
 - a dedicated Morning Warbler hub is now the branded destination for all live subscriber CTAs
+- the Morning Warbler hub now renders cluster-aware next-read recommendations from existing attribution context
 - keep internal-link architecture compounding as new content ships
 
 ### 2) Public-surface hygiene and brand protection
@@ -107,7 +108,7 @@ Run an immediate review when any of the following happens:
 - keep wave-2 Morning Warbler rollout stable across gear-trust pages and use it to inform the first live capture swap later
 - continue refining customer-safe support and subscriber architecture while Beehiiv remains pending
 - keep QA green while shipping non-blocked growth work
-- keep Morning Warbler hub routing and attribution stable so the first live subscriber swap inherits clean source context
+- keep Morning Warbler hub routing, attribution, and cluster-aware next-read behavior stable so the first live subscriber swap inherits clean source context
 
 ## Decision rule
 If a task improves both customer trust and operational durability, prioritize it over cosmetic-only work.

@@ -264,6 +264,70 @@ function initNewsletterWelcomeContext() {
   target.innerHTML = `<strong>Starting point:</strong> You arrived from ${sourceLabel || clusterLabel}. This page stays paired with ${offerLabel} so the next step feels connected to why you came.`;
 }
 
+
+function initMorningWarblerRecommendations() {
+  const grid = document.querySelector('[data-newsletter-recommendation-grid]');
+  if (!grid) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const cluster = params.get('mw_cluster') || 'editorial';
+  const recommendationsByCluster = {
+    beginner: [
+      { title: 'Essential Birding Gear for Beginners', href: '../essential-birding-gear-for-beginners/index.html', body: 'Build out the simple tools that make a first month outdoors easier.' },
+      { title: 'Backyard Birding for Beginners', href: '../backyard-birding-for-beginners/index.html', body: 'Turn everyday feeder watching into a steadier habit.' },
+      { title: 'Best Birding Apps in 2026', href: '../best-birding-apps/index.html', body: 'Keep your digital birding tools useful without letting them take over.' },
+    ],
+    'beginner-gear': [
+      { title: 'Best Binoculars for Birding in 2026', href: '../best-binoculars-for-birding/index.html', body: 'Compare optics with a calmer shortlist already in mind.' },
+      { title: 'Best Bird Field Guides Compared', href: '../best-bird-field-guides/index.html', body: 'Choose the guide that matches how you actually learn birds.' },
+      { title: 'Birdwatching for Beginners', href: '../birdwatching-for-beginners/index.html', body: 'Reconnect gear choices to the broader field habit you are building.' },
+    ],
+    backyard: [
+      { title: 'How to Attract More Birds to Your Yard Naturally', href: '../attract-birds-to-your-yard/index.html', body: 'Improve your patch with habitat changes that compound over time.' },
+      { title: 'Best Backyard Bird Feeders', href: '../best-backyard-bird-feeders/index.html', body: 'Choose feeder setups that fit the species and rhythm you want.' },
+      { title: 'Birdwatching for Beginners', href: '../birdwatching-for-beginners/index.html', body: 'Keep backyard observation connected to broader birding skill.' },
+    ],
+    migration: [
+      { title: 'How to Use eBird to Track Migration in Real Time', href: '../how-to-use-ebird-migration/index.html', body: 'Turn seasonal movement into cleaner field decisions.' },
+      { title: 'Hawk Migration Explained', href: '../hawk-migration/index.html', body: 'Follow a more event-driven side of migration with sharper timing.' },
+      { title: 'How to Identify Birds', href: '../how-to-identify-birds/index.html', body: 'Strengthen the ID habits that matter most during seasonal turnover.' },
+    ],
+    'migration-tools': [
+      { title: 'Spring Bird Migration', href: '../spring-bird-migration/index.html', body: 'Zoom back out to the bigger seasonal rhythm.' },
+      { title: 'Hawk Migration Explained', href: '../hawk-migration/index.html', body: 'Compare broad migration tracking with focused watch-site behavior.' },
+      { title: 'Best Birding Apps in 2026', href: '../best-birding-apps/index.html', body: 'Keep your app stack practical and field-friendly.' },
+    ],
+    regional: [
+      { title: 'Birdwatching for Beginners', href: '../birdwatching-for-beginners/index.html', body: 'Tie local species knowledge back to stronger all-purpose habits.' },
+      { title: 'Spring Bird Migration', href: '../spring-bird-migration/index.html', body: 'See how seasonal movement changes what is likely in your area.' },
+      { title: 'Backyard Birding for Beginners', href: '../backyard-birding-for-beginners/index.html', body: 'Turn regional familiarity into a repeatable neighborhood practice.' },
+    ],
+    'migration-event': [
+      { title: 'Spring Bird Migration', href: '../spring-bird-migration/index.html', body: 'Step back into the broader seasonal movement picture.' },
+      { title: 'How to Identify Hawks in Flight', href: '../how-to-identify-hawks/index.html', body: 'Sharpen the field marks and silhouettes that matter most at watch sites.' },
+      { title: 'How to Use eBird to Track Migration in Real Time', href: '../how-to-use-ebird-migration/index.html', body: 'Add cleaner data-reading habits to your next hawkwatch.' },
+    ],
+    'gear-trust': [
+      { title: 'Birdwatching for Beginners', href: '../birdwatching-for-beginners/index.html', body: 'Reconnect tool decisions to the field habits they are meant to support.' },
+      { title: 'Essential Birding Gear for Beginners', href: '../essential-birding-gear-for-beginners/index.html', body: 'Keep your buying plan simple and field-ready.' },
+      { title: 'How to Identify Birds', href: '../how-to-identify-birds/index.html', body: 'Make sure better tools are reinforcing better observation.' },
+    ],
+    editorial: [
+      { title: 'Birdwatching for Beginners', href: '../birdwatching-for-beginners/index.html', body: 'Start with the clearest on-ramp into the journal.' },
+      { title: 'Spring Bird Migration', href: '../spring-bird-migration/index.html', body: 'Follow one of the strongest seasonal coverage paths in the journal.' },
+      { title: 'Birds in Texas', href: '../birds-in-texas/index.html', body: 'See how regional pages turn familiar birds into a steadier practice.' },
+    ]
+  };
+
+  const items = recommendationsByCluster[cluster] || recommendationsByCluster.editorial;
+  grid.innerHTML = items.map(item => `
+    <article class="card panel" style="padding:1rem;">
+      <h4 style="margin-top:0;">${item.title}</h4>
+      <p style="color:var(--muted);">${item.body}</p>
+      <a class="btn btn-secondary" href="${item.href}">Open article</a>
+    </article>`).join('');
+}
+
 function renderMarquee() {
   const track = document.getElementById('bird-track');
   if (!track) return;
@@ -429,6 +493,7 @@ function renderDownloads() {
   renderMarquee();
   initNewsletterAttribution();
   initNewsletterWelcomeContext();
+  initMorningWarblerRecommendations();
 
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
