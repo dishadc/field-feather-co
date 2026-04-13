@@ -119,6 +119,25 @@ CTA options:
 - Read about the journal
 - Explore the journal guide
 
+## Pattern G — Tool-confidence and comparison pages
+Best for:
+- Best Birding Apps
+- Best Bird Field Guides
+- Best Binoculars for Birding
+- Best Spotting Scopes for Birding
+
+Headline options:
+- Keep your field tools simpler, calmer, and easier to revisit.
+- Turn gear research into a cleaner field kit.
+
+Body options:
+- The Morning Warbler is building a quieter companion layer for these trust pages: shortlists, comparison worksheets, and practical notes you can revisit before buying or packing for the field.
+- These pages are strong future entry points for printable buying shortlists and comparison notes that help readers make fewer, better gear decisions.
+
+CTA options:
+- Read about the journal
+- Explore the journal guide
+
 ## Swap guidance once Beehiiv is live
 - Broad educational pages -> newsletter-first CTA
 - Practical-intent pages -> lead-magnet-first CTA

@@ -30,8 +30,11 @@ FORBIDDEN_PUBLIC_MARKERS = [
     'pending Bookshop.org',
     'temporary live publishing home',
     'temporary publishing layer',
+    'temporary publishing base',
     'Temporary journal host live on GitHub Pages',
     'WordPress cutover',
+    'CMS stack',
+    'permanent CMS stack',
     'wing_bustle30@icloud.com',
     'mailto:wing_bustle30@icloud.com',
 ]

@@ -34,6 +34,7 @@ Next actions:
 - execution-ready subscriber matrix written in marketing/newsletter/subscriber_entry_matrix.csv
 - CTA copy library written in marketing/newsletter/morning_warbler_cta_copy.md
 - execution-ready lead magnet packs prepared under marketing/newsletter/lead-magnets/
+- wave-2 Morning Warbler rollout now covers gear-trust pages: birding apps, field guides, binoculars, and spotting scopes
 - keep internal-link architecture compounding as new content ships
 
 ### 2) Public-surface hygiene and brand protection
@@ -101,10 +102,10 @@ Run an immediate review when any of the following happens:
 - a workstream stalls or no longer compounds value
 
 ## Immediate next best actions
-- continue expanding customer-safe Morning Warbler rollout patterns on the strongest pages
-- Morning Warbler rollout extended to Texas, Florida, and California regional entry pages
+- keep wave-2 Morning Warbler rollout stable across gear-trust pages and use it to inform the first live capture swap later
 - continue refining customer-safe support and subscriber architecture while Beehiiv remains pending
 - keep QA green while shipping non-blocked growth work
+- prepare click and conversion instrumentation once the live subscriber path is available
 
 ## Decision rule
 If a task improves both customer trust and operational durability, prioritize it over cosmetic-only work.

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T02:49:41.676698+00:00",
+  "generated_at_utc": "2026-04-13T03:07:24.075399+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
@@ -36,7 +36,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-13T02:49:30.609863+00:00",
+      "generated_at_utc": "2026-04-13T03:07:12.547667+00:00",
       "status": "PASS",
       "results": [
         {
@@ -113,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-13T02:49:36.041Z",
+      "generated_at_utc": "2026-04-13T03:07:18.626Z",
       "status": "PASS",
       "results": [
         {
@@ -153,7 +153,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-13T02:49:32.224495+00:00",
+      "generated_at_utc": "2026-04-13T03:07:14.591030+00:00",
       "status": "PASS",
       "article_results": [
         {
@@ -308,7 +308,7 @@
           "title_present": true,
           "meta_present": true,
           "sources_present": true,
-          "internal_links": 22
+          "internal_links": 23
         },
         {
           "title": "Best Birding Apps in 2026: Merlin, eBird, and More Compared",

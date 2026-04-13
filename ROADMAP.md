@@ -36,6 +36,7 @@ Field & Feather Co. helps birders build a calmer, richer birding life by pairing
 - Rough effort: Medium
 - Dependencies: subscriber-entry shortlist approved, CTA copy written, branded capture path ready.
 - Current artifact: `reports/branded-subscriber-rollout-spec-2026-04-13.md`
+- Current status: soft Morning Warbler rollout now spans beginner, backyard, migration, regional, hawkwatch, and gear-trust pages, with wave-2 expansion documented in `reports/subscriber-rollout-wave2-2026-04-13.md`.
 
 ### 3. Editorial lead magnet and conversion path
 - User problem it solves: New readers need a compelling reason to return and subscribe beyond passive article consumption.

@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T02:49:32.224495+00:00
+Generated (UTC): 2026-04-13T03:07:14.591030+00:00
 
 Overall status: PASS
 
@@ -116,7 +116,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 22
+  - internal links: 23
 - Best Birding Apps in 2026: Merlin, eBird, and More Compared: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/best-birding-apps/
   - local file exists: True
