@@ -33,6 +33,7 @@ Next actions:
 - soft Morning Warbler rollout added to top shortlisted entry pages, regional state guides, and hawk migration
 - execution-ready subscriber matrix written in marketing/newsletter/subscriber_entry_matrix.csv
 - CTA copy library written in marketing/newsletter/morning_warbler_cta_copy.md
+- execution-ready lead magnet packs prepared under marketing/newsletter/lead-magnets/
 - keep internal-link architecture compounding as new content ships
 
 ### 2) Public-surface hygiene and brand protection
