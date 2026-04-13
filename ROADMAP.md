@@ -15,7 +15,7 @@ Field & Feather Co. helps birders build a calmer, richer birding life by pairing
 - One-sentence description: Identify the strongest journal entry pages for future lead-magnet and subscriber placement based on search intent, hub strength, and likely conversion posture.
 - User story: As a reader who lands on one of our strongest articles, I want the next step into the brand to feel relevant and timely, so subscribing feels helpful rather than interruptive.
 - Definition of done: A prioritized list of entry pages exists, rationale is documented, and the board/roadmap reflect the placement strategy.
-- Success metric: The company has a clear shortlist of pages to use when branded subscriber capture is activated.
+- Success metric: Completed — a clear shortlist now exists in `reports/subscriber-entry-pages-2026-04-13.md` for future branded subscriber capture activation.
 
 ### 2. Customer-safe subscriber capture foundation
 - Team responsible: Growth / Ops / CEO
@@ -31,7 +31,12 @@ Field & Feather Co. helps birders build a calmer, richer birding life by pairing
 - Rough effort: Medium
 - Dependencies: Beehiiv integration readiness, branded capture flow, public CTA copy approved.
 
-### 2. Editorial lead magnet and conversion path
+### 2. First branded capture rollout on shortlisted entry pages
+- User problem it solves: Readers need high-context subscriber prompts that match why they arrived on the page.
+- Rough effort: Medium
+- Dependencies: subscriber-entry shortlist approved, CTA copy written, branded capture path ready.
+
+### 3. Editorial lead magnet and conversion path
 - User problem it solves: New readers need a compelling reason to return and subscribe beyond passive article consumption.
 - Rough effort: Medium
 - Dependencies: Strongest entry pages identified, subscriber path decided, downloadable asset concept chosen.
