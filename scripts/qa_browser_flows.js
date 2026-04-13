@@ -122,6 +122,23 @@ const BASE = 'https://dishadc.github.io/field-feather-co';
     return { recommendation_titles: titles };
   });
 
+
+  await record('journal_header_consistency', async () => {
+    await page.goto(`${BASE}/blog/?qa=1`, { waitUntil: 'networkidle' });
+    await page.waitForSelector('header.topbar .container.nav-wrap');
+    const brandHtml = await page.locator('header.topbar .brand').innerHTML();
+    if (!brandHtml.includes('<span class="amp">&amp;</span>')) throw new Error('Journal header brand markup regressed');
+    const desktopNavCount = await page.locator('header.topbar .desktop-nav a').count();
+    if (desktopNavCount !== 4) throw new Error(`Unexpected journal desktop nav count: ${desktopNavCount}`);
+    const hasThemeToggle = await page.locator('header.topbar .theme-toggle[data-theme-toggle]').count();
+    if (!hasThemeToggle) throw new Error('Journal header missing standard theme toggle');
+    const hasNavToggle = await page.locator('header.topbar .nav-toggle[data-nav-toggle]').count();
+    if (!hasNavToggle) throw new Error('Journal header missing standard mobile nav toggle');
+    const mobilePanel = await page.locator('header.topbar [data-mobile-panel]').count();
+    if (!mobilePanel) throw new Error('Journal header missing mobile panel');
+    return { desktop_nav_links: desktopNavCount, has_theme_toggle: true, has_mobile_toggle: true };
+  });
+
   await browser.close();
 
   if (pageErrors.length || consoleErrors.length) {

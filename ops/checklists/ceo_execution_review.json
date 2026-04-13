@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T03:38:03.406538+00:00",
+  "generated_at_utc": "2026-04-13T03:42:05.285547+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
@@ -36,7 +36,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-13T03:37:51.728751+00:00",
+      "generated_at_utc": "2026-04-13T03:41:52.499276+00:00",
       "status": "PASS",
       "results": [
         {
@@ -113,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-13T03:37:57.257Z",
+      "generated_at_utc": "2026-04-13T03:41:58.363Z",
       "status": "PASS",
       "results": [
         {
@@ -164,6 +164,13 @@
             "Essential Birding Gear for Beginners",
             "How to Identify Birds"
           ]
+        },
+        {
+          "name": "journal_header_consistency",
+          "status": "PASS",
+          "desktop_nav_links": 4,
+          "has_theme_toggle": true,
+          "has_mobile_toggle": true
         }
       ],
       "page_errors": [],
@@ -171,7 +178,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-13T03:37:53.357159+00:00",
+      "generated_at_utc": "2026-04-13T03:41:54.252886+00:00",
       "status": "PASS",
       "article_results": [
         {

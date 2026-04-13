@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T03:37:57.257Z",
+  "generated_at_utc": "2026-04-13T03:41:58.363Z",
   "status": "PASS",
   "results": [
     {
@@ -50,6 +50,13 @@
         "Essential Birding Gear for Beginners",
         "How to Identify Birds"
       ]
+    },
+    {
+      "name": "journal_header_consistency",
+      "status": "PASS",
+      "desktop_nav_links": 4,
+      "has_theme_toggle": true,
+      "has_mobile_toggle": true
     }
   ],
   "page_errors": [],

@@ -1,6 +1,6 @@
 # Browser QA Report
 
-Generated (UTC): 2026-04-13T03:37:57.257Z
+Generated (UTC): 2026-04-13T03:41:58.363Z
 
 Overall status: PASS
 
@@ -23,6 +23,10 @@ Overall status: PASS
   - recommendation_titles: Essential Birding Gear for Beginners | Backyard Birding for Beginners | Best Birding Apps in 2026
 - morning_warbler_gear_trust_flow: PASS
   - recommendation_titles: Birdwatching for Beginners | Essential Birding Gear for Beginners | How to Identify Birds
+- journal_header_consistency: PASS
+  - desktop_nav_links: 4
+  - has_theme_toggle: true
+  - has_mobile_toggle: true
 
 ## JS runtime issues
 - page errors: 0
