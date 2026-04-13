@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T03:41:54.252886+00:00",
+  "generated_at_utc": "2026-04-13T04:02:16.663981+00:00",
   "status": "PASS",
   "article_results": [
     {
@@ -881,6 +881,88 @@
       "has_source": false,
       "has_offer": false,
       "has_cluster": false,
+      "status": "PASS"
+    }
+  ],
+  "legacy_newsletter_route_results": [
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/index.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/product.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/about.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/support.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/terms.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/shop.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/downloads.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/docs/privacy.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/web/index.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/web/product.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/web/about.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/web/support.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/web/terms.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/web/shop.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/web/downloads.html",
+      "legacy_route_found": false,
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/dishad/Desktop/workspace/birdwatching-store/web/privacy.html",
+      "legacy_route_found": false,
       "status": "PASS"
     }
   ]

@@ -16,6 +16,7 @@ PRODUCTS = ROOT / 'docs' / 'products.json'
 PREVIEWS_DOCS = ROOT / 'docs' / 'assets' / 'previews'
 PREVIEWS_WEB = ROOT / 'web' / 'assets' / 'previews'
 PUBLIC_PAGES = list((ROOT / 'docs').rglob('*.html'))
+LEGACY_NEWSLETTER_ROUTE_PAGES = list((ROOT / 'docs').glob('*.html')) + list((ROOT / 'web').glob('*.html'))
 FORBIDDEN_PUBLIC_MARKERS = [
     'Temporary editorial HQ',
     'Editorial ops',
@@ -91,6 +92,17 @@ def scan_newsletter_cta(path):
         'status': status,
     }
 
+
+
+def scan_legacy_newsletter_routes(path):
+    text = path.read_text() if path.exists() else ''
+    found = 'blog/welcome/index.html' in text
+    return {
+        'path': str(path),
+        'legacy_route_found': found,
+        'status': 'FAIL' if found else 'PASS',
+    }
+
 def main():
     ts = datetime.now(timezone.utc).isoformat()
     overall = 'PASS'
@@ -149,6 +161,11 @@ def main():
         if item['status'] != 'PASS':
             overall = 'FAIL'
 
+    legacy_newsletter_route_results = [scan_legacy_newsletter_routes(path) for path in LEGACY_NEWSLETTER_ROUTE_PAGES]
+    for item in legacy_newsletter_route_results:
+        if item['status'] != 'PASS':
+            overall = 'FAIL'
+
     payload = {
         'generated_at_utc': ts,
         'status': overall,
@@ -156,6 +173,7 @@ def main():
         'asset_results': asset_results,
         'public_surface_results': public_surface_results,
         'newsletter_cta_results': newsletter_cta_results,
+        'legacy_newsletter_route_results': legacy_newsletter_route_results,
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(payload, indent=2) + '\n')
@@ -195,6 +213,11 @@ def main():
             lines.append(f"  - source attr: {item['has_source']}")
             lines.append(f"  - offer attr: {item['has_offer']}")
             lines.append(f"  - cluster attr: {item['has_cluster']}")
+
+    lines.extend(['', '## Legacy newsletter route checks'])
+    for item in legacy_newsletter_route_results:
+        lines.append(f"- {item['path']}: {item['status']}")
+        lines.append(f"  - legacy welcome route found: {item['legacy_route_found']}")
 
     OUT_MD.write_text('\n'.join(lines) + '\n')
     print(json.dumps({'status': overall, 'out_json': str(OUT_JSON), 'out_md': str(OUT_MD)}))

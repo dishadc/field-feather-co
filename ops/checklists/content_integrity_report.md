@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T03:41:54.252886+00:00
+Generated (UTC): 2026-04-13T04:02:16.663981+00:00
 
 Overall status: PASS
 
@@ -264,3 +264,37 @@ Overall status: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
+
+## Legacy newsletter route checks
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/index.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/product.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/about.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/support.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/terms.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/shop.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/downloads.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/privacy.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/web/index.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/web/product.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/web/about.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/web/support.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/web/terms.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/web/shop.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/web/downloads.html: PASS
+  - legacy welcome route found: False
+- /Users/dishad/Desktop/workspace/birdwatching-store/web/privacy.html: PASS
+  - legacy welcome route found: False
