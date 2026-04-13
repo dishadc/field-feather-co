@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T01:30:14.520627+00:00
+Generated (UTC): 2026-04-13T01:34:18.124628+00:00
 
 Overall status: PASS
 
@@ -108,7 +108,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 13
+  - internal links: 16
 - Hawk Migration Explained: Best Times, Weather, and Watch Sites: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/hawk-migration/
   - local file exists: True
@@ -148,7 +148,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 13
+  - internal links: 16
 - How to Identify Shorebirds Without Guessing: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-shorebirds/
   - local file exists: True

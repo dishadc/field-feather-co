@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T01:30:14.520627+00:00",
+  "generated_at_utc": "2026-04-13T01:34:18.124628+00:00",
   "status": "PASS",
   "article_results": [
     {
@@ -143,7 +143,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 13
+      "internal_links": 16
     },
     {
       "title": "Hawk Migration Explained: Best Times, Weather, and Watch Sites",
@@ -198,7 +198,7 @@
       "title_present": true,
       "meta_present": true,
       "sources_present": true,
-      "internal_links": 13
+      "internal_links": 16
     },
     {
       "title": "How to Identify Shorebirds Without Guessing",

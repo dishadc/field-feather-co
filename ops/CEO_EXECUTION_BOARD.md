@@ -30,7 +30,7 @@ Current state:
 - first related-reads optimization slice completed
 Next actions:
 - related-reads modules added to Texas, Florida, and California regional hubs
-- add related-reads modules to migration cluster
+- related-reads modules added to spring migration, hawk migration, and eBird migration hubs
 - add related-reads modules to gear cluster
 - identify best entry pages for future newsletter/lead magnet placement
 
