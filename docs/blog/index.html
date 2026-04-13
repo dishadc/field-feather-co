@@ -8,18 +8,29 @@
   <meta property="og:title" content="Field Notes Journal · Field & Feather Co." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dishadc.github.io/field-feather-co/blog/" />
-  <link rel="stylesheet" href="../styles.v8.css" />
+  <link rel="stylesheet" href="../styles.v8.css?v=c396cbb" />
 </head>
 <body>
 <header class="topbar">
-  <div class="nav-wrap">
-    <a class="brand" href="../index.html">Field & Feather Co.</a>
-    <nav class="nav-links" aria-label="Primary navigation">
+  <div class="container nav-wrap">
+    <a class="brand" href="../index.html" aria-label="Field and Feather home">Field <span class="amp">&amp;</span> Feather</a>
+    <nav class="nav-links desktop-nav" aria-label="Primary navigation">
       <a href="../shop.html">Shop</a>
-      <a href="../downloads.html">Digital Downloads</a>
-      <a href="index.html">Journal</a>
+      <a href="../downloads.html">Downloads</a>
+      <a href="index.html" aria-current="page">Journal</a>
       <a href="../about.html">About</a>
-      <button class="btn btn-secondary" data-theme-toggle aria-label="Toggle dark mode">Dark Mode</button>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme"></button>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation"></button>
+    </div>
+  </div>
+  <div class="container mobile-panel" data-mobile-panel>
+    <nav class="nav-links" aria-label="Mobile navigation">
+      <a href="../shop.html">Shop</a>
+      <a href="../downloads.html">Downloads</a>
+      <a href="index.html" aria-current="page">Journal</a>
+      <a href="../about.html">About</a>
     </nav>
   </div>
 </header>

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T03:21:26.916264+00:00",
+  "generated_at_utc": "2026-04-13T03:38:03.406538+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
@@ -36,7 +36,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-13T03:21:16.678407+00:00",
+      "generated_at_utc": "2026-04-13T03:37:51.728751+00:00",
       "status": "PASS",
       "results": [
         {
@@ -113,7 +113,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-13T03:21:21.811Z",
+      "generated_at_utc": "2026-04-13T03:37:57.257Z",
       "status": "PASS",
       "results": [
         {
@@ -146,6 +146,24 @@
           "name": "mobile_nav",
           "status": "PASS",
           "opened": true
+        },
+        {
+          "name": "morning_warbler_beginner_flow",
+          "status": "PASS",
+          "recommendation_titles": [
+            "Essential Birding Gear for Beginners",
+            "Backyard Birding for Beginners",
+            "Best Birding Apps in 2026"
+          ]
+        },
+        {
+          "name": "morning_warbler_gear_trust_flow",
+          "status": "PASS",
+          "recommendation_titles": [
+            "Birdwatching for Beginners",
+            "Essential Birding Gear for Beginners",
+            "How to Identify Birds"
+          ]
         }
       ],
       "page_errors": [],
@@ -153,7 +171,7 @@
       "path": "/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-13T03:21:18.281350+00:00",
+      "generated_at_utc": "2026-04-13T03:37:53.357159+00:00",
       "status": "PASS",
       "article_results": [
         {

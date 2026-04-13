@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-13T03:21:21.811Z",
+  "generated_at_utc": "2026-04-13T03:37:57.257Z",
   "status": "PASS",
   "results": [
     {
@@ -32,6 +32,24 @@
       "name": "mobile_nav",
       "status": "PASS",
       "opened": true
+    },
+    {
+      "name": "morning_warbler_beginner_flow",
+      "status": "PASS",
+      "recommendation_titles": [
+        "Essential Birding Gear for Beginners",
+        "Backyard Birding for Beginners",
+        "Best Birding Apps in 2026"
+      ]
+    },
+    {
+      "name": "morning_warbler_gear_trust_flow",
+      "status": "PASS",
+      "recommendation_titles": [
+        "Birdwatching for Beginners",
+        "Essential Birding Gear for Beginners",
+        "How to Identify Birds"
+      ]
     }
   ],
   "page_errors": [],
