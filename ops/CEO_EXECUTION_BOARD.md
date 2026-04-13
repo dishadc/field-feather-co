@@ -78,7 +78,8 @@ Current state:
 Next actions:
 - keep `ops/backlog/ceo-operating-system-improvements.md` current
 - add system improvements whenever recurring friction appears
-- review whether newsletter/support/contact surfaces need a more brand-safe capture architecture
+- premium public support architecture added across docs/ and web/
+- continue reviewing customer-surface architecture as branded subscriber systems mature
 
 ## Blockers requiring owner action
 1. Gumroad payout method connection
@@ -99,7 +100,7 @@ Run an immediate review when any of the following happens:
 ## Immediate next best actions
 - continue expanding customer-safe Morning Warbler rollout patterns on the strongest pages
 - Morning Warbler rollout extended to Texas, Florida, and California regional entry pages
-- prepare branded subscriber capture once Beehiiv is ready
+- continue refining customer-safe support and subscriber architecture while Beehiiv remains pending
 - keep QA green while shipping non-blocked growth work
 
 ## Decision rule

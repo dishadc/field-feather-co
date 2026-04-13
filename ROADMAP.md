@@ -56,6 +56,7 @@ Field & Feather Co. helps birders build a calmer, richer birding life by pairing
 - User problem it solves: Customers need a clean support and contact experience that feels trustworthy and on-brand.
 - Rough effort: Small
 - Dependencies: Decide support channel hierarchy, ensure public contact path does not expose fragile fallback mechanics.
+- Current status: Support architecture is now live through `docs/support.html` / `web/support.html` and linked from legal/storefront surfaces.
 
 ## 4) On the Horizon (Next Quarter)
 

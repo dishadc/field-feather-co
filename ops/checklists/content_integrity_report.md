@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T02:42:23.484889+00:00
+Generated (UTC): 2026-04-13T02:46:18.328001+00:00
 
 Overall status: PASS
 
@@ -52,7 +52,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 14
+  - internal links: 15
 - How to Identify Warblers: Field Marks, Songs, and Migration Timing: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-warblers/
   - local file exists: True
@@ -108,7 +108,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 16
+  - internal links: 17
 - Hawk Migration Explained: Best Times, Weather, and Watch Sites: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/hawk-migration/
   - local file exists: True
@@ -148,7 +148,7 @@ Overall status: PASS
   - title present: True
   - meta present: True
   - sources present: True
-  - internal links: 16
+  - internal links: 17
 - How to Identify Shorebirds Without Guessing: PASS
   - url: https://dishadc.github.io/field-feather-co/blog/how-to-identify-shorebirds/
   - local file exists: True
@@ -181,6 +181,7 @@ Overall status: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/index.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/product.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/about.html: PASS
+- /Users/dishad/Desktop/workspace/birdwatching-store/docs/support.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/terms.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/shop.html: PASS
 - /Users/dishad/Desktop/workspace/birdwatching-store/docs/downloads.html: PASS
