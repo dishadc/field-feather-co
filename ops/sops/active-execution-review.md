@@ -68,3 +68,7 @@ Do not claim the website is working correctly unless all are true for the curren
 ## Notes
 - This review cadence is operational leadership, not a human approval loop.
 - The CEO is expected to self-propel, reallocate work, and keep all teams moving.
+
+## Roadmap discipline
+- Treat `ROADMAP.md` as the canonical sequencing document for company direction.
+- If active work drifts from the roadmap, either update the roadmap immediately or redirect the work.

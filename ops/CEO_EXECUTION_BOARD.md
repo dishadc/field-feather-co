@@ -5,6 +5,8 @@ Owner: CEO, Field & Feather Co.
 
 Purpose: single operating board for the CEO to steer product, content, revenue, ops, and company-system improvement without losing momentum.
 
+Canonical roadmap: `ROADMAP.md`
+
 ## North-star status
 - Public website information hygiene: PASS after hardening + QA enforcement
 - Week 1 editorial blitz: COMPLETE (21/21 live)
@@ -88,6 +90,7 @@ Reference: `ops/checklists/OWNER_ACTIONS_REQUIRED.md`
 
 ## CEO review triggers
 Run an immediate review when any of the following happens:
+- roadmap trigger event fires or the roadmap is more than one week out of date
 - validation stack turns FAIL
 - major deploy ships
 - public-surface leak is detected

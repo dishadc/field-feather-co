@@ -36,3 +36,8 @@
 - Next week pin/content schedule
 - Tool spend adjustments
 - Latest CEO execution review artifact
+
+
+## Roadmap discipline
+- Treat `ROADMAP.md` as the canonical sequencing document for company direction.
+- If active work drifts from the roadmap, either update the roadmap immediately or redirect the work.
