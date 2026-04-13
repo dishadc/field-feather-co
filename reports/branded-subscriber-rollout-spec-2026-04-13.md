@@ -13,6 +13,10 @@ Define the customer-safe Morning Warbler CTA pattern now, so the brand can build
 3. /blog/backyard-birding-for-beginners/
 4. /blog/spring-bird-migration/
 5. /blog/how-to-use-ebird-migration/
+6. /blog/birds-in-texas/
+7. /blog/birds-in-florida/
+8. /blog/birds-in-california/
+9. /blog/hawk-migration/
 
 ## CTA pattern
 Each live module uses:
@@ -29,6 +33,10 @@ This keeps the brand polished while avoiding fake forms, brittle signup mechanic
 - Backyard Birding for Beginners -> Backyard Habitat Starter Planner
 - Spring Bird Migration -> Spring Migration Tracker
 - How to Use eBird to Track Migration in Real Time -> Migration Worksheet + seasonal notes
+- Birds in Texas -> Texas Birding Checklist
+- Birds in Florida -> Florida Birding Checklist
+- Birds in California -> California Birding Checklist
+- Hawk Migration -> Hawk Watch Log
 
 ## Swap plan when Beehiiv is ready
 Replace the current journal-guide CTA target with one of these patterns:
@@ -53,12 +61,8 @@ Best fit:
 - Do not interrupt before the page has delivered value
 - Preserve premium editorial tone; avoid popup-style growth tactics unless proven necessary
 
-## Recommended next expansion
-When the next rollout wave ships, add customer-safe Morning Warbler modules to:
-- /blog/birds-in-florida/
-- /blog/birds-in-california/
-- /blog/birds-in-texas/
-- /blog/hawk-migration/
+## Rollout status
+The first rollout wave is now live across beginner, gear-beginner, migration, regional, and hawk-migration entry pages.
 
 ## Success criteria
 Short-term:

@@ -30,7 +30,7 @@ Current state:
 - related-reads optimization completed across regional, migration, and gear clusters
 Next actions:
 - subscriber-entry shortlist defined in reports/subscriber-entry-pages-2026-04-13.md
-- soft Morning Warbler rollout added to the top shortlisted entry pages
+- soft Morning Warbler rollout added to top shortlisted entry pages, regional state guides, and hawk migration
 - keep internal-link architecture compounding as new content ships
 
 ### 2) Public-surface hygiene and brand protection

@@ -15,7 +15,7 @@ Field & Feather Co. helps birders build a calmer, richer birding life by pairing
 - One-sentence description: Identify the strongest journal entry pages for future lead-magnet and subscriber placement based on search intent, hub strength, and likely conversion posture.
 - User story: As a reader who lands on one of our strongest articles, I want the next step into the brand to feel relevant and timely, so subscribing feels helpful rather than interruptive.
 - Definition of done: A prioritized list of entry pages exists, rationale is documented, and the board/roadmap reflect the placement strategy.
-- Success metric: Completed — a clear shortlist now exists in `reports/subscriber-entry-pages-2026-04-13.md` for future branded subscriber capture activation, and a soft Morning Warbler rollout now exists on the top shortlisted pages, with regional state-guide rollout added for Texas, Florida, and California.
+- Success metric: Completed — a clear shortlist now exists in `reports/subscriber-entry-pages-2026-04-13.md` for future branded subscriber capture activation, and a soft Morning Warbler rollout now exists on the top shortlisted pages, with regional state-guide rollout added for Texas, Florida, and California, plus hawk-migration rollout for the event-style migration entry path.
 
 ### 2. Customer-safe subscriber capture foundation
 - Team responsible: Growth / Ops / CEO
