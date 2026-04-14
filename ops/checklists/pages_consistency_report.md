@@ -1,12 +1,12 @@
 # GitHub Pages Consistency Report
 
-Generated (UTC): 2026-04-14T07:43:00.788078+00:00
+Generated (UTC): 2026-04-14T08:27:25.785009+00:00
 
 Status: PASS
 Reasons: none
 
 ## Pipeline
-Latest pages-build-deployment: completed / success / https://github.com/dishadc/field-feather-co/actions/runs/24384096732
+Latest pages-build-deployment: completed / success / https://github.com/dishadc/field-feather-co/actions/runs/24387191220
 
 ## Content consistency
 - raw matches local docs/index.html: True
