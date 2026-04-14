@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-04-14T08:27:40.533799+00:00",
+  "generated_at_utc": "2026-04-14T09:15:00.278942+00:00",
   "status": "PASS",
   "reports": {
     "pages_consistency": {
-      "generated_at_utc": "2026-04-14T08:27:25.785009+00:00",
+      "generated_at_utc": "2026-04-14T09:14:45.669552+00:00",
       "status": "PASS",
       "reasons": [],
       "urls": {
@@ -26,17 +26,17 @@
         "ok": true,
         "run": {
           "conclusion": "success",
-          "createdAt": "2026-04-14T07:43:36Z",
-          "databaseId": 24387191220,
+          "createdAt": "2026-04-14T08:28:07Z",
+          "databaseId": 24388956036,
           "status": "completed",
-          "updatedAt": "2026-04-14T07:44:04Z",
-          "url": "https://github.com/dishadc/field-feather-co/actions/runs/24387191220"
+          "updatedAt": "2026-04-14T08:28:37Z",
+          "url": "https://github.com/dishadc/field-feather-co/actions/runs/24388956036"
         }
       },
-      "path": "/private/tmp/birdwatching-store-AckTqH/repo/ops/checklists/pages_consistency_report.json"
+      "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/ops/checklists/pages_consistency_report.json"
     },
     "storefront_smoke": {
-      "generated_at_utc": "2026-04-14T08:27:27.590247+00:00",
+      "generated_at_utc": "2026-04-14T09:14:47.025479+00:00",
       "status": "PASS",
       "results": [
         {
@@ -110,10 +110,10 @@
           "http_status": 200
         }
       ],
-      "path": "/private/tmp/birdwatching-store-AckTqH/repo/ops/checklists/storefront_smoke_report.json"
+      "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/ops/checklists/storefront_smoke_report.json"
     },
     "browser_qa": {
-      "generated_at_utc": "2026-04-14T08:27:29.521Z",
+      "generated_at_utc": "2026-04-14T09:14:48.852Z",
       "status": "PASS",
       "results": [
         {
@@ -175,10 +175,10 @@
       ],
       "page_errors": [],
       "console_errors": [],
-      "path": "/private/tmp/birdwatching-store-AckTqH/repo/ops/checklists/browser_qa_report.json"
+      "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/ops/checklists/browser_qa_report.json"
     },
     "content_integrity": {
-      "generated_at_utc": "2026-04-14T08:27:37.003633+00:00",
+      "generated_at_utc": "2026-04-14T09:14:56.372680+00:00",
       "status": "PASS",
       "article_results": [
         {
@@ -613,193 +613,193 @@
       ],
       "public_surface_results": [
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/product.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/product.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/about.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/about.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/support.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/support.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/terms.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/terms.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/shop.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/shop.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/downloads.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/downloads.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/privacy.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/privacy.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-birding-apps/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-birding-apps/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/essential-birding-gear-for-beginners/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/essential-birding-gear-for-beginners/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-birds/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-birds/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-hawks/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-hawks/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birdwatching-for-beginners/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birdwatching-for-beginners/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birdwatching-etiquette/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birdwatching-etiquette/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-start-birdwatching-alone/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-start-birdwatching-alone/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-binoculars-for-birding/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-binoculars-for-birding/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-spotting-scopes-for-birding/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-spotting-scopes-for-birding/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/morning-warbler/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/morning-warbler/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/welcome/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/welcome/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-california/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-california/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-shorebirds/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-shorebirds/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-florida/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-florida/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-backyard-bird-feeders/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-backyard-bird-feeders/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-use-ebird-migration/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-use-ebird-migration/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/backyard-birding-for-beginners/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/backyard-birding-for-beginners/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-bird-field-guides/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-bird-field-guides/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-texas/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-texas/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/spring-bird-migration/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/spring-bird-migration/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/attract-birds-to-your-yard/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/attract-birds-to-your-yard/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/hawk-migration/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/hawk-migration/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-warblers/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-warblers/index.html",
           "exists": true,
           "forbidden_markers": [],
           "status": "PASS"
@@ -807,7 +807,7 @@
       ],
       "newsletter_cta_results": [
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -815,7 +815,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/product.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/product.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -823,7 +823,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/about.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/about.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -831,7 +831,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/support.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/support.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -839,7 +839,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/terms.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/terms.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -847,7 +847,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/shop.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/shop.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -855,7 +855,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/downloads.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/downloads.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -863,7 +863,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/privacy.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/privacy.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -871,7 +871,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -879,7 +879,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-birding-apps/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-birding-apps/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -887,7 +887,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/essential-birding-gear-for-beginners/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/essential-birding-gear-for-beginners/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -895,7 +895,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-birds/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-birds/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -903,7 +903,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-hawks/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-hawks/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -911,7 +911,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birdwatching-for-beginners/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birdwatching-for-beginners/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -919,7 +919,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birdwatching-etiquette/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birdwatching-etiquette/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -927,7 +927,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-start-birdwatching-alone/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-start-birdwatching-alone/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -935,7 +935,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-binoculars-for-birding/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-binoculars-for-birding/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -943,7 +943,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-spotting-scopes-for-birding/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-spotting-scopes-for-birding/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -951,7 +951,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/morning-warbler/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/morning-warbler/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -959,7 +959,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/welcome/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/welcome/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -967,7 +967,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-california/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-california/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -975,7 +975,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-shorebirds/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-shorebirds/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -983,7 +983,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-florida/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-florida/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -991,7 +991,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-backyard-bird-feeders/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-backyard-bird-feeders/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -999,7 +999,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-use-ebird-migration/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-use-ebird-migration/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -1007,7 +1007,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/backyard-birding-for-beginners/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/backyard-birding-for-beginners/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -1015,7 +1015,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-bird-field-guides/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-bird-field-guides/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -1023,7 +1023,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-texas/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-texas/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -1031,7 +1031,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/spring-bird-migration/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/spring-bird-migration/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -1039,7 +1039,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/attract-birds-to-your-yard/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/attract-birds-to-your-yard/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -1047,7 +1047,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/hawk-migration/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/hawk-migration/index.html",
           "has_module": true,
           "has_source": true,
           "has_offer": true,
@@ -1055,7 +1055,7 @@
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-warblers/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-warblers/index.html",
           "has_module": false,
           "has_source": false,
           "has_offer": false,
@@ -1065,87 +1065,87 @@
       ],
       "legacy_newsletter_route_results": [
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/index.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/product.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/product.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/about.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/about.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/support.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/support.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/terms.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/terms.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/shop.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/shop.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/downloads.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/downloads.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/docs/privacy.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/privacy.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/web/index.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/index.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/web/product.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/product.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/web/about.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/about.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/web/support.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/support.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/web/terms.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/terms.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/web/shop.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/shop.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/web/downloads.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/downloads.html",
           "legacy_route_found": false,
           "status": "PASS"
         },
         {
-          "path": "/private/tmp/birdwatching-store-AckTqH/repo/web/privacy.html",
+          "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/privacy.html",
           "legacy_route_found": false,
           "status": "PASS"
         }
       ],
-      "path": "/private/tmp/birdwatching-store-AckTqH/repo/ops/checklists/content_integrity_report.json"
+      "path": "/private/tmp/birdwatching-store-ops.8qCEXZ/repo/ops/checklists/content_integrity_report.json"
     }
   },
   "content_calendar": {

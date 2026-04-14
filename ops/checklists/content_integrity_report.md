@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-14T08:27:37.003633+00:00
+Generated (UTC): 2026-04-14T09:14:56.372680+00:00
 
 Overall status: PASS
 
@@ -178,123 +178,123 @@ Overall status: PASS
 - All expected preview assets exist in docs/ and web/.
 
 ## Public surface leakage checks
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/product.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/about.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/support.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/terms.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/shop.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/downloads.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/privacy.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-birding-apps/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-birds/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-hawks/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birdwatching-for-beginners/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birdwatching-etiquette/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-start-birdwatching-alone/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-binoculars-for-birding/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/morning-warbler/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/welcome/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-california/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-shorebirds/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-florida/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-backyard-bird-feeders/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-use-ebird-migration/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/backyard-birding-for-beginners/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-bird-field-guides/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-texas/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/spring-bird-migration/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/attract-birds-to-your-yard/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/hawk-migration/index.html: PASS
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-identify-warblers/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/product.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/about.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/support.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/terms.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/shop.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/downloads.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/privacy.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-birding-apps/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-birds/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-hawks/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birdwatching-for-beginners/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birdwatching-etiquette/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-start-birdwatching-alone/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-binoculars-for-birding/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/morning-warbler/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/welcome/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-california/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-shorebirds/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-florida/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-backyard-bird-feeders/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-use-ebird-migration/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/backyard-birding-for-beginners/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-bird-field-guides/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-texas/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/spring-bird-migration/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/attract-birds-to-your-yard/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/hawk-migration/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-identify-warblers/index.html: PASS
 
 ## Newsletter CTA attribution checks
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-birding-apps/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-birding-apps/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birdwatching-for-beginners/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birdwatching-for-beginners/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-binoculars-for-birding/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-binoculars-for-birding/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-california/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-california/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-florida/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-florida/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/how-to-use-ebird-migration/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/how-to-use-ebird-migration/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/backyard-birding-for-beginners/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/backyard-birding-for-beginners/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/best-bird-field-guides/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/best-bird-field-guides/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/birds-in-texas/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/birds-in-texas/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/spring-bird-migration/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/spring-bird-migration/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/blog/hawk-migration/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/blog/hawk-migration/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
 
 ## Legacy newsletter route checks
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/index.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/product.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/product.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/about.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/about.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/support.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/support.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/terms.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/terms.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/shop.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/shop.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/downloads.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/downloads.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/docs/privacy.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/docs/privacy.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/web/index.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/index.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/web/product.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/product.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/web/about.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/about.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/web/support.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/support.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/web/terms.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/terms.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/web/shop.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/shop.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/web/downloads.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/downloads.html: PASS
   - legacy welcome route found: False
-- /private/tmp/birdwatching-store-AckTqH/repo/web/privacy.html: PASS
+- /private/tmp/birdwatching-store-ops.8qCEXZ/repo/web/privacy.html: PASS
   - legacy welcome route found: False

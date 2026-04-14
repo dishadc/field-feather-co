@@ -1,6 +1,6 @@
 # Storefront Smoke Report
 
-Generated (UTC): 2026-04-14T08:27:27.590247+00:00
+Generated (UTC): 2026-04-14T09:14:47.025479+00:00
 
 Overall status: PASS
 

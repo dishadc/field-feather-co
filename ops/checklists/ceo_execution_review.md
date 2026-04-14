@@ -1,14 +1,14 @@
 # CEO Execution Review
 
-Generated (UTC): 2026-04-14T08:27:40.533799+00:00
+Generated (UTC): 2026-04-14T09:15:00.278942+00:00
 
 Overall status: PASS
 
 ## Validation stack
-- pages_consistency: PASS (/private/tmp/birdwatching-store-AckTqH/repo/ops/checklists/pages_consistency_report.json)
-- storefront_smoke: PASS (/private/tmp/birdwatching-store-AckTqH/repo/ops/checklists/storefront_smoke_report.json)
-- browser_qa: PASS (/private/tmp/birdwatching-store-AckTqH/repo/ops/checklists/browser_qa_report.json)
-- content_integrity: PASS (/private/tmp/birdwatching-store-AckTqH/repo/ops/checklists/content_integrity_report.json)
+- pages_consistency: PASS (/private/tmp/birdwatching-store-ops.8qCEXZ/repo/ops/checklists/pages_consistency_report.json)
+- storefront_smoke: PASS (/private/tmp/birdwatching-store-ops.8qCEXZ/repo/ops/checklists/storefront_smoke_report.json)
+- browser_qa: PASS (/private/tmp/birdwatching-store-ops.8qCEXZ/repo/ops/checklists/browser_qa_report.json)
+- content_integrity: PASS (/private/tmp/birdwatching-store-ops.8qCEXZ/repo/ops/checklists/content_integrity_report.json)
 
 ## Content pipeline
 - planned articles: 21
