@@ -1,6 +1,6 @@
 # Content Integrity Report
 
-Generated (UTC): 2026-04-13T04:02:16.663981+00:00
+Generated (UTC): 2026-04-14T06:16:35.869928+00:00
 
 Overall status: PASS
 
@@ -178,123 +178,123 @@ Overall status: PASS
 - All expected preview assets exist in docs/ and web/.
 
 ## Public surface leakage checks
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/product.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/about.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/support.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/terms.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/shop.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/downloads.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/privacy.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-birding-apps/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-birds/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-hawks/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-for-beginners/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-etiquette/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-start-birdwatching-alone/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-binoculars-for-birding/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/morning-warbler/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/welcome/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-california/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-shorebirds/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-florida/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-backyard-bird-feeders/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-use-ebird-migration/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/backyard-birding-for-beginners/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-bird-field-guides/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-texas/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/spring-bird-migration/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/attract-birds-to-your-yard/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/hawk-migration/index.html: PASS
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-identify-warblers/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/product.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/about.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/support.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/terms.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/shop.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/downloads.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/privacy.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-birding-apps/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/how-to-identify-birds/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/how-to-identify-hawks/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birdwatching-for-beginners/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birdwatching-etiquette/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/how-to-start-birdwatching-alone/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-binoculars-for-birding/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/morning-warbler/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/welcome/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birds-in-california/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/how-to-identify-shorebirds/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birds-in-florida/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-backyard-bird-feeders/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/how-to-use-ebird-migration/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/backyard-birding-for-beginners/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-bird-field-guides/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birds-in-texas/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/spring-bird-migration/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/attract-birds-to-your-yard/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/hawk-migration/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/how-to-identify-warblers/index.html: PASS
 
 ## Newsletter CTA attribution checks
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-birding-apps/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-birding-apps/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/essential-birding-gear-for-beginners/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birdwatching-for-beginners/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birdwatching-for-beginners/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-binoculars-for-birding/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-binoculars-for-birding/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-spotting-scopes-for-birding/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-california/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birds-in-california/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-florida/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birds-in-florida/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/how-to-use-ebird-migration/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/how-to-use-ebird-migration/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/backyard-birding-for-beginners/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/backyard-birding-for-beginners/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/best-bird-field-guides/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/best-bird-field-guides/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/birds-in-texas/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/birds-in-texas/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/spring-bird-migration/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/spring-bird-migration/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/blog/hawk-migration/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/blog/hawk-migration/index.html: PASS
   - source attr: True
   - offer attr: True
   - cluster attr: True
 
 ## Legacy newsletter route checks
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/index.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/product.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/product.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/about.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/about.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/support.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/support.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/terms.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/terms.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/shop.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/shop.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/downloads.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/downloads.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/docs/privacy.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/docs/privacy.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/web/index.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/web/index.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/web/product.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/web/product.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/web/about.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/web/about.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/web/support.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/web/support.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/web/terms.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/web/terms.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/web/shop.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/web/shop.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/web/downloads.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/web/downloads.html: PASS
   - legacy welcome route found: False
-- /Users/dishad/Desktop/workspace/birdwatching-store/web/privacy.html: PASS
+- /private/tmp/field-feather-ops.ML7MFA/repo/web/privacy.html: PASS
   - legacy welcome route found: False

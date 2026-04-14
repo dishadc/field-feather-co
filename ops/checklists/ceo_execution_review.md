@@ -1,14 +1,14 @@
 # CEO Execution Review
 
-Generated (UTC): 2026-04-13T04:02:28.210489+00:00
+Generated (UTC): 2026-04-14T06:16:39.511300+00:00
 
 Overall status: PASS
 
 ## Validation stack
-- pages_consistency: PASS (/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/pages_consistency_report.json)
-- storefront_smoke: PASS (/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/storefront_smoke_report.json)
-- browser_qa: PASS (/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/browser_qa_report.json)
-- content_integrity: PASS (/Users/dishad/Desktop/workspace/birdwatching-store/ops/checklists/content_integrity_report.json)
+- pages_consistency: PASS (/private/tmp/field-feather-ops.ML7MFA/repo/ops/checklists/pages_consistency_report.json)
+- storefront_smoke: PASS (/private/tmp/field-feather-ops.ML7MFA/repo/ops/checklists/storefront_smoke_report.json)
+- browser_qa: PASS (/private/tmp/field-feather-ops.ML7MFA/repo/ops/checklists/browser_qa_report.json)
+- content_integrity: PASS (/private/tmp/field-feather-ops.ML7MFA/repo/ops/checklists/content_integrity_report.json)
 
 ## Content pipeline
 - planned articles: 21
